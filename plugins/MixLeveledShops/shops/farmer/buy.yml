@@ -1,0 +1,126 @@
+# Формат: "<Материал>:<Кол-во>":   level: <Уровень>   price: <Цена>   refill: <Восполнять на>   max: <Максимально на складе>
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+items:
+  "bread:16;0":
+    level: 1
+    price: 100
+    initial: 1400
+    refill: 5
+    max: 1400
+  "grass:16;0":
+    level: 1
+    price: 3000
+    initial: 1100
+    refill: 5
+    max: 1100
+  "seeds:16;0":
+    level: 1
+    price: 350
+    initial: 700
+    refill: 10
+    max: 700
+  "log:32;0":
+    level: 1
+    price: 950
+    initial: 500
+    refill: 5
+    max: 500
+  "diamond_hoe:1;0":
+    level: 1
+    price: 1500
+    initial: 130
+    refill: 10
+    max: 130
+  "egg:4;0":
+    level: 1
+    price: 1200
+    initial: 600
+    refill: 15
+    max: 600
+  "milk_bucket:1;0":
+    level: 1
+    price: 750
+    initial: 2000
+    refill: 3
+    max: 2000
+  "water_bucket:1;0":
+    level: 1
+    price: 240
+    initial: 350
+    refill: 3
+    max: 350
+  "iron_hoe:1;0":
+    level: 2
+    price: 750
+    initial: 550
+    refill: 5
+    max: 550
+  "raw_beef:16;0":
+    level: 2
+    price: 950
+    initial: 1200
+    refill: 6
+    max: 1200
+  "raw_chicken:16;0":
+    level: 2
+    price: 750
+    initial: 1400
+    refill: 10
+    max: 1400
+  "rabbit_stew:1;0":
+    level: 2
+    price: 150
+    initial: 1200
+    refill: 5
+    max: 1200
+  "pumpkin_pie:8;0":
+    level: 2
+    price: 650
+    initial: 880
+    refill: 3
+    max: 880
+  "sugar_cane:16;0":
+    level: 2
+    price: 950
+    initial: 550
+    refill: 2
+    max: 550
+  "apple:32;0":
+    level: 2
+    price: 550
+    initial: 950
+    refill: 5
+    max: 950
+  "cake:1;0":
+    level: 3
+    price: 960
+    initial: 400
+    refill: 1
+    max: 400
+  "rabbit:16;0":
+    level: 4
+    price: 1400
+    initial: 200
+    refill: 1
+    max: 200
+  "melon:64;0":
+    level: 5
+    price: 340
+    initial: 4400
+    refill: 15
+    max: 4400
+  "carrot_item:32;0":
+    level: 5
+    price: 550
+    initial: 2400
+    refill: 5
+    max: 2400

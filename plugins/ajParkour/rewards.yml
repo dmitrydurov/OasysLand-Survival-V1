@@ -1,0 +1,16 @@
+# This is the rewards file.
+# Here is a guide for this: https://ajgeiss72.gitbook.io/ajparkour/rewards
+intervals:
+  '4':
+    message: '&7Текущее количество прыжков: &9{SCORE}'
+    commands:
+    - cmi money give {PLAYER} 1
+exceptions:
+  '1':
+    message: '&9Поздравляем!&7 Это ваш первый прыжок!'
+    first-time-only: true
+specials:
+  beat-server-record:
+    message: '&7Поздравляем! Вы побили самый большой рекорд на сервере!'
+    commands:
+    - cmi money give {PLAYER} 10

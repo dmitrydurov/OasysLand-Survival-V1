@@ -1,0 +1,196 @@
+#    _______                                     
+#   |__   __|                                    
+#      | |_ __ ___  __ _ ___ _   _ _ __ ___  ___ 
+#      | | '__/ _ \/ _` / __| | | | '__/ _ \/ __|
+#      | | | |  __/ (_| \__ \ |_| | | |  __/\__ \
+#      |_|_|  \___|\__,_|___/\__,_|_|  \___||___/
+#   Official, default config.
+# -------------------------------------------------
+# Result effects:
+# LIGHTNING, EXPLOSION, FLAME_EXPLOSION, SPELL
+#        ---------------------------------
+# Result effects meant for rarity result effects:
+# (But can be used for anything)
+# SPELL
+#        ---------------------------------
+# (!) All result effects can be used as both normal
+#     result effects, and both as rarity result
+#     effects.
+# -------------------------------------------------
+# Opening effects:
+# NONE, DEFAULT, FIREWORK, HOVER_BLOCK, HELIX,
+# SOUL, WEB, EXPLOSIVE, INCR_CIRCLE, TOTEM, BAT
+#        ---------------------------------
+# To customize effects, simply use opening particle
+# like particle1/particle2. Example:
+# COLOR_0_0_0/COLOR_255_0_210
+# You may check which particle may be customizable,
+# and how many from /treasures effects
+# Atleast one particle effect is required per
+# opening particle, if others are not given, they
+# will be the default one.
+# -------------------------------------------------
+# Currency:
+# VAULT, COINSAPI, TOKENENCHANT, ITEM
+# -------------------------------------------------
+# Particle Effects:
+# http://pastebin.com/JLce1Y0x
+# -------------------------------------------------
+# Items:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# -------------------------------------------------
+# Sounds:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# 1.8 Sounds:
+# https://github.com/Attano/Spigot0.8/blob/master/org/bukkit/Sound.java
+# -------------------------------------------------
+# Use the links above for help.
+# You can make as many Treasure/Rarity/Reward as you want.
+# Just copy that path, paste it, and edit it.
+# -------------------------------------------------
+# Configure rarities in config.yml!
+# -------------------------------------------------
+
+inventory:
+  title: '&0Кейсы'
+  row: 5
+  canbuy: '&aClick to buy this!'
+  cantbuy: '&cYou can''t buy this!'
+  haskey: '&cУ вас есть ключ(-и)! Вы можете его открыть!'
+  nokey: '&cУ вас нету ключей!'
+treasures:
+  naebka:
+    display-name: '&4&lКупилСервер &8- &7Кейс'
+    lore:
+    - ''
+    - '&8Может выпасть:'
+    - '&8- &4&lКупилСервер &7с шансом &a10%'
+    - '&8- &7&lПУСТОТА &7с шансом &c90%'
+    - ''
+    - '&8- &7Покупка кейсов: &9&nMcDev.Store'
+    - '&8- &7Предметов в кейсе: &e2 шт.'
+    - '&8- &7Цена ключа: &9&n10&7 рублей'
+    - ''
+    - '&8- &7Ключей: &9%keys%'
+    - ''
+    - '&8Нажмите чтобы открыть.'
+    slot: 24
+    amount: 1
+    item: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkYjBhMWUxNTA1YTc3OTA1YjczNDgwNjdkZDJlYjRmODdmMWFhZjllNDg5ZjY3MGQ4MmQzYjdkNGM0YWU1MCJ9fX0=
+    result-effect: LIGHTNING
+    opening-particle: ENDER_CHEST
+    opening-effect: HOVER_BLOCK
+    use-key: true
+    purchaseable-key: false
+    open-broadcast: false
+    duplicate: false
+    rarities:
+      naebka:
+        chance: 100
+  donate:
+    display-name: '&cДОНАТ &8- &7Кейс'
+    lore:
+    - ''
+    - '&8Может выпасть:'
+    - '&8- &9&lВип &7- &9Навсегда'
+    - '&8- &b&lПремиум &7- &9Навсегда'
+    - '&8- &e&lКреатив &7- &9Навсегда'
+    - '&8- &a&lЛегенда &7- &9Навсегда'
+    - '&8- &2&lАдмин &7- &9Навсегда'
+    - '&8- &4&lГл.Админ &7- &9Навсегда'
+    - '&8- &e&lЭлита &7- &9Навсегда'
+    - '&8- &c&lИмператор &7- &9Навсегда'
+    - '&8- &a&lДелюкс &7- &9Навсегда'
+    - '&8- &6&lОпка &7- &9Навсегда'
+    - '&8- &e&lХелпер &7- &9Навсегда'
+    - '&8- &c&lПрофит &7- &9Навсегда'
+    - '&8- &3&lАнти-Грифер &7- &9Навсегда'
+    - '&8- &c&lВладелец &7- &9Навсегда'
+    - '&8- &4&lКупилСервер &7- &9Навсегда'
+    - ''
+    - '&8- &7Покупка кейсов: &9&nMcDev.Store'
+    - '&8- &7Предметов в кейсе: &e15 шт.'
+    - ''
+    - '&8- &7Цены за ключи:'
+    - ' &8- &75 штук &8- &9&n39 рублей'
+    - ' &8- &710 штук &8- &9&n69 рублей'
+    - ' &8- &720 штук &8- &9&n119 рублей'
+    - ''
+    - '&8- &7Ключей: &9%keys%'
+    - ''
+    - '&8Нажмите чтобы открыть.'
+    slot: 22
+    amount: 15
+    item: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjYyNGM5MjdjZmVhMzEzNTU0Mjc5OTNkOGI3OTcxMmU4NmY5NGQ1OTUzNDMzZjg0ODg0OWEzOWE2ODc5In19fQ==
+    result-effect: LIGHTNING
+    opening-particle: ENDER_CHEST
+    opening-effect: HOVER_BLOCK
+    use-key: true
+    purchaseable-key: false
+    open-broadcast: false
+    duplicate: false
+    rarities:
+      donate:
+        chance: 100
+  adcase:
+    display-name: '&4&lРазработчик &8- &7Кейс'
+    lore:
+    - ''
+    - '&8Может выпасть:'
+    - '&8- &4&lРазработчик &7с шансом &a1%'
+    - '&8- &7&lПУСТОТА &7с шансом &c99%'
+    - ''
+    - '&8- &7Покупка кейсов: &9&nMcDev.Store'
+    - '&8- &7Предметов в кейсе: &e2 шт.'
+    - ''
+    - '&8- &7Цены за ключи:'
+    - ' &8- &75 штук &8- &9&n19 рублей'
+    - ' &8- &710 штук &8- &9&n49 рублей'
+    - ' &8- &720 штук &8- &9&n89 рублей'
+    - ''
+    - '&8- &7Ключей: &9%keys%'
+    - ''
+    - '&8Нажмите чтобы открыть.'
+    slot: 24
+    amount: 1
+    item: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkYjBhMWUxNTA1YTc3OTA1YjczNDgwNjdkZDJlYjRmODdmMWFhZjllNDg5ZjY3MGQ4MmQzYjdkNGM0YWU1MCJ9fX0=
+    result-effect: LIGHTNING
+    opening-particle: ENDER_CHEST
+    opening-effect: HOVER_BLOCK
+    use-key: true
+    purchaseable-key: false
+    open-broadcast: false
+    duplicate: false
+    rarities:
+      adcase:
+        chance: 100
+  des_default:
+    display-name: '&a'
+    item: STAINED_GLASS_PANE:15
+    slot:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 18
+    - 19
+    - 27
+    - 28
+    - 36
+    - 37
+    - 45
+    - 44
+    - 43
+    - 42
+    - 41
+    - 40
+    - 39
+    - 38
+    - 37
+

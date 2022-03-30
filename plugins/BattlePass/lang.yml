@@ -1,0 +1,38 @@
+# NOTE: Remember to check each update for language file changes or you may receive 'null' messages in chat.
+
+could-not-find-user: "&7[&9BattlePass&7]  &7Не могу найти игрока &9%player%"
+no-permission: "&7[&9BattlePass&7]  &7У вас недостаточно прав."
+collectable-rewards-notification: "&7[&9BattlePass&7]  &7У вас есть награды которые вы не забрали! Используйте &9/battlepass&7, чтобы открыть меню BattlePass."
+
+daily-quest-reset: '&7[&9BattlePass&7]  &7Ежедневные квесты были перезагружены!'
+
+week-status-locked: '&cЗакрыто'
+week-status-unlocked: '&aОткрыто'
+week-status-claimed: '&aВзято'
+
+season-finished-message: '&aЗавершено' # This is displayed as the %week% if the season is finished. Remove this line to have it go to the minimum week.
+
+progress-bar:
+  complete-color: '&a'
+  incomplete-color: '&c'
+  symbol: '|'
+
+stats-command:
+  - '&7&m                                                &7'
+  - '&7Ваша статистика BattlePass:'
+  - ' &7&9-&7 &7Тип: &9%pass_type%&7'
+  - ' &7&9-&7 &7Уровень: &9%tier%'
+  - ' &7&9-&7 &7Всего поинтов: &9%total_points%'
+  - '&7&m                                                &7'
+
+quests:
+  # The base message will be used for all quests unless another message is set.
+  base-message-progressed: "&7[&9BattlePass&7]  &7Прогрес квеста: &9%quest_name% &7(&c%progress%&7/&c%required_progress%&7)"
+  base-message-completed: "&7[&9BattlePass&7]  &7Вы выполнили квест &9%quest_name%"
+
+  # The message set below will overwrite the one set as the base message.
+  # <quest name>-progressed: "<Your  message>"
+  # <quest-name>-completed: "<Your Message>"
+  # These are here as examples, and you can make as many as necessary.
+  askyblock_createisland-progressed: "&9Quests >> &7Custom ASkyblock progression message :D. &7(&9%progress%&7/&7%required_progress%&7)"
+  askyblock_createisland-completed: "&9Quests >> &7You completed the ASkyblock island quest!"

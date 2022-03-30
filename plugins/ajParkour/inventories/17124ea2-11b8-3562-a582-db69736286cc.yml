@@ -1,0 +1,161 @@
+inventory:
+  armor:
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        PROTECTION_PROJECTILE: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        DURABILITY: 1
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 13
+  - ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 5
+  - ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 14
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEAVES
+    damage: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: SEA_LANTERN
+  - ==: org.bukkit.inventory.ItemStack
+    type: JACK_O_LANTERN
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEAVES
+  - ==: org.bukkit.inventory.ItemStack
+    type: STEP
+    damage: 5
+  - ==: org.bukkit.inventory.ItemStack
+    type: SNOW
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    amount: 16
+  - ==: org.bukkit.inventory.ItemStack
+    type: GLASS
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: BREAD
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    type: EXP_BOTTLE
+    amount: 16
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        PROTECTION_PROJECTILE: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 2
+        DURABILITY: 1

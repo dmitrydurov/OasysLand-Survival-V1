@@ -1,0 +1,35 @@
+Messages:
+  noperms: У вас недостаточно прав!
+  getMoney: '&6&lGRIEF &8› &7Держите вашу зарплату &e%money ❖'
+  nobreak: '&6&lGRIEF &8› &7Вы еще не сломали ни одной руды'
+  broke: '&e+%money ❖ &7(Заберите зарплату у начальника)'
+  TitleEnter: '&c⚒&fШахта&c⚒'
+  SubtitleEnter: Вы вошли в шахту
+  TitleLeave: '&c⚒&fШахта&c⚒'
+  SubtitleLeave: Вы вышли из шахты
+  TitleCantBreak: '&c⚒&fШахта&c⚒'
+  SubtitleCantBreak: Войдите в шахту что бы ломать блоки
+  Help:
+  - ''
+  - '&6| &f Команды плагина:'
+  - '&6| &6/rmine create&f или &6/c &f❯ Создать шахту'
+  - '&6| &6/rmine gm &f или &6/getmoney &f❯ Получить зарплату'
+  - ''
+Blocks:
+  COAL_ORE:
+    earn: 1
+  DIAMOND_ORE:
+    earn: 4
+  EMERALD_ORE:
+    earn: 5
+  GOLD_ORE:
+    earn: 3
+  IRON_ORE:
+    earn: 2
+Mine:
+  maxx: -3721.0
+  minx: -3739.0
+  maxy: 66.0
+  miny: 50.0
+  maxz: -989.0
+  minz: -1005.0

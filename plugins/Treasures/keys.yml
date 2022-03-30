@@ -1,0 +1,12 @@
+use-mysql: false
+mysql-host: localhost
+mysql-port: 3306
+mysql-database: profit
+mysql-username: profit
+mysql-password: password
+storgare:
+  c0a0c12c-414f-4bcd-8ac4-4a4939bc429c:
+    skulls: 10
+    codz: 120
+  b7d93f09-7e5c-4be2-ad77-9ed7a11e318e:
+    money: 1

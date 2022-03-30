@@ -1,0 +1,15 @@
+# Тут вы можете локализовать все нужные вам предметы.
+# Формат:
+# "<Название>":
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+items:
+  "anvil": "Наковальня"

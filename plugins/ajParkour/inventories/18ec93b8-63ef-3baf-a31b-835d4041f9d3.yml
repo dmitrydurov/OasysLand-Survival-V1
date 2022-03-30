@@ -1,0 +1,91 @@
+inventory:
+  armor:
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 58
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 58
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 10
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 58
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 50
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    damage: 80
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 9
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 4
+  - ==: org.bukkit.inventory.ItemStack
+    type: BREAD
+    amount: 18
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    damage: 48
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 58
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 58
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 10
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 58
+  - ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    damage: 67

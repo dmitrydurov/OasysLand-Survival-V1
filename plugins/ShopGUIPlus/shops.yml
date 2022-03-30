@@ -1,0 +1,4040 @@
+shops:
+  #Shop ID, mustn't contain spaces or special characters, has to be unique, is used in "shop: "food"" in config.yml and players need permissions shopguiplus.shop.food to access it
+  Food:
+    #Shop inventory name
+    name: "&8Еда %page%"
+    items:
+      #Has to be unique for each of items, value doesn't matter
+      1:
+        #Type of sold item, valid values are item/permission/enchantment/command
+        type: item
+        item:
+          #Material name, full list can be found here: http://wiki.brcdev.net/Materials
+          material: BREAD
+          #(optional) Quantity of the item
+          quantity: 1
+          #(optional) Data value, for example 1 for WOOD:1 means spruce wood planks
+          damage: 0
+          #(optional) Custom name
+        #Buy price, lower than 0 means you can't buy it, 0 mean free, higher than 0 is regular value
+        buyPrice: 13.5
+        #Same as above but sell price
+        #Slot in shop's inventory, counting from 0 to 53
+        slot: 0
+      2:
+        type: item
+        item:
+          material: GRILLED_PORK
+          quantity: 1
+          damage: 0
+        buyPrice: 3.37
+        slot: 1
+      3:
+        type: item
+        item:
+          material: APPLE
+          quantity: 1
+          damage: 0
+        buyPrice: 1.5
+        slot: 2
+      4:
+        type: item
+        item:
+          material: COOKIE
+          quantity: 1
+          damage: 0
+        buyPrice: 24
+        slot: 3
+      5:
+        type: item
+        item:
+          material: COOKED_BEEF
+          quantity: 1
+          damage: 0
+        buyPrice: 3.37
+        page: 1
+        slot: 4
+      6:
+        type: item
+        item:
+          material: MELON
+          quantity: 1
+          damage: 0
+        buyPrice: 8.50
+        page: 1
+        slot: 5
+      7:
+        type: item
+        item:
+          material: GOLDEN_APPLE
+          quantity: 1
+          damage: 0
+        buyPrice: 61.83
+        page: 1
+        slot: 6
+      8:
+        type: item
+        item:
+          material: GOLDEN_APPLE
+          quantity: 1
+          damage: 1
+        buyPrice: 5000
+        page: 1
+        slot: 7
+      9:
+        type: item
+        item:
+          material: GOLDEN_CARROT
+          quantity: 1
+          damage:
+        buyPrice: 67.83
+        page: 1
+        slot: 8
+      10:
+        type: item
+        item:
+          material: 349
+          quantity: 1
+          damage: 2
+        buyPrice: 3.37
+        page: 1
+        slot: 9
+      11:
+        type: item
+        item:
+          material: COOKED_FISH
+          quantity: 1
+          damage: 1
+        buyPrice: 7.87
+        page: 1
+        slot: 10
+      12:
+        type: item
+        item:
+          material: SPIDER_EYE
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        page: 1
+        slot: 11
+      13:
+        type: item
+        item:
+          material: BAKED_POTATO
+          quantity: 1
+          damage: 0
+        buyPrice: 7.87
+        page: 1
+        slot: 12
+      14:
+        type: item
+        item:
+          material: COOKED_CHICKEN
+          quantity: 1
+          damage: 0
+        buyPrice: 3.37
+        page: 1
+        slot: 13
+      15:
+        type: item
+        item:
+          material: 367
+          quantity: 1
+          damage: 0
+        buyPrice: 3.37
+        page: 1
+        slot: 14
+      16:
+        type: item
+        item:
+          material: 349
+          quantity: 1
+          damage: 3
+        buyPrice: 22.30
+        page: 1
+        slot: 15
+      17:
+        type: item
+        item:
+          material: MUSHROOM_SOUP
+          quantity: 1
+          damage: 0
+        buyPrice: 6.57
+        page: 1
+        slot: 16
+      18:
+        type: item
+        item:
+          material: 350
+          quantity: 1
+          damage: 0
+        buyPrice: 10.50
+        page: 1
+        slot: 17
+      19:
+        type: item
+        item:
+          material: CARROT_ITEM
+          quantity: 1
+          damage: 0
+        buyPrice: 10.00
+        page: 1
+        slot: 18
+      20:
+        type: item
+        item:
+          material: PUMPKIN_PIE
+          quantity: 1
+          damage: 0
+        buyPrice: 122
+        page: 1
+        slot: 19
+      21:
+        type: item
+        item:
+          material: CAKE
+          quantity: 1
+          damage: 0
+        buyPrice: 300
+        page: 1
+        slot: 20
+      22:
+        type: item
+        item:
+          material: 434
+          quantity: 1
+          damage: 0
+        buyPrice: 300
+        page: 1
+        slot: 21
+      23:
+        type: item
+        item:
+          material: 436
+          quantity: 1
+          damage: 0
+        buyPrice: 300
+        page: 1
+        slot: 22
+  block:
+    name: "&8Блоки %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: STONE
+          quantity: 1
+        buyPrice: 1
+        slot: 0
+      2:
+        type: item
+        item:
+          material: GRASS
+          quantity: 1
+        buyPrice: 8
+        slot: 1
+      3:
+        type: item
+        item:
+          material: DIRT
+          damage: 0
+          quantity: 1
+        buyPrice: 2
+        slot: 2
+      4:
+        type: item
+        item:
+          material: COBBLESTONE
+          quantity: 1
+        buyPrice: 2
+        slot: 3
+      5:
+        type: item
+        item:
+          material: OBSIDIAN
+          quantity: 1
+        buyPrice: 15
+        slot: 4
+      6:
+        type: item
+        item:
+          material: CACTUS
+          quantity: 1
+        buyPrice: 10
+        slot: 5
+      7:
+        type: item
+        item:
+          material: MYCEL
+          quantity: 1
+        buyPrice: 60
+        slot: 6
+      8:
+        type: item
+        item:
+          material: SAND
+          quantity: 1
+        buyPrice: 2
+        slot: 7
+      9:
+        type: item
+        item:
+          material: GRAVEL
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 8
+      10:
+        type: item
+        item:
+          material: LOG
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 9
+      11:
+        type: item
+        item:
+          material: LOG
+          quantity: 1
+          damage: 1
+        buyPrice: 4
+        slot: 10
+      12:
+        type: item
+        item:
+          material: LOG
+          quantity: 1
+          damage: 2
+        buyPrice: 4
+        slot: 11
+      13:
+        type: item
+        item:
+          material: LOG
+          quantity: 1
+          damage: 3
+        buyPrice: 4
+        slot: 12
+      14:
+        type: item
+        item:
+          material: LOG_2
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 13
+      15:
+        type: item
+        item:
+          material: LOG_2
+          quantity: 1
+          damage: 1
+        buyPrice: 4
+        slot: 14
+      16:
+        type: item
+        item:
+          material: SANDSTONE
+          quantity: 1
+          damage: 0
+        buyPrice: 8
+        slot: 15
+      17:
+        type: item
+        item:
+          material: Quartz_Block
+          quantity: 1
+          damage: 1
+        buyPrice: 5.4
+        slot: 16
+      18:
+        type: item
+        item:
+          material: 112
+          quantity: 1
+          damage: 2
+        buyPrice: 5.4
+        slot: 17
+      19:
+        type: item
+        item:
+          material: Diamond_block
+          quantity: 1
+          damage: 0
+        buyPrice: 700
+        slot: 18
+      20:
+        type: item
+        item:
+          material: Gold_block
+          quantity: 1
+          damage: 0
+        buyPrice: 200
+        slot: 19
+      21:
+        type: item
+        item:
+          material: Iron_block
+          quantity: 1
+          damage: 0
+        buyPrice: 500
+        slot: 20
+      22:
+        type: item
+        item:
+          material: Emerald_block
+          quantity: 1
+          damage: 0
+        buyPrice: 700
+        slot: 21
+      23:
+        type: item
+        item:
+          material: 5
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 22
+      24:
+        type: item
+        item:
+          material: 5
+          quantity: 1
+          damage: 1
+        buyPrice: 1
+        slot: 23
+      25:
+        type: item
+        item:
+          material: 5
+          quantity: 1
+          damage: 2
+        buyPrice: 1
+        slot: 24
+      26:
+        type: item
+        item:
+          material: 5
+          quantity: 1
+          damage: 3
+        buyPrice: 1
+        slot: 25
+      27:
+        type: item
+        item:
+          material: 5
+          quantity: 1
+          damage: 4
+        buyPrice: 1
+        slot: 26
+      28:
+        type: item
+        item:
+          material: 5
+          quantity: 1
+          damage: 5
+        buyPrice: 1
+        slot: 27
+      29:
+        type: item
+        item:
+          material: 12
+          quantity: 1
+          damage: 1
+        buyPrice: 2
+        slot: 28
+      30:
+        type: item
+        item:
+          material: 19
+          quantity: 1
+          damage: 0
+        buyPrice: 130
+        slot: 29
+      31:
+        type: item
+        item:
+          material: 20
+          quantity: 1
+          damage: 0
+        buyPrice: 3.50
+        slot: 30
+      32:
+        type: item
+        item:
+          material: 45
+          quantity: 1
+          damage: 0
+        buyPrice: 26
+        slot: 31
+      33:
+        type: item
+        item:
+          material: 47
+          quantity: 1
+          damage: 0
+        buyPrice: 170
+        slot: 32
+      34:
+        type: item
+        item:
+          material: 48
+          quantity: 1
+          damage: 0
+        buyPrice: 8
+        slot: 33
+      35:
+        type: item
+        item:
+          material: 79
+          quantity: 1
+          damage: 0
+        buyPrice: 70
+        slot: 34
+      36:
+        type: item
+        item:
+          material: 80
+          quantity: 1
+          damage: 0
+        buyPrice: 8
+        slot: 35
+      37:
+        type: item
+        item:
+          material: 82
+          quantity: 1
+          damage: 0
+        buyPrice: 24
+        slot: 36
+      38:
+        type: item
+        item:
+          material: 87
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 37
+      39:
+        type: item
+        item:
+          material: 88
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 38
+      40:
+        type: item
+        item:
+          material: 89
+          quantity: 1
+          damage: 0
+        buyPrice: 60
+        slot: 39
+      41:
+        type: item
+        item:
+          material: 98
+          quantity: 1
+          damage: 0
+        buyPrice: 2.50
+        slot: 40
+      42:
+        type: item
+        item:
+          material: 121
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 41
+      43:
+        type: item
+        item:
+          material: 170
+          quantity: 1
+          damage: 0
+        buyPrice: 54
+        slot: 42
+      44:
+        type: item
+        item:
+          material: 174
+          quantity: 1
+          damage: 0
+        buyPrice: 140
+        slot: 43
+      45:
+        type: item
+        item:
+          material: 179
+          quantity: 1
+          damage: 0
+        buyPrice: 100
+        slot: 44
+      46:
+        type: item
+        item:
+          material: 201
+          quantity: 1
+          damage: 0
+        buyPrice: 100
+        slot: 45
+      47:
+        type: item
+        item:
+          material: 202
+          quantity: 1
+          damage: 0
+        buyPrice: 100
+        slot: 46
+      48:
+        type: item
+        item:
+          material: 206
+          quantity: 1
+          damage: 0
+        buyPrice: 100
+        slot: 47
+      49:
+        type: item
+        item:
+          material: 213
+          quantity: 1
+          damage: 0
+        buyPrice: 100
+        slot: 48
+      50:
+        type: item
+        item:
+          material: 215
+          quantity: 1
+          damage: 0
+        buyPrice: 100
+        slot: 50
+  decoration:
+    name: "&8Декорации %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 30
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 37
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 1
+        buyPrice: 4
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 2
+        buyPrice: 4
+        slot: 4
+      6:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 3
+        buyPrice: 4
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 4
+        buyPrice: 4
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 5
+        buyPrice: 4
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 6
+        buyPrice: 4
+        slot: 8
+      10:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 7
+        buyPrice: 4
+        slot: 9
+      11:
+        type: item
+        item:
+          material: 38
+          quantity: 1
+          damage: 8
+        buyPrice: 4
+        slot: 10
+      12:
+        type: item
+        item:
+          material: 54
+          quantity: 1
+          damage: 0
+        buyPrice: 8
+        slot: 11
+      13:
+        type: item
+        item:
+          material: 146
+          quantity: 1
+          damage: 0
+        buyPrice: 27
+        slot: 12
+      14:
+        type: item
+        item:
+          material: 58
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 13
+      15:
+        type: item
+        item:
+          material: FURNACE
+          quantity: 1
+          damage: 0
+        buyPrice: 16
+        slot: 14
+      16:
+        type: item
+        item:
+          material: LADDER
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 15
+      17:
+        type: item
+        item:
+          material: JUKEBOX
+          quantity: 1
+          damage: 0
+        buyPrice: 408
+        slot: 16
+      18:
+        type: item
+        item:
+          material: 85
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 17
+      19:
+        type: item
+        item:
+          material: 101
+          quantity: 1
+          damage: 0
+        buyPrice: 10
+        slot: 18
+      20:
+        type: item
+        item:
+          material: 102
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 19
+      21:
+        type: item
+        item:
+          material: 113
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        slot: 20
+      22:
+        type: item
+        item:
+          material: 116
+          quantity: 1
+          damage: 0
+        buyPrice: 1920
+        slot: 21
+      23:
+        type: item
+        item:
+          material: 130
+          quantity: 1
+          damage: 0
+        buyPrice: 1712
+        slot: 22
+      24:
+        type: item
+        item:
+          material: 145
+          quantity: 1
+          damage: 0
+        buyPrice: 800
+        slot: 23
+      25:
+        type: item
+        item:
+          material: Sponge
+          quantity: 1
+          damage:
+        buyPrice: 100
+        slot: 24
+      26:
+        type: item
+        item:
+          material: 321
+          quantity: 1
+          damage: 0
+        buyPrice: 44
+        slot: 25
+      27:
+        type: item
+        item:
+          material: 323
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 26
+      28:
+        type: item
+        item:
+          material: 355
+          quantity: 1
+          damage: 0
+        buyPrice: 120
+        slot: 27
+      29:
+        type: item
+        item:
+          material: 389
+          quantity: 1
+          damage: 0
+        buyPrice: 24
+        slot: 28
+      30:
+        type: item
+        item:
+          material: 416
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 29
+      31:
+        type: item
+        item:
+          material: 219
+          quantity: 1
+          damage: 0
+        buyPrice: 200
+        slot: 30
+      32:
+        type: item
+        item:
+          material: 198
+          quantity: 1
+          damage: 0
+        buyPrice: 200
+        slot: 31
+  redstone:
+    name: "&8Механизмы %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 23
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 25
+          quantity: 1
+          damage: 0
+        buyPrice: 18
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 29
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 33
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 46
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 4
+      6:
+        type: item
+        item:
+          material: LEVER
+          quantity: 1
+          damage: 0
+        buyPrice: 2.50
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 70
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 72
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 77
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 8
+      10:
+        type: item
+        item:
+          material: 96
+          quantity: 1
+          damage: 0
+        buyPrice: 3
+        slot: 9
+      11:
+        type: item
+        item:
+          material: 107
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 10
+      12:
+        type: item
+        item:
+          material: 123
+          quantity: 1
+          damage: 0
+        buyPrice: 20
+        slot: 11
+      13:
+        type: item
+        item:
+          material: 131
+          quantity: 1
+          damage: 0
+        buyPrice: 19
+        slot: 12
+      14:
+        type: item
+        item:
+          material: 143
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 13
+      15:
+        type: item
+        item:
+          material: 147
+          quantity: 1
+          damage: 0
+        buyPrice: 120
+        slot: 14
+      16:
+        type: item
+        item:
+          material: 148
+          quantity: 1
+          damage: 0
+        buyPrice: 56
+        slot: 15
+      17:
+        type: item
+        item:
+          material: 151
+          quantity: 1
+          damage: 0
+        buyPrice: 118.5
+        slot: 16
+      18:
+        type: item
+        item:
+          material: 152
+          quantity: 1
+          damage: 0
+        buyPrice: 90
+        slot: 17
+      19:
+        type: item
+        item:
+          material: 154
+          quantity: 1
+          damage: 0
+        buyPrice: 10000
+        slot: 18
+      20:
+        type: item
+        item:
+          material: 158
+          quantity: 1
+          damage: 0
+        buyPrice: 14
+        slot: 19
+      21:
+        type: item
+        item:
+          material: 326
+          quantity: 1
+          damage: 0
+        buyPrice: 10
+        slot: 20
+      22:
+        type: item
+        item:
+          material: 324
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 21
+      23:
+        type: item
+        item:
+          material: 330
+          quantity: 1
+          damage: 0
+        buyPrice: 46
+        slot: 22
+      24:
+        type: item
+        item:
+          material: 331
+          quantity: 1
+          damage: 0
+        buyPrice: 10
+        slot: 23
+      25:
+        type: item
+        item:
+          material: 356
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 24
+      26:
+        type: item
+        item:
+          material: 404
+          quantity: 1
+          damage: 0
+        buyPrice: 12
+        slot: 25
+      27:
+        type: item
+        item:
+          material: 12
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 26
+      28:
+        type: item
+        item:
+          material: 30
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 27
+  farming:
+    name: "&8Ферма %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 295
+          quantity: 1
+        buyPrice: 1
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 361
+          quantity: 1
+        buyPrice: 7
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 362
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 3
+        buyPrice: 10
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 6
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 4
+      6:
+        type: item
+        item:
+          material: 6
+          quantity: 1
+          damage: 1
+        buyPrice: 5
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 6
+          quantity: 1
+          damage: 2
+        buyPrice: 5
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 6
+          quantity: 1
+          damage: 3
+        buyPrice: 5
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 6
+          quantity: 1
+          damage: 4
+        buyPrice: 5
+        slot: 8
+      10:
+        type: item
+        item:
+          material: 6
+          quantity: 1
+          damage: 5
+        buyPrice: 5
+        slot: 9
+      11:
+        type: item
+        item:
+          material: 39
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 10
+      12:
+        type: item
+        item:
+          material: 40
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 11
+      13:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 15
+        buyPrice: 1
+        slot: 12
+      14:
+        type: item
+        item:
+          material: 326
+          quantity: 1
+          damage: 0
+        buyPrice: 40
+        slot: 13
+      15:
+        type: item
+        item:
+          material: 290
+          quantity: 1
+          damage: 0
+        buyPrice: 3
+        slot: 14
+      16:
+        type: item
+        item:
+          material: 291
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 15
+      17:
+        type: item
+        item:
+          material: 292
+          quantity: 1
+          damage: 0
+        buyPrice: 38
+        slot: 16
+      18:
+        type: item
+        item:
+          material: 293
+          quantity: 1
+          damage: 0
+        buyPrice: 200
+        slot: 17
+      19:
+        type: item
+        item:
+          material: 294
+          quantity: 1
+          damage: 0
+        buyPrice: 95
+        slot: 18
+  wool:
+    name: "&8Шерсть %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 0
+        buyPrice: 40
+        slot: 0
+      2:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 1
+        buyPrice: 40
+        slot: 1
+      3:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 2
+        buyPrice: 40
+        slot: 2
+      4:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 3
+        buyPrice: 40
+        slot: 3
+      5:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 4
+        buyPrice: 40
+        slot: 4
+      6:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 5
+        buyPrice: 40
+        slot: 5
+      7:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 6
+        buyPrice: 40
+        slot: 6
+      8:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 7
+        buyPrice: 40
+        slot: 7
+      9:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 8
+        buyPrice: 40
+        slot: 8
+      10:
+        type: item
+        item:
+          material: WOOL
+          quantity: 1
+          damage: 9
+        buyPrice: 40
+        slot: 9
+  transportation:
+    name: "&8Транспорт %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 27
+          quantity: 1
+          damage: 0
+        buyPrice: 25
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 28
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 66
+          quantity: 1
+          damage: 0
+        buyPrice: 7
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 157
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 328
+          quantity: 1
+          damage: 0
+        buyPrice: 80
+        slot: 4
+      6:
+        type: item
+        item:
+          material: 329
+          quantity: 1
+          damage: 0
+        buyPrice: 200
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 333
+          quantity: 1
+          damage: 0
+        buyPrice: 5
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 398
+          quantity: 1
+          damage: 0
+        buyPrice: 30
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 443
+          quantity: 1
+          damage: 0
+        buyPrice: 120000
+        slot: 8
+  tool:
+    name: "&8Инструменты %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 257
+          quantity: 1
+          damage: 0
+        buyPrice: 60
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 258
+          quantity: 1
+          damage: 0
+        buyPrice: 60
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 256
+          quantity: 1
+          damage: 0
+        buyPrice: 28
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 284
+          quantity: 1
+          damage: 0
+        buyPrice: 90
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 285
+          quantity: 1
+          damage: 0
+        buyPrice: 135
+        slot: 4
+      6:
+        type: item
+        item:
+          material: 286
+          quantity: 1
+          damage: 0
+        buyPrice: 135
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 277
+          quantity: 1
+          damage: 0
+        buyPrice: 200
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 278
+          quantity: 1
+          damage: 0
+        buyPrice: 550
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 279
+          quantity: 1
+          damage: 0
+        buyPrice: 550
+        slot: 8
+      10:
+        type: item
+        item:
+          material: 259
+          quantity: 1
+          damage: 0
+        buyPrice: 26
+        slot: 9
+      11:
+        type: item
+        item:
+          material: 345
+          quantity: 1
+          damage: 0
+        buyPrice: 180
+        slot: 10
+      12:
+        type: item
+        item:
+          material: 346
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        slot: 11
+      13:
+        type: item
+        item:
+          material: 347
+          quantity: 1
+          damage: 0
+        buyPrice: 170
+        slot: 12
+      14:
+        type: item
+        item:
+          material: 359
+          quantity: 1
+          damage: 0
+        buyPrice: 38
+        slot: 13
+      15:
+        type: item
+        item:
+          material: 420
+          quantity: 1
+          damage: 0
+        buyPrice: 55
+        slot: 14
+      16:
+        type: item
+        item:
+          material: 421
+          quantity: 1
+          damage: 0
+        buyPrice: 150
+        slot: 15
+  weapon:
+    name: "&8Оружие %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 261
+          quantity: 1
+          damage: 0
+        buyPrice: 30
+        slot: 0
+        maxStackSize: 1
+      2:
+        type: item
+        item:
+          material: 262
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 267
+          quantity: 1
+          damage: 0
+        buyPrice: 38
+        slot: 2
+        maxStackSize: 1
+      4:
+        type: item
+        item:
+          material: 276
+          quantity: 1
+          damage: 0
+        buyPrice: 500
+        slot: 3
+        maxStackSize: 1
+      5:
+        type: item
+        item:
+          material: 283
+          quantity: 1
+          damage: 0
+        buyPrice: 90
+        slot: 4
+        maxStackSize: 1
+      6:
+        type: item
+        item:
+          material: 306
+          quantity: 1
+          damage: 0
+        buyPrice: 142
+        slot: 5
+        maxStackSize: 1
+      7:
+        type: item
+        item:
+          material: 307
+          quantity: 1
+          damage: 0
+        buyPrice: 228
+        slot: 6
+        maxStackSize: 1
+      8:
+        type: item
+        item:
+          material: 308
+          quantity: 1
+          damage: 0
+        buyPrice: 198
+        slot: 7
+        maxStackSize: 1
+      9:
+        type: item
+        item:
+          material: 309
+          quantity: 1
+          damage: 0
+        buyPrice: 114
+        slot: 8
+        maxStackSize: 1
+      10:
+        type: item
+        item:
+          material: 310
+          quantity: 1
+          damage: 0
+        buyPrice: 2000
+        slot: 9
+        maxStackSize: 1
+      11:
+        type: item
+        item:
+          material: 311
+          quantity: 1
+          damage: 0
+        buyPrice: 3200
+        slot: 10
+        maxStackSize: 1
+      12:
+        type: item
+        item:
+          material: 312
+          quantity: 1
+          damage: 0
+        buyPrice: 2800
+        slot: 11
+        maxStackSize: 1
+      13:
+        type: item
+        item:
+          material: 313
+          quantity: 1
+          damage: 0
+        buyPrice: 1600
+        slot: 12
+        maxStackSize: 1
+      14:
+        type: item
+        item:
+          material: 314
+          quantity: 1
+          damage: 0
+        buyPrice: 302
+        slot: 13
+        maxStackSize: 1
+      15:
+        type: item
+        item:
+          material: 315
+          quantity: 1
+          damage: 0
+        buyPrice: 484
+        slot: 14
+        maxStackSize: 1
+      16:
+        type: item
+        item:
+          material: 316
+          quantity: 1
+          damage: 0
+        buyPrice: 422
+        slot: 15
+        maxStackSize: 1
+      17:
+        type: item
+        item:
+          material: 317
+          quantity: 1
+          damage: 0
+        buyPrice: 242
+        slot: 16
+        maxStackSize: 1
+      18:
+        type: item
+        item:
+          material: 442
+          quantity: 1
+          damage: 0
+        buyPrice: 400
+        slot: 17
+      19:
+        type: item
+        item:
+          material: 449
+          quantity: 1
+          damage: 0
+        buyPrice: 4000
+        slot: 18
+  brewing:
+    name: "&8Зельеварение %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 370
+          quantity: 1
+          damage: 0
+        buyPrice: 740
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 376
+          quantity: 1
+          damage: 0
+        buyPrice: 44
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 377
+          quantity: 1
+          damage: 0
+        buyPrice: 45
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 378
+          quantity: 1
+          damage: 0
+        buyPrice: 48.34
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 379
+          quantity: 1
+          damage: 0
+        buyPrice: 96
+        slot: 4
+      6:
+        type: item
+        item:
+          material: 380
+          quantity: 1
+          damage: 0
+        buyPrice: 199.5
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 382
+          quantity: 1
+          damage: 0
+        buyPrice: 16.72
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 396
+          quantity: 1
+          damage: 0
+        buyPrice: 63.78
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 414
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 8
+  materials:
+    name: "&8Материалы %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 263
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 263
+          quantity: 1
+          damage: 1
+        buyPrice: 4.50
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 264
+          quantity: 1
+          damage: 0
+        buyPrice: 400
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 265
+          quantity: 1
+          damage: 0
+        buyPrice: 28.50
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 266
+          quantity: 1
+          damage: 0
+        buyPrice: 60.50
+        slot: 4
+      6:
+        type: item
+        item:
+          material: 280
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 281
+          quantity: 1
+          damage: 0
+        buyPrice: 1
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 287
+          quantity: 1
+          damage: 0
+        buyPrice: 10
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 288
+          quantity: 1
+          damage: 0
+        buyPrice: 6
+        slot: 8
+      10:
+        type: item
+        item:
+          material: 289
+          quantity: 1
+          damage: 0
+        buyPrice: 40
+        slot: 9
+      11:
+        type: item
+        item:
+          material: 296
+          quantity: 1
+          damage: 0
+        buyPrice: 6
+        slot: 10
+      12:
+        type: item
+        item:
+          material: 318
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 11
+      13:
+        type: item
+        item:
+          material: 334
+          quantity: 1
+          damage: 0
+        buyPrice: 20
+        slot: 12
+      14:
+        type: item
+        item:
+          material: 336
+          quantity: 1
+          damage: 0
+        buyPrice: 6.50
+        slot: 13
+      15:
+        type: item
+        item:
+          material: 337
+          quantity: 1
+          damage: 0
+        buyPrice: 6
+        slot: 14
+      16:
+        type: item
+        item:
+          material: 338
+          quantity: 1
+          damage: 0
+        buyPrice: 20
+        slot: 15
+      17:
+        type: item
+        item:
+          material: 344
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 16
+      18:
+        type: item
+        item:
+          material: 348
+          quantity: 1
+          damage: 0
+        buyPrice: 20
+        slot: 17
+      19:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 0
+        buyPrice: 20
+        slot: 18
+      20:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 1
+        buyPrice: 2
+        slot: 19
+      21:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 2
+        buyPrice: 20.50
+        slot: 20
+      22:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 3
+        buyPrice: 20
+        slot: 21
+      23:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 4
+        buyPrice: 20
+        slot: 22
+      24:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 5
+        buyPrice: 11
+        slot: 23
+      25:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 6
+        buyPrice: 20.26
+        slot: 24
+      26:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 7
+        buyPrice: 6
+        slot: 25
+      27:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 8
+        buyPrice: 10.66
+        slot: 26
+      28:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 9
+        buyPrice: 1.66
+        slot: 27
+      29:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 10
+        buyPrice: 10.92
+        slot: 28
+      30:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 11
+        buyPrice: 2
+        slot: 29
+      31:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 12
+        buyPrice: 10.66
+        slot: 30
+      32:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 13
+        buyPrice: 6.34
+        slot: 31
+      33:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 14
+        buyPrice: 2
+        slot: 32
+      34:
+        type: item
+        item:
+          material: 351
+          quantity: 1
+          damage: 15
+        buyPrice: 1.34
+        slot: 33
+      35:
+        type: item
+        item:
+          material: 353
+          quantity: 1
+          damage: 0
+        buyPrice: 15
+        slot: 34
+      36:
+        type: item
+        item:
+          material: 369
+          quantity: 1
+          damage: 0
+        buyPrice: 90
+        slot: 35
+      37:
+        type: item
+        item:
+          material: 371
+          quantity: 1
+          damage: 0
+        buyPrice: 6.72
+        slot: 36
+      38:
+        type: item
+        item:
+          material: 372
+          quantity: 1
+          damage: 0
+        buyPrice: 1.34
+        slot: 37
+      39:
+        type: item
+        item:
+          material: 388
+          quantity: 1
+          damage: 0
+        buyPrice: 500
+        slot: 38
+      40:
+        type: item
+        item:
+          material: 399
+          quantity: 1
+          damage: 0
+        buyPrice: 6100
+        slot: 39
+      41:
+        type: item
+        item:
+          material: 405
+          quantity: 1
+          damage: 0
+        buyPrice: 2.50
+        slot: 40
+      42:
+        type: item
+        item:
+          material: 406
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 41
+      43:
+        type: item
+        item:
+          material: 409
+          quantity: 1
+          damage: 0
+        buyPrice: 30
+        slot: 42
+      44:
+        type: item
+        item:
+          material: 410
+          quantity: 1
+          damage: 0
+        buyPrice: 30
+        slot: 43
+      45:
+        type: item
+        item:
+          material: 415
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 44
+  misc:
+    name: "&8Прочее %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: 325
+          quantity: 1
+          damage: 0
+        buyPrice: 60
+        slot: 0
+      2:
+        type: item
+        item:
+          material: 327
+          quantity: 1
+          damage: 0
+        buyPrice: 80
+        slot: 1
+      3:
+        type: item
+        item:
+          material: 332
+          quantity: 1
+          damage: 0
+        buyPrice: 2
+        slot: 2
+      4:
+        type: item
+        item:
+          material: 335
+          quantity: 1
+          damage: 0
+        buyPrice: 40
+        slot: 3
+      5:
+        type: item
+        item:
+          material: 339
+          quantity: 1
+          damage: 0
+        buyPrice: 20
+        slot: 4
+      6:
+        type: item
+        item:
+          material: 340
+          quantity: 1
+          damage: 0
+        buyPrice: 60
+        slot: 5
+      7:
+        type: item
+        item:
+          material: 341
+          quantity: 1
+          damage: 0
+        buyPrice: 75
+        slot: 6
+      8:
+        type: item
+        item:
+          material: 352
+          quantity: 1
+          damage: 0
+        buyPrice: 4
+        slot: 7
+      9:
+        type: item
+        item:
+          material: 368
+          quantity: 1
+          damage: 0
+        buyPrice: 10
+        slot: 8
+      10:
+        type: item
+        item:
+          material: 381
+          quantity: 1
+          damage: 0
+        buyPrice: 165
+        slot: 9
+      11:
+        type: item
+        item:
+          material: 384
+          quantity: 1
+          damage: 0
+        buyPrice: 100
+        slot: 10
+      12:
+        type: item
+        item:
+          material: 385
+          quantity: 1
+          damage: 0
+        buyPrice: 1000
+        slot: 11
+      13:
+        type: item
+        item:
+          material: 386
+          quantity: 1
+          damage: 0
+        buyPrice: 106
+        slot: 12
+      14:
+        type: item
+        item:
+          material: 395
+          quantity: 1
+          damage: 0
+        buyPrice: 298
+        slot: 13
+      15:
+        type: item
+        item:
+          material: 417
+          quantity: 1
+          damage: 0
+        buyPrice: 200
+        slot: 14
+      16:
+        type: item
+        item:
+          material: 418
+          quantity: 1
+          damage: 0
+        buyPrice: 300
+        slot: 15
+      17:
+        type: item
+        item:
+          material: 419
+          quantity: 1
+          damage: 0
+        buyPrice: 400
+        slot: 16
+      18:
+        type: item
+        item:
+          material: 2256
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 17
+      19:
+        type: item
+        item:
+          material: 2257
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 18
+      20:
+        type: item
+        item:
+          material: 2258
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 19
+      21:
+        type: item
+        item:
+          material: 2259
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 20
+      22:
+        type: item
+        item:
+          material: 2260
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 21
+      23:
+        type: item
+        item:
+          material: 2261
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 22
+      24:
+        type: item
+        item:
+          material: 2262
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 23
+      25:
+        type: item
+        item:
+          material: 2263
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 24
+      26:
+        type: item
+        item:
+          material: 2264
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 25
+      27:
+        type: item
+        item:
+          material: 2265
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 26
+      28:
+        type: item
+        item:
+          material: 2266
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 27
+      29:
+        type: item
+        item:
+          material: 2267
+          quantity: 1
+          damage: 0
+        buyPrice: 50
+        slot: 28
+  # IMPORTANT #
+  # You need SilkSpawners (http://dev.bukkit.org/bukkit-plugins/silkspawners/) plugin to sell preset spawners, otherwise remove this section!
+  spawners:
+    name: "&8Спавнеры %page%"
+    items:
+      1:
+        type: item
+        item:
+          spawner: true
+          mob: CHICKEN
+          name: "&aСпавнер Куриц"
+          quantity: 1
+        buyPrice: 75000
+        slot: 0
+      2:
+        type: item
+        item:
+          spawner: true
+          mob: COW
+          name: "&aСпавнер Коров"
+          quantity: 1
+        buyPrice: 75000
+        slot: 1
+      3:
+        type: item
+        item:
+          spawner: true
+          mob: PIG
+          name: "&aСпавнер Свиней"
+          quantity: 1
+        buyPrice: 75000
+        slot: 2
+      4:
+        type: item
+        item:
+          spawner: true
+          mob: SHEEP
+          name: "&aСпавнер Овец"
+          quantity: 1
+        buyPrice: 75000
+        slot: 3
+      5:
+        type: item
+        item:
+          spawner: true
+          mob: SPIDER
+          name: "&aСпавнер Пауков"
+          quantity: 1
+        buyPrice: 75000
+        slot: 4
+      6:
+        type: item
+        item:
+          spawner: true
+          mob: CAVE_SPIDER
+          name: "&aСпавнер Пещерных Пауков"
+          quantity: 1
+        buyPrice: 75000
+        slot: 5
+      7:
+        type: item
+        item:
+          spawner: true
+          mob: ZOMBIE
+          name: "&aСпавнер Зомби"
+          quantity: 1
+        buyPrice: 75000
+        slot: 6
+      8:
+        type: item
+        item:
+          spawner: true
+          mob: SKELETON
+          name: "&aСпавнер Скелетов"
+          quantity: 1
+        buyPrice: 75000
+        slot: 7
+      9:
+        type: item
+        item:
+          spawner: true
+          mob: WITCH
+          name: "&aСпавнер Ведьм"
+          quantity: 1
+        buyPrice: 100000
+        slot: 8
+      10:
+        type: item
+        item:
+          spawner: true
+          mob: Blaze
+          name: "&aСпавнер Ифритов"
+          quantity: 1
+        buyPrice: 200000
+        slot: 9
+      11:
+        type: item
+        item:
+          spawner: true
+          mob:  PigZombie
+          name: "&aСпавнер Свино-Зомби"
+          quantity: 1
+        buyPrice: 400000
+        slot: 10
+      12:
+        type: item
+        item:
+          spawner: true
+          mob: SLIME
+          name: "&aСпавнер Слизьней"
+          quantity: 1
+        buyPrice: 450000
+        slot: 10
+      11:
+        type: item
+        item:
+          spawner: true
+          mob: ENDERMAN
+          name: "&aСпавнер Эндерменов"
+          quantity: 1
+        buyPrice: 500000
+        slot: 11
+      13:
+        type: item
+        item:
+          spawner: true
+          mob: CREEPER
+          name: "&aСпавнер Криперов"
+          quantity: 1
+        buyPrice: 700000
+        slot: 12
+      15:
+        type: item
+        item:
+          spawner: true
+          mob: Villager_Golem
+          name: "&aСпавнер Железных Големов"
+          quantity: 1
+        buyPrice: 950000
+        slot: 13
+      16:
+        type: item
+        item:
+          spawner: true
+          mob: Villager
+          name: "&aСпавнер Жителей"
+          quantity: 1
+        buyPrice: 1250000
+        slot: 13
+  potion:
+    name: "&8Зелья %page%"
+    items:
+      1:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8193
+        buyPrice: 10
+        slot: 0
+      2:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8194
+        buyPrice: 10
+        slot: 1
+      3:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8195
+        buyPrice: 10
+        slot: 2
+      4:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8196
+        buyPrice: 10
+        slot: 3
+      5:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8197
+        buyPrice: 10
+        slot: 4
+      6:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8198
+        buyPrice: 10
+        slot: 5
+      7:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8200
+        buyPrice: 10
+        slot: 6
+      9:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8201
+        buyPrice: 10
+        slot: 7
+      10:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8202
+        buyPrice: 10
+        slot: 8
+      11:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8203
+        buyPrice: 10
+        slot: 9
+      12:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8204
+        buyPrice: 10
+        slot: 10
+      13:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8205
+        buyPrice: 10
+        slot: 11
+      14:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8206
+        buyPrice: 10
+        slot: 12
+      15:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8225
+        buyPrice: 10
+        slot: 13
+      16:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8226
+        buyPrice: 10
+        slot: 14
+      17:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8228
+        buyPrice: 10
+        slot: 15
+      18:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8229
+        buyPrice: 10
+        slot: 16
+      19:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8233
+        buyPrice: 10
+        slot: 17
+      20:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8235
+        buyPrice: 10
+        slot: 18
+      21:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8236
+        buyPrice: 10
+        slot: 19
+      22:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8257
+        buyPrice: 10
+        slot: 20
+      23:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8258
+        buyPrice: 10
+        slot: 21
+      24:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8259
+        buyPrice: 10
+        slot: 22
+      25:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8260
+        buyPrice: 10
+        slot: 23
+      26:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8262
+        buyPrice: 10
+        slot: 24
+      27:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8264
+        buyPrice: 10
+        slot: 25
+      28:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8265
+        buyPrice: 10
+        slot: 26
+      29:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8266
+        buyPrice: 10
+        slot: 27
+      30:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8269
+        buyPrice: 10
+        slot: 28
+      31:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 8270
+        buyPrice: 10
+        slot: 29
+      32:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16385
+        buyPrice: 10
+        slot: 0
+        page: 2
+      33:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16386
+        buyPrice: 10
+        slot: 1
+        page: 2
+      34:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16387
+        buyPrice: 10
+        slot: 2
+        page: 2
+      35:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16388
+        buyPrice: 10
+        slot: 3
+        page: 2
+      36:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16389
+        buyPrice: 10
+        slot: 4
+        page: 2
+      37:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16390
+        buyPrice: 10
+        slot: 5
+        page: 2
+      38:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16392
+        buyPrice: 10
+        slot: 6
+        page: 2
+      39:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16393
+        buyPrice: 10
+        slot: 7
+        page: 2
+      40:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16394
+        buyPrice: 10
+        slot: 8
+        page: 2
+      41:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16395
+        buyPrice: 10
+        slot: 9
+        page: 2
+      42:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16396
+        buyPrice: 10
+        slot: 10
+        page: 2
+      43:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16397
+        buyPrice: 10
+        slot: 11
+        page: 2
+      44:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16398
+        buyPrice: 10
+        slot: 12
+        page: 2
+      45:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16417
+        buyPrice: 10
+        slot: 13
+        page: 2
+      46:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16418
+        buyPrice: 10
+        slot: 14
+        page: 2
+      47:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16420
+        buyPrice: 10
+        slot: 15
+        page: 2
+      48:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16421
+        buyPrice: 10
+        slot: 16
+        page: 2
+      49:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16425
+        buyPrice: 10
+        slot: 17
+        page: 2
+      50:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16427
+        buyPrice: 10
+        slot: 18
+        page: 2
+      51:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16428
+        buyPrice: 10
+        slot: 19
+        page: 2
+      52:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16449
+        buyPrice: 10
+        slot: 20
+        page: 2
+      53:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16450
+        buyPrice: 10
+        slot: 21
+        page: 2
+      54:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16451
+        buyPrice: 10
+        slot: 22
+        page: 2
+      55:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16452
+        buyPrice: 10
+        slot: 23
+        page: 2
+      56:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16454
+        buyPrice: 10
+        slot: 24
+        page: 2
+      57:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16456
+        buyPrice: 10
+        slot: 25
+        page: 2
+      58:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16457
+        buyPrice: 10
+        slot: 26
+        page: 2
+      59:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16458
+        buyPrice: 10
+        slot: 27
+        page: 2
+      60:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16461
+        buyPrice: 10
+        slot: 28
+        page: 2
+      61:
+        type: item
+        item:
+          material: POTION
+          amount: 1
+          damage: 16462
+        buyPrice: 10
+        slot: 29
+        page: 2
+  enchantment:
+    name: "&8Чары %page%"
+    items:
+      1:
+        type: enchantment
+        enchantment: EFFICIENCY
+        enchantmentLevel: 5
+        item:
+          material: 403
+          quantity: 1
+          name: "&aEfficiency V"
+          enchantments:
+            - EFFICIENCY:5
+        buyPrice: 2000
+        slot: 10
+      2:
+        type: enchantment
+        enchantment: UNBREAKING
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aUnbreaking III"
+          enchantments:
+            - UNBREAKING:3
+        buyPrice: 1000
+        slot: 12
+      3:
+        type: enchantment
+        enchantment: SILKTOUCH
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSilk Touch I"
+          enchantments:
+            - SILKTOUCH:1
+        buyPrice: 3500
+        slot: 14
+      4:
+        type: enchantment
+        enchantment: FORTUNE
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFortune III"
+          enchantments:
+            - FORTUNE:3
+        buyPrice: 4000
+        slot: 16
+      5:
+        type: item
+        item:
+          material: 278
+          amount: 1
+          damage: 0
+          name: "&aTool Enchants"
+        buyPrice: -1
+        slot: 4
+        page: 1
+      6:
+        type: enchantment
+        enchantment: EFFICIENCY
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aEfficiency IV"
+          enchantments:
+            - EFFICIENCY:4
+        buyPrice: 1000
+        slot: 19
+      7:
+        type: enchantment
+        enchantment: EFFICIENCY
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aEfficiency III"
+          enchantments:
+            - EFFICIENCY:3
+        buyPrice: 500
+        slot: 28
+      8:
+        type: enchantment
+        enchantment: EFFICIENCY
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aEfficiency II"
+          enchantments:
+            - EFFICIENCY:2
+        buyPrice: 200
+        slot: 37
+      9:
+        type: enchantment
+        enchantment: EFFICIENCY
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aEfficiency I"
+          enchantments:
+            - EFFICIENCY:1
+        buyPrice: 100
+        slot: 46
+      10:
+        type: enchantment
+        enchantment: UNBREAKING
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aUnbreaking II"
+          enchantments:
+            - UNBREAKING:2
+        buyPrice: 400
+        slot: 21
+      11:
+        type: enchantment
+        enchantment: UNBREAKING
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aUnbreaking I"
+          enchantments:
+            - UNBREAKING:1
+        buyPrice: 100
+        slot: 30
+      12:
+        type: enchantment
+        enchantment: FORTUNE
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFortune II"
+          enchantments:
+            - FORTUNE:2
+        buyPrice: 2000
+        slot: 25
+      13:
+        type: enchantment
+        enchantment: FORTUNE
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFortune I"
+          enchantments:
+            - FORTUNE:1
+        buyPrice: 1500
+        slot: 34
+      14:
+        type: enchantment
+        enchantment: MENDING
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aMending"
+          enchantments:
+            - MENDING:1
+        buyPrice: 1500
+        slot: 32
+      14:
+        type: item
+        item:
+          material: 276
+          amount: 1
+          damage: 0
+          name: "&aWeapon Enchants"
+        buyPrice: -1
+        slot: 4
+        page: 2
+      15:
+        type: enchantment
+        enchantment: Sharpness
+        enchantmentLevel: 5
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSharpness V"
+          enchantments:
+            - SHARPNESS:5
+        buyPrice: 3000
+        slot: 9
+        page: 2
+      16:
+        type: enchantment
+        enchantment: Sharpness
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSharpness IV"
+          enchantments:
+            - SHARPNESS:4
+        buyPrice: 2700
+        slot: 18
+        page: 2
+      17:
+        type: enchantment
+        enchantment: Sharpness
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSharpness III"
+          enchantments:
+            - SHARPNESS:3
+        buyPrice: 900
+        slot: 27
+        page: 2
+      18:
+        type: enchantment
+        enchantment: Sharpness
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSharpness II"
+          enchantments:
+            - SHARPNESS:2
+        buyPrice: 400
+        slot: 36
+        page: 2
+      19:
+        type: enchantment
+        enchantment: Sharpness
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSharpness I"
+          enchantments:
+            - SHARPNESS:1
+        buyPrice: 50
+        slot: 10
+        page: 2
+      20:
+        type: enchantment
+        enchantment: Smite
+        enchantmentLevel: 5
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSmite V"
+          enchantments:
+            - SMITE:5
+        buyPrice: 3000
+        slot: 11
+        page: 2
+      21:
+        type: enchantment
+        enchantment: Smite
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSmite IV"
+          enchantments:
+            - SMITE:4
+        buyPrice: 2400
+        slot: 20
+        page: 2
+      22:
+        type: enchantment
+        enchantment: Smite
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSmite III"
+          enchantments:
+            - SMITE:3
+        buyPrice: 1500
+        slot: 29
+        page: 2
+      23:
+        type: enchantment
+        enchantment: Smite
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSmite II"
+          enchantments:
+            - SMITE:2
+        buyPrice: 800
+        slot: 38
+        page: 2
+      24:
+        type: enchantment
+        enchantment: Smite
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aSmite I"
+          enchantments:
+            - SMITE:1
+        buyPrice: 200
+        slot: 12
+        page: 2
+      25:
+        type: enchantment
+        enchantment: Baneofarthropods
+        enchantmentLevel: 5
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBane of Arthropods V"
+          enchantments:
+            - BANEOFARTHROPODS:5
+        buyPrice: 3000
+        slot: 13
+        page: 2
+      26:
+        type: enchantment
+        enchantment: Baneofarthropods
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBane of Arthropods IV"
+          enchantments:
+            - BANEOFARTHROPODS:4
+        buyPrice: 2300
+        slot: 22
+        page: 2
+      27:
+        type: enchantment
+        enchantment: Baneofarthropods
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBane of Arthropods III"
+          enchantments:
+            - BANEOFARTHROPODS:3
+        buyPrice: 1500
+        slot: 31
+        page: 2
+      28:
+        type: enchantment
+        enchantment: Baneofarthropods
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBane of Arthropods II"
+          enchantments:
+            - BANEOFARTHROPODS:2
+        buyPrice: 800
+        slot: 40
+        page: 2
+      29:
+        type: enchantment
+        enchantment: Baneofarthropods
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBane of Arthropods I"
+          enchantments:
+            - BANEOFARTHROPODS:1
+        buyPrice: 300
+        slot: 14
+        page: 2
+      30:
+        type: enchantment
+        enchantment: looting
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aLooting III"
+          enchantments:
+            - LOOTING:3
+        buyPrice: 4700
+        slot: 15
+        page: 2
+      31:
+        type: enchantment
+        enchantment: looting
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aLooting II"
+          enchantments:
+            - LOOTING:2
+        buyPrice: 2700
+        slot: 24
+        page: 2
+      32:
+        type: enchantment
+        enchantment: looting
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aLooting I"
+          enchantments:
+            - LOOTING:1
+        buyPrice: 1700
+        slot: 33
+        page: 2
+      33:
+        type: enchantment
+        enchantment: Knockback
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aKnockback II"
+          enchantments:
+            - KNOCKBACK:2
+        buyPrice: 1250
+        slot: 16
+        page: 2
+      34:
+        type: enchantment
+        enchantment: Knockback
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aKnockback I"
+          enchantments:
+            - KNOCKBACK:1
+        buyPrice: 250
+        slot: 25
+        page: 2
+      35:
+        type: enchantment
+        enchantment: FireAspect
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFire Aspect II"
+          enchantments:
+            - FIREASPECT:2
+        buyPrice: 3000
+        slot: 17
+        page: 2
+      36:
+        type: enchantment
+        enchantment: FireAspect
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFire Aspect I"
+          enchantments:
+            - FIREASPECT:1
+        buyPrice: 2000
+        slot: 26
+        page: 2
+      37:
+        type: item
+        item:
+          material: BOW
+          amount: 1
+          damage: 0
+          name: "&aBow Enchants"
+        buyPrice: -1
+        slot: 4
+        page: 3
+      38:
+        type: enchantment
+        enchantment: Power
+        enchantmentLevel: 5
+        item:
+          material: 403
+          quantity: 1
+          name: "&aPower V"
+          enchantments:
+            - POWER:5
+        buyPrice: 2000
+        slot: 10
+        page: 3
+      39:
+        type: enchantment
+        enchantment: Power
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aPower IV"
+          enchantments:
+            - POWER:4
+        buyPrice: 900
+        slot: 19
+        page: 3
+      40:
+        type: enchantment
+        enchantment: Power
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aPower III"
+          enchantments:
+            - POWER:3
+        buyPrice: 400
+        slot: 28
+        page: 3
+      41:
+        type: enchantment
+        enchantment: Power
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aPower II"
+          enchantments:
+            - POWER:2
+        buyPrice: 200
+        slot: 37
+        page: 3
+      42:
+        type: enchantment
+        enchantment: Power
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aPower I"
+          enchantments:
+            - POWER:1
+        buyPrice: 50
+        slot: 46
+        page: 3
+      43:
+        type: enchantment
+        enchantment: Punch
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aPunch II"
+          enchantments:
+            - PUNCH:2
+        buyPrice: 4000
+        slot: 12
+        page: 3
+      44:
+        type: enchantment
+        enchantment: Punch
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aPunch I"
+          enchantments:
+            - PUNCH:1
+        buyPrice: 600
+        slot: 21
+        page: 3
+      45:
+        type: enchantment
+        enchantment: Flame
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFlame I"
+          enchantments:
+            - PUNCH:1
+        buyPrice: 1500
+        slot: 14
+        page: 3
+      46:
+        type: enchantment
+        enchantment: Infinity
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aInfinity I"
+          enchantments:
+            - INFINITY:1
+        buyPrice: 2600
+        slot: 16
+        page: 3
+      47:
+        type: item
+        item:
+          material: 311
+          amount: 1
+          damage: 0
+          name: "&aArmor Enchants"
+        buyPrice: -1
+        slot: 4
+        page: 4
+      48:
+        type: enchantment
+        enchantment: Protection
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProtection IV"
+          enchantments:
+            - PROTECTION:4
+        buyPrice: 2000
+        slot: 9
+        page: 4
+      49:
+        type: enchantment
+        enchantment: Protection
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProtection III"
+          enchantments:
+            - PROTECTION:3
+        buyPrice: 700
+        slot: 18
+        page: 4
+      50:
+        type: enchantment
+        enchantment: Protection
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProtection II"
+          enchantments:
+            - PROTECTION:2
+        buyPrice: 300
+        slot: 27
+        page: 4
+      51:
+        type: enchantment
+        enchantment: Protection
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProtection I"
+          enchantments:
+            - PROTECTION:1
+        buyPrice: 20
+        slot: 36
+        page: 4
+      52:
+        type: enchantment
+        enchantment: FireProtection
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFire Protection IV"
+          enchantments:
+            - FIREPROTECTION:4
+        buyPrice: 4500
+        slot: 10
+        page: 4
+      53:
+        type: enchantment
+        enchantment: FireProtection
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFire Protection III"
+          enchantments:
+            - FIREPROTECTION:3
+        buyPrice: 1800
+        slot: 19
+        page: 4
+      54:
+        type: enchantment
+        enchantment: FireProtection
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFire Protection II"
+          enchantments:
+            - FIREPROTECTION:2
+        buyPrice: 1000
+        slot: 28
+        page: 4
+      55:
+        type: enchantment
+        enchantment: FireProtection
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFire Protection I"
+          enchantments:
+            - FIREPROTECTION:1
+        buyPrice: 500
+        slot: 37
+        page: 4
+      56:
+        type: enchantment
+        enchantment: BlastProtection
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBlast Protection IV"
+          enchantments:
+            - BLASTPROTECTION:4
+        buyPrice: 4800
+        slot: 11
+        page: 4
+      57:
+        type: enchantment
+        enchantment: BlastProtection
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBlast Protection III"
+          enchantments:
+            - BLASTPROTECTION:3
+        buyPrice: 3000
+        slot: 20
+        page: 4
+      58:
+        type: enchantment
+        enchantment: BlastProtection
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBlast Protection II"
+          enchantments:
+            - BLASTPROTECTION:2
+        buyPrice: 1700
+        slot: 29
+        page: 4
+      59:
+        type: enchantment
+        enchantment: BlastProtection
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aBlast Protection I"
+          enchantments:
+            - BLASTPROTECTION:1
+        buyPrice: 500
+        slot: 38
+        page: 4
+      60:
+        type: enchantment
+        enchantment: ProjectileProtection
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProjectile Protection IV"
+          enchantments:
+            - ProjectileProtection:4
+        buyPrice: 1200
+        slot: 12
+        page: 4
+      61:
+        type: enchantment
+        enchantment: ProjectileProtection
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProjectile Protection III"
+          enchantments:
+            - ProjectileProtection:3
+        buyPrice: 800
+        slot: 21
+        page: 4
+      62:
+        type: enchantment
+        enchantment: ProjectileProtection
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProjectile Protection II"
+          enchantments:
+            - ProjectileProtection:2
+        buyPrice: 400
+        slot: 30
+        page: 4
+      63:
+        type: enchantment
+        enchantment: ProjectileProtection
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aProjectile Protection I"
+          enchantments:
+            - ProjectileProtection:1
+        buyPrice: 100
+        slot: 39
+        page: 4
+      64:
+        type: enchantment
+        enchantment: FeatherFalling
+        enchantmentLevel: 4
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFeather Falling IV"
+          enchantments:
+            - FeatherFalling:4
+        buyPrice: 800
+        slot: 13
+        page: 4
+      65:
+        type: enchantment
+        enchantment: FeatherFalling
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFeather Falling III"
+          enchantments:
+            - FeatherFalling:3
+        buyPrice: 600
+        slot: 22
+        page: 4
+      66:
+        type: enchantment
+        enchantment: FeatherFalling
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFeather Falling II"
+          enchantments:
+            - FeatherFalling:2
+        buyPrice: 400
+        slot: 31
+        page: 4
+      67:
+        type: enchantment
+        enchantment: FeatherFalling
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aFeather Falling I"
+          enchantments:
+            - FeatherFalling:1
+        buyPrice: 150
+        slot: 40
+        page: 4
+      68:
+        type: enchantment
+        enchantment: Respiration
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aRespiration III"
+          enchantments:
+            - Respiration:3
+        buyPrice: 1800
+        slot: 14
+        page: 4
+      69:
+        type: enchantment
+        enchantment: Respiration
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aRespiration II"
+          enchantments:
+            - Respiration:2
+        buyPrice: 1400
+        slot: 23
+        page: 4
+      70:
+        type: enchantment
+        enchantment: Respiration
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aRespiration I"
+          enchantments:
+            - Respiration:1
+        buyPrice: 1800
+        slot: 32
+        page: 4
+      71:
+        type: enchantment
+        enchantment: Thorns
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aThorns III"
+          enchantments:
+            - Thorns:3
+        buyPrice: 3000
+        slot: 15
+        page: 4
+      72:
+        type: enchantment
+        enchantment: Thorns
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aThorns II"
+          enchantments:
+            - Thorns:2
+        buyPrice: 1200
+        slot: 24
+        page: 4
+      73:
+        type: enchantment
+        enchantment: Thorns
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aThorns I"
+          enchantments:
+            - Thorns:1
+        buyPrice: 1000
+        slot: 33
+        page: 4
+      74:
+        type: enchantment
+        enchantment: DepthStrider
+        enchantmentLevel: 3
+        item:
+          material: 403
+          quantity: 1
+          name: "&aDepth Strider III"
+          enchantments:
+            - DepthStrider:3
+        buyPrice: 3000
+        slot: 16
+        page: 4
+      75:
+        type: enchantment
+        enchantment: DepthStrider
+        enchantmentLevel: 2
+        item:
+          material: 403
+          quantity: 1
+          name: "&aDepth Strider II"
+          enchantments:
+            - DepthStrider:2
+        buyPrice: 1500
+        slot: 25
+        page: 4
+      76:
+        type: enchantment
+        enchantment: DepthStrider
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aDepth Strider I"
+          enchantments:
+            - DepthStrider:1
+        buyPrice: 1000
+        slot: 34
+        page: 4
+      77:
+        type: enchantment
+        enchantment: AquaAffinity
+        enchantmentLevel: 1
+        item:
+          material: 403
+          quantity: 1
+          name: "&aAquaAffinity I"
+          enchantments:
+            - AquaAffinity:1
+        buyPrice: 1600
+        slot: 17
+        page: 4

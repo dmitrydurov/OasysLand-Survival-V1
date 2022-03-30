@@ -1,0 +1,32 @@
+#
+# BossBar effects only works for minecraft on versions 1.9 or higher
+#
+# Colors: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+# Styles: SOLID, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20, SEGMENTED_6
+# Flags: CREATE_FOG, DARKEN_SKY, PLAY_BOSS_MUSIC
+#
+# message: accept placeholder: {time} and all placeholders from PLACEHOLDERS.txt
+#
+Bossbar:
+  enabled: true
+  regroup:
+    color: BLUE
+    style: SOLID
+    animate: true
+    flags: [
+      ]
+    message: '&b&l%uclans_player% &9&lзапрос на перегруппировку! &c({time})'
+  invite:
+    color: GREEN
+    style: SOLID
+    animate: true
+    flags: [
+      ]
+    message: '&a&lНовое %uclans_tag_color% &a&lприглашение! &c({time})'
+  chat:
+    color: RED
+    style: SOLID
+    animate: true
+    flags: [
+      ]
+    message: '&4&lВремя действовать &c&l{time}'

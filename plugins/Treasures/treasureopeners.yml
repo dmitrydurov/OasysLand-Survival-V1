@@ -1,0 +1,52 @@
+# Possibly don't modify treasure opener's name.
+
+hologram-location-difference: 0.25
+starting-hologram-position: -0.5
+treasure-openers:
+  opener1:
+    location: 0;0;0;world
+    hologram-enabled: false
+    hologram:
+    - '&e&lКЕЙС'
+    - '&7Кликните по блоку'
+    opener: defaultopener.yml
+  opener2:
+    location: 5;101;0;spawn
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener3:
+    location: 6;100;-13;spawn
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener4:
+    location: 2748;70;766;world
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener5:
+    location: 0;61;37;lobby
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener6:
+    location: -41;79;7;lobby
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener7:
+    location: -11;64;-13;spawn
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener8:
+    location: -11;64;-17;spawn
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener9:
+    location: -11;64;-21;spawn
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener10:
+    location: -1745;70;923;world
+    hologram-enabled: false
+    opener: defaultopener.yml
+  opener11:
+    location: -3767;68;-1043;world
+    hologram-enabled: false
+    opener: defaultopener.yml

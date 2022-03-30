@@ -1,0 +1,39 @@
+# Down: 108 135 -45 | UP: 134 145 -63
+job-info:
+- Информация об
+- плагине
+regions:
+  '1':
+    x1: -3760
+    y1: 71
+    z1: -1084
+    x2: -3747
+    y2: 66
+    z2: -1074
+    earn: 5
+    cooldown: 15
+Message:
+  reloadconfig: '&c&lИнформация  &8❭  &fКонфигурация плагина перезагружена.'
+  getMoney-buy-donate-line1: '&f'
+  getMoney-buy-donate-line2: '  &8❭   &fЗа &eразрушение &e&lдерева &fсчет был пополнен
+    &6%money% &6&lмонет'
+  getMoney-buy-donate-line3: '  &8❭   &fЛомай &cдеревья быстрее&f, купи донат &8❲&eКреатив&8❳
+    &fи у вас будет &6доступ к &6&lкреативу!'
+  getMoney-buy-donate-line4: '  &8❭  &f &fКупить привилегию можно на сайте &8- &e&l&nwww.McDev.Store&a
+    ←[Нажми]'
+  getMoney-buy-donate-line5: '&f'
+  getMoney: '&c&lИнформация  &8❭  &fЗа &eразрушение &e&lдерева &fсчет был пополнен
+    &6%money% &6&lмонет'
+  treeCut: '&c&lИнформация  &8❭  &fРазрушение дерева произойдет через &6&l%number%
+    &6ударов!'
+  no-perm-message-1: '&f'
+  no-perm-message-2: '  &8❭   &fУ вас недостаточно прав для &6использования этой &6&lкоманды'
+  no-perm-message-3: '  &8❭   &fКупи донат &8❲&c&lКонсоль&8❳ &fи у тебя будет доступ
+    &cко всем &c&lкомандам!'
+  no-perm-message-4: '  &8❭   &fКупить привилегию можно на сайте &8- &e&l&nwww.McDev.Store&a
+    ←[Нажми]'
+  no-perm-message-5: '&f'
+  no-perm-title: '&cНедостаточно &c&lправ'
+  no-perm-subtitle: '&cКупить привилегию на сайте &c&lwww.McDev.Store'
+  insufficiently-food: '&c&lИнформация  &8❭  &fВы не можете сломать это дерево, так
+    как &6у вас мало &6&lголода'

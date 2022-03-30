@@ -1,0 +1,76 @@
+inventory:
+  armor:
+  - null
+  - null
+  - null
+  - null
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    type: BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §e§lМеню
+      lore:
+      - §8Нажмите, чтобы открыть!
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §c§lБесплатный Админка
+      lore:
+      - §8Нажмите, чтобы открыть!
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §c§lДонат
+      lore:
+      - §8Нажмите, чтобы открыть!
+  - ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_LAMP_OFF
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 5
+  - ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 14
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null

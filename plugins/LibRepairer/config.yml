@@ -1,0 +1,90 @@
+gui:
+  name: 'Кузнец'
+  #Кол-во линий (куда класть предметы, в одной линии - 7 слотов)
+  lines: 3
+
+allow-items:
+- 'GOLD_SWORD'
+- 'DIAMOND_SWORD'
+- 'IRON_SWORD'
+- 'STONE_SWORD'
+- 'WOOD_SWORD'
+- 'BOW'
+- 'CHAINMAIL_BOOTS'
+- 'CHAINMAIL_CHESTPLATE'
+- 'CHAINMAIL_HELMET'
+- 'CHAINMAIL_LEGGINGS'
+- 'DIAMOND_AXE'
+- 'DIAMOND_BOOTS'
+- 'DIAMOND_CHESTPLATE'
+- 'DIAMOND_HELMET'
+- 'DIAMOND_HOE'
+- 'DIAMOND_LEGGINGS'
+- 'DIAMOND_PICKAXE'
+- 'DIAMOND_SPADE'
+- 'GOLD_AXE'
+- 'GOLD_BOOTS'
+- 'GOLD_CHESTPLATE'
+- 'GOLD_HELMET'
+- 'GOLD_HOE'
+- 'GOLD_LEGGINGS'
+- 'GOLD_PICKAXE'
+- 'IRON_AXE'
+- 'IRON_BOOTS'
+- 'IRON_CHESTPLATE'
+- 'IRON_HELMET'
+- 'IRON_HOE'
+- 'IRON_LEGGINGS'
+- 'IRON_PICKAXE'
+- 'IRON_SWORD'
+- 'LEATHER_BOOTS'
+- 'LEATHER_CHESTPLATE'
+- 'LEATHER_HELMET'
+- 'LEATHER_LEGGINGS'
+- 'FISHING_ROD'
+- 'SHEARS'
+- 'WOODEN_SWORD'
+
+items:
+  accept:
+   id: WOOL
+   sub-id: 5
+   name: '&aНажмите, чтобы принять ремонт'
+  decline:
+   id: WOOL
+   sub-id: 14
+   name: '&cНажмите, чтобы отклонить ремонт'
+  info:
+   id: BOOK
+   sub-id: 0
+   name: '&cИнформация'
+   lore:
+   - ''
+   - '&7Плата за починку: &e{0} ❖ &8({1} предметов)'
+   - '&7Плата за чары: &e{2} ❖ &8({3} зачаровний)'
+   - '&7&o(( Чем больше уровень зачара, тем больше плата ))'
+
+#Цена за починку предмета
+item-price: 100
+
+#Цена за один левел зачарования (т.е если Острота I - плата +2$ к цене, Острота II - плата 4$ + доллара и т.д)
+enchant-price: 2
+
+#Кол-во предметов, которые игрок должен отремонтить, чтобы появилась задержка
+items-each-cooldown: 64
+
+#Время задержки между ремонтами (в секундах)
+cooldown-time: 60
+
+#Скидки на цену за предмет И цену за зачар (в процентах от их реальных цен)
+sales:
+  vip: 5
+  creative: 10
+  admin: 40
+  root: 100
+
+messages:
+  success: '&7[&cMixRepair&7] Я отремонтил всё тебе за &e{0} ❖'
+  not-have-enough-money: '&7[&cMixRepair&7] У тебя недостаточно кредитов, нужно &e{0} ❖'
+  too-many-items: '&7[&cMixRepair&7] По легче, я могу отремонтить за раз только &e{0} &7предметов!'
+  cooldown: '&7[&cMixRepair&7] Извени, я не успеваю с заказами, подожди &c{0} мин&7, &c{1} сек'

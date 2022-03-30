@@ -1,0 +1,19 @@
+bossbar-enabled: false
+bossbar-toggle-command: /bossbar
+remember-toggle-choice: false
+default-bars:
+- ServerInfo
+per-world:
+  testworld:
+  - test
+bars:
+  ServerInfo:
+    permission-required: false
+    refresh: 1000
+    style: NOTCHED_12
+    color: WHITE
+    progress: '100'
+    text: '&6Ⓖ &7Золото: &6Ⓖ %vault_eco_balance% &8| &aⓇ &7Рубли: &a%tm_tokens%&o
+      руб.'
+permission-required-to-toggle: false
+hidden-by-default: false

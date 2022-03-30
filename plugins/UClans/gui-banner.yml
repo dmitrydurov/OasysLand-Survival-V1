@@ -1,0 +1,182 @@
+ 
+ 
+ 
+ 
+# BANNER GUI
+ 
+ 
+ 
+ 
+Banner:
+  #Clan Banner config
+  banner_home:
+    title: '&7Клановый флаг'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:2;STAINED_GLASS_PANE:10
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&7Текущий флаг'
+        lore:
+        - '&8-&9---------------------------------&8-'
+        - ' &7Клановый флаг это ваше лицо'
+        - '&7и его используют для пометки территории!'
+        - '&8-&9---------------------------------&8-'
+        - ' &9<< &7Используйте кнопки по бокам &9>>'
+      upload:
+        clicksound: ''
+        material: LEVER
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&7Обновить флаг'
+        lore:
+        - ''
+        - ' &7Нажмите, чтобы открыть меню загрузки.'
+      delete:
+        clicksound: ''
+        material: BARRIER
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&7Удалить флаг'
+        lore:
+        - ''
+        - ' &7Нажмите, чтобы удалить текущий флаг.'
+      pre:
+        clicksound: ''
+        material: ITEM_FRAME
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&7Готовые флаги.'
+        lore:
+        - ''
+        - ' &7Нажмите, чтобы открыть список.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&7Вернуться назад'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+  #Clan Banner config
+  banner_delete:
+    title: '&7Подтвердить удаление текущего флага?'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:2;STAINED_GLASS_PANE:10
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&8Подтвердить'
+        lore:
+        - ''
+        - ' &7Нажмите, чтобы &8Подтвердить&7 удаление.'
+      cancel:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&cОтменить'
+        lore:
+        - ''
+        - ' &7Нажмите, чтобы &cОтменить&7 удаление.'
+  #Clan Banner config
+  banner_upload:
+    title: '&7Загрузка кланового флага'
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:2;STAINED_GLASS_PANE:10
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      fill2:
+        clicksound: ''
+        material: STAINED_GLASS_PANE:14
+        amount: 1
+        glow: false
+        name: '&7Новый флаг!'
+        lore:
+        - ' '
+        - ' &7Разместите здесь свой новый флаг!'
+        # %player%, nicknames or base64Textures
+        texture: ''
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      confirm:
+        clicksound: ''
+        material: DIAMOND_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&7Сохранить.'
+        lore:
+        - ''
+        - ' &7Нажмите, чтобы сохранить флаг.'
+      back:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&7Вернуться назад'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'

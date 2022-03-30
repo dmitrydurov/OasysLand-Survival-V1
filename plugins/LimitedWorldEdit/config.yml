@@ -1,0 +1,23 @@
+Prefix: '&7[&9&lMcDev&7] '
+CoolDownMessage: '&cСетать можно раз в %delay% секунд'
+WGOwnerMessageError: '&cВы не можете сетать в регионе в котором не состоите!'
+WorldGuardMessageError: '&cСетать можно только в своем регионе!'
+LimitBlockMessage: '&cВы не можете сетнуть больше %limit% блоков!'
+SelectFirstBlockMessage: '&cДля начала нужно выделить регион!'
+AutoUpdate: false
+UseWorldGaurdAPI: true
+UseTownyAPI: false
+delayOn: true
+delayTimeInSecounds: 10
+DefualtLimit: 100
+worldEditCommands:
+- set
+- replace
+- walls
+- sphere
+- hsphere
+- undo
+- redo
+worldGaurdCommands:
+- region define
+- region redefine

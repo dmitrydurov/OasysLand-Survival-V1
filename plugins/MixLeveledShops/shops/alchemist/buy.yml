@@ -1,0 +1,53 @@
+# Формат:
+# "<Материал>:<Кол-во>":
+#   level: <Уровень>
+#   price: <Цена>
+#   refill: <Восполнять на>
+#   max: <Максимально на складе>
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+items:
+  "nether_wart_block:8;0":
+    level: 1
+    price: 9500
+    initial: 500
+    refill: 1
+    max: 500
+  "blaze_rod:8;0":
+    level: 1
+    price: 4500
+    initial: 500
+    refill: 1
+    max: 500
+  "sugar:16;0":
+    level: 1
+    price: 2400
+    initial: 500
+    refill: 1
+    max: 500
+  "dragons_breath:16;0":
+    level: 1
+    price: 2500
+    initial: 400
+    refill: 3
+    max: 400
+  "spider_eye:32;0":
+    level: 1
+    price: 950
+    initial: 500
+    refill: 5
+    max: 500
+  "redstone:32;0":
+    level: 1
+    price: 650
+    initial: 200
+    refill: 1
+    max: 200

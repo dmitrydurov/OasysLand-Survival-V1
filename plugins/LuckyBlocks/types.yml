@@ -1,0 +1,123 @@
+types:
+  "1":
+    reset-time: 120
+    glass-data: 4
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI5MmNiNDMzMzNhYTYyMWM3MGVlZjRlYmYyOTliYTQxMmI0NDZmZTEyZTM0MWNjYzU4MmYzMTkyMTg5In19fQ=="
+    actions:
+      "1":
+        - "console-command: cmi money give {name} 20"
+        - "message: &7Вам было начислено &a20&l$"
+      "2":
+        - "console-command: cmi money give {name} 30"
+        - "message: &7Вам было начислено &a30&l$"
+      "3":
+        - "console-command: cmi money give {name} 40"
+        - "message: &7Вам было начислено &a40&l$"
+      "4":
+        - "console-command: cmi money give {name} 50"
+        - "message: &7Вам было начислено &a50&l$"
+  "2":
+    reset-time: 120
+    glass-data: 13
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRhZDA3MzA1MTA2YzFhNzU1YjI1NDY4ZGEwOGIzMDk2MTY4YjU1ZDEyZGEwZmRhNjQ0OTU5NTlhYmU5OTIxNCJ9fX0="
+    actions:
+      "1":
+        - "console-command: cmi money give {name} 10"
+        - "message: &7Вам было начислено &a10&l$"
+      "2":
+        - "spawn-item: GOLD_CHESTPLATE"
+      "3":
+        - "spawn-item: DIAMOND_CHESTPLATE"
+      "4":
+        - "spawn-item: IRON_CHESTPLATE"
+      "5":
+        - "console-command: cmi money give {name} 20"
+        - "message: &7Вам было начислено &a20&l$"
+      "6":
+        - "console-command: cmi money give {name} 30"
+        - "message: &7Вам было начислено &a30&l$"
+      "7":
+        - "console-command: cmi money give {name} 40"
+        - "message: &7Вам было начислено &a40&l$"
+      "8":
+        - "console-command: cmi money give {name} 50"
+        - "message: &7Вам было начислено &a50&l$"
+  "3":
+    reset-time: 120
+    glass-data: 14
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEyNjExNjU2M2U5MDRjZGU3ZjUyYWUwZmI1ZTA3NjZlNjBhYmY0NzU3OTU3ZGU5ZGQzYjA2ZWRmMWY4YmQ4ZSJ9fX0="
+    actions:
+      "1":
+        - "spawn-item: DIAMOND_SWORD"
+      "2":
+        - "spawn-item: IRON_SWORD"
+      "3":
+        - "spawn-item: DIAMOND_CHESTPLATE"
+      "4":
+        - "spawn-item: IRON_CHESTPLATE"
+      "5":
+        - "console-command: cmi money give {name} 20"
+        - "message: &7Вам было начислено &a20&l$"
+      "6":
+        - "console-command: cmi money give {name} 30"
+        - "message: &7Вам было начислено &a30&l$"
+      "7":
+        - "console-command: cmi money give {name} 40"
+        - "message: &7Вам было начислено &a40&l$"
+      "8":
+        - "console-command: cmi money give {name} 50"
+        - "message: &7Вам было начислено &a50&l$"
+  "4":
+    reset-time: 120
+    glass-data: 9
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM1ZTUyNGFlNGVhZGVjY2I1YTFhZjMzNGE0YWYwOWIzOTQxMjdjZmYyNTM1NzdiZDExODBlZGE3MTJmZDgyIn19fQ=="
+    actions:
+      "1":
+        - "spawn-item: DIAMOND"
+      "2":
+        - "spawn-item: EMERALD"
+      "3":
+        - "spawn-item: GOLD_INGOT"
+      "4":
+        - "spawn-item: IRON_INGOT"
+      "5":
+        - "spawn-item: EMERALD"
+      "6":
+        - "console-command: cmi money give {name} 20"
+        - "message: &7Вам было начислено &a20&l$"
+      "7":
+        - "console-command: cmi money give {name} 30"
+        - "message: &7Вам было начислено &a30&l$"
+      "8":
+        - "console-command: cmi money give {name} 40"
+        - "message: &7Вам было начислено &a40&l$"
+      "9":
+        - "console-command: cmi money give {name} 50"
+        - "message: &7Вам было начислено &a50&l$"
+  "5":
+    reset-time: 2
+    glass-data: 15
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNmMmNkOWY4MWEyNzcyYmRjNDg2NDQ3MmU4MzMzNjIzMTA0ODVjOGE2YmMwYjc2YjgxNzAzMzkwYTliMDMyZSJ9fX0="
+    actions:
+      "1":
+        - "spawn-item: DIAMOND_AXE"
+      "2":
+        - "spawn-item: IRON_AXE"
+      "3":
+        - "spawn-item: GOLD_AXE"
+      "4":
+        - "spawn-item: IRON_SHOVEL"
+      "5":
+        - "spawn-item: DIAMOND_SHOVEL"
+      "6":
+        - "console-command: cmi money give {name} 20"
+        - "message: &7Вам было начислено &a20&l$"
+      "7":
+        - "console-command: cmi money give {name} 30"
+        - "message: &7Вам было начислено &a30&l$"
+      "8":
+        - "console-command: cmi money give {name} 40"
+        - "message: &7Вам было начислено &a40&l$"
+      "9":
+        - "console-command: cmi money give {name} 50"
+        - "message: &7Вам было начислено &a50&l$"

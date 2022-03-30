@@ -1,0 +1,92 @@
+setting:
+  priority: 1
+  advanced: true
+
+# Scoreboard criteria, see the wiki for more information.
+criteria:
+  1:
+    type: permission
+    permission: "kiteboard.group.default"
+
+# Advanced scoreboard configuration
+content:
+  title:
+    frames:
+      - "&5♚ &a&lSurvival (Gamma) &5♚"
+      - "&a&l☣ &6&lСКИДКИ! &2&l☣"
+      - "&3&l◐ &f&lСУПЕР-ВЫГОДНО &9&l◑"
+    interval: 200
+  1:
+    frames:
+      - " "
+    interval: 200
+  2:
+    frames:
+      - "  &6&lПрофиль:"
+      - " &eТолько на этой неделе,"
+      - " &cВладелец&f за &a799&f рублей"
+    interval: 200
+  3:
+    frames:
+      - "   &6◉ &fНик: &9%player_name%"
+      - " &eСкидки &b&l90%&e на весь донат!"
+      - " + супер доступ к &cКОНСОЛИ"
+    interval: 200
+  4:
+    frames:
+      - "   &6◉ &fДолларов: &a%vault_eco_balance%&l$"
+      - "  "
+      - " &a✔ Обмана нету! Проверено!"
+    interval: 200
+  6:
+    frames:
+      - "   &6◉ &fДонат: %luckperms_prefix%"
+      - " &bУспей купить по &lскидке&b!"
+      - " "
+    interval: 200
+  7:
+    frames:
+      - " "
+      - " "
+      - " До конца акции &c&lОДИН час"
+    interval: 200
+  8:
+    frames:
+      - "  &6&lСтатистика:"
+      - " &6Акция! Опка за &a269 руб."
+      - " "
+    interval: 200
+  9:
+    frames:
+      - "   &6◉ &fЖизнь: &3%statistic_minutes_since_death% мин."
+      - "  &cВместо &4&m2690&c руб.!"
+      - " &6&l◈ &fВыдача доната"
+    interval: 200
+  10:
+    frames:
+      - "   &6◉ &fУ/С: &c%statistic_player_kills%&7/&c%statistic_deaths%"
+      - "  "
+      - " &6&l◈ &c&l95%&f Команд сервера"
+    interval: 200
+  11:
+    frames:
+      - "   &6◉ &fНа сервере: &2%statistic_minutes_played% мин."
+      - " &eАкция действует &l12 часов"
+      - " &6&l◈ &fКоманда &c&l//set"
+    interval: 200
+  12:
+    frames:
+      - " "
+    interval: 200
+  13:
+    frames:
+      - "   &aАвто-Донат &c&l(Скидки!)"
+    interval: 200
+  14:
+    frames:
+      - "    &5&lwww.McDev.Store"
+    interval: 200
+  15:
+    frames:
+      - " "
+    interval: 200

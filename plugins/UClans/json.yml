@@ -1,0 +1,735 @@
+Json:
+  simple:
+    command_unknown:
+      center: false
+      raw_text: '%tag% &cНеизвестная команда. Нажмите, для просмотра списка команд.'
+      hover_text: ''
+      click_type: RUN_COMMAND
+      click_action: /uclan help
+      raw_base_color: RED
+    command_unknown_player:
+      center: false
+      raw_text: '%tag% &cНеизвестная команда. Нажмите, для просмотра списка команд.'
+      hover_text: ''
+      click_type: RUN_COMMAND
+      click_action: /clan help
+      raw_base_color: RED
+    clan_ally_rival_list_format:
+      raw_text: ' &d%clan_tag% &f- &d%clan_kdr% &f- &d%clan_members_count%'
+      hover_text: '&fНажмите, чтобы просмотреть информацию о клане.'
+      click_type: SUGGEST_COMMAND
+      click_action: /clan info %clan_tag_nocolor%
+    clan_list_format:
+      raw_text: ' &d%clan_rank% &f- &d%clan_tag% &f- &d%clan_desc% &f- &d%clan_kdr% &f- &d%clan_members_count%'
+      hover_text: '&fНажмите, чтобы просмотреть информацию о клане.'
+      click_type: SUGGEST_COMMAND
+      click_action: /clan info %clan_tag_nocolor%
+    list_next:
+      raw_text: ' &fСледущая страница &7>>'
+      hover_text: '&fНажмите, для перехода.'
+      click_type: RUN_COMMAND
+      click_action: /clan list %next_page%
+    list_prev:
+      raw_text: ' &7<< &fПредыдущая страница'
+      hover_text: '&fНажмите, для перехода.'
+      click_type: RUN_COMMAND
+      click_action: /clan list %prev_page%
+    list_controler:
+      raw_text: ' &7<< &fПредыдущая страница'
+      hover_text: '&fНажмите, для перехода.'
+      click_type: RUN_COMMAND
+      click_action: /clan list %prev_page%
+    clan_deleted:
+      raw_text: ' &d%clan_rank% &f- Клан распущен!'
+      hover_text: '&fСкоро он пропадёт из списка!'
+      click_type: ''
+      click_action: ''
+    war_left_player:
+      raw_text: '%tag% &fИгрок &d%player% &fсбежал с поля боя, осталось &d%clanall_joined_players%&f/&d%max%.'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+    war_send_to:
+      raw_text: '%tag% &fКлан &d%clan1% &fобъявил войну клану &d%clan2%&f, ожидание ответа...'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+    war_send_accepted:
+      raw_text: '%tag% &fКлан &d%clan2% &fпринял вызов клана &d%clan1%&f, битва скоро начнется!'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+    war_send_danied:
+      raw_text: '%tag% &fКлан &d%clan2% &fотказался от войны с кланом &d%clan1%&f.'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+    war_send_started:
+      raw_text: '%tag% &fВойна между кланами &d%clan1% &fи &d%clan1% &fначалась.'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+    war_send_ending:
+      raw_text: '%tag% &fВойна между кланами &d%clan1% &fи &d%clan1% &fзакончилась, победу одержал клан &d%clan_tag_winner%&f.'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+    clan_level:
+      raw_text: '%tag% &fКлан &d%clan% &fимеет &d%num% &fуровень.'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+      extra:
+        # use '' to disable sound
+        sound: ''
+        # use '' to disable title, use %nl% to separate Title and Subtitle
+        title: '&fУровень &d%num% %nl% &d%clan%'
+        # use '' to disable actionbar message.
+        actionbar: '&fУровень &d%num% &f| &d%clan%'
+    clan_reward_level:
+      raw_text: '%tag% &fКлан получил &d%num% &fуровень.'
+      hover_text: ''
+      click_type: ''
+      click_action: ''
+      extra:
+        # use '' to disable sound
+        sound: ''
+        # use '' to disable title, use %nl% to separate Title and Subtitle
+        title: ''
+        # use '' to disable actionbar message.
+        actionbar: ''
+  advanced:
+    help_pagination:
+      lines:
+        start:
+          center: false
+          raw_text: ' '
+        actions:
+          center: false
+          raw_text: ''
+          sublines:
+            prev:
+              raw_text: ' &7<< &fПредыдущая страница '
+              hover_text: '&fНажмите, для перехода.'
+              click_type: RUN_COMMAND
+              click_action: /clan help %prev_page%
+              raw_base_color: ''
+            join:
+              raw_text: ' &f| '
+              hover_text: ' '
+              click_type: ''
+              click_action: ''
+              raw_base_color: ''
+            next:
+              raw_text: ' &fСледущая страница &7>> '
+              hover_text: '&fНажмите, для перехода.'
+              click_type: RUN_COMMAND
+              click_action: /clan help %next_page%
+              raw_base_color: ''
+    help_pagination_admin:
+      lines:
+        start:
+          center: false
+          raw_text: ' '
+        actions:
+          center: false
+          raw_text: ''
+          sublines:
+            prev:
+              raw_text: ' &7<< &fПредыдущая страница '
+              hover_text: '&fНажмите, для перехода.'
+              click_type: RUN_COMMAND
+              click_action: /uclan help %prev_page%
+              raw_base_color: ''
+            join:
+              raw_text: ' &7| '
+              hover_text: ' '
+              click_type: ''
+              click_action: ''
+              raw_base_color: ''
+            next:
+              raw_text: ' &fСледущая страница &7>> '
+              hover_text: '&fНажмите, для перехода.'
+              click_type: RUN_COMMAND
+              click_action: /uclan help %next_page%
+              raw_base_color: ''
+    war_invite_sended:
+      lines:
+        space1:
+          raw_text: ' '
+        name:
+          center: false
+          raw_text: '&fЗапрос на объявление войны &dотправлен&f, дождитесь, пока клан примет или отклонит.'
+        actions:
+          center: false
+          raw_text: ''
+          sublines:
+            '1':
+              raw_text: ' &f- Вы можете отменить запрос на объявление войны &d[Нажмите, чтобы отменить]'
+              hover_text: '&fНажмите, или используйте: &d/clan war cancel %clan2%'
+              click_type: RUN_COMMAND
+              click_action: /clan war cancel %clan2%
+              raw_base_color: ''
+        spaceX:
+          raw_text: ' '
+    invite_receive:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fВы получили приглашение в клан &d%clan_tag%'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan <join/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        expires:
+          center: true
+          raw_text: '&fОсталось &d%sec_expires% &fсек.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan <join/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        space2:
+          raw_text: ' '
+        actions:
+          center: true
+          raw_text: ''
+          sublines:
+            '1':
+              raw_text: '&d[Принять]'
+              hover_text: '&fНажмите, чтобы принять.'
+              click_type: RUN_COMMAND
+              click_action: /clan join %clan_tag_nocolor%
+              raw_base_color: ''
+            '2':
+              raw_text: '      &c[Отклонить]'
+              hover_text: '&fНажмите, чтобы отклонить.'
+              click_type: RUN_COMMAND
+              click_action: /clan deny %clan_tag_nocolor%
+              raw_base_color: ''
+        space3:
+          raw_text: ' '
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    ally_receive:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fКлан &d%clan_tag% &fпредлагает вступить в альянс.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan ally <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        expires:
+          center: true
+          raw_text: '&fОсталось &d%sec_expires% &fсек.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan ally <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        space2:
+          raw_text: ' '
+        actions:
+          center: true
+          raw_text: ''
+          sublines:
+            '1':
+              raw_text: '&d[Принять]'
+              hover_text: '&fНажмите, чтобы принять.'
+              click_type: RUN_COMMAND
+              click_action: /clan ally accept %clan_tag_nocolor%
+              raw_base_color: ''
+            '2':
+              raw_text: '      &c[Отклонить]'
+              hover_text: '&fНажмите, чтобы отклонить.'
+              click_type: RUN_COMMAND
+              click_action: /clan ally deny %clan_tag_nocolor%
+              raw_base_color: ''
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    rival_remove:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fКлан &d%clan_tag% &fотправил запрос на перемирие.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan rival <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        expires:
+          center: true
+          raw_text: '&fОсталось &d%sec_expires% &fсек.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan rival <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        space2:
+          raw_text: ' '
+        actions:
+          center: true
+          raw_text: ''
+          sublines:
+            '1':
+              raw_text: '&d[Принять]'
+              hover_text: '&fНажмите, чтобы принять.'
+              click_type: RUN_COMMAND
+              click_action: /clan rival accept %clan_tag_nocolor%
+              raw_base_color: ''
+            '2':
+              raw_text: '      &c[Отклонить]'
+              hover_text: '&fНажмите, чтобы отклонить.'
+              click_type: RUN_COMMAND
+              click_action: /clan rival deny %clan_tag_nocolor%
+              raw_base_color: ''
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_inwait_announce:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fВойна вот-вот начнется!'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan war join
+          raw_base_color: SILVER
+        name2:
+          center: true
+          raw_text: '&c! &fПомогите союзникам в войне!'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan war join
+          raw_base_color: SILVER
+        actions:
+          center: true
+          raw_text: ''
+          sublines:
+            '1':
+              raw_text: '&d[Присоединиться]'
+              hover_text: '&fНажмите, чтобы присоедениться к войне!'
+              click_type: RUN_COMMAND
+              click_action: /clan war join
+              raw_base_color: ''
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_inlobby_announce:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &cВремя присоедениться к войне прошло!'
+          raw_base_color: SILVER
+        wait:
+          center: true
+          raw_text: '&c! &cПриготовьтесь, война начнется через несколько секунд!'
+          raw_base_color: SILVER
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_instarted_announce:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fВойна началась, пусть победит лучший клан!'
+          raw_base_color: SILVER
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_inending_announce:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fВойна окончена, победил клан: &d%clan_tag_winner%'
+          raw_base_color: YELLOW
+        winn:
+          center: true
+          raw_text: '&c! &fУ вас есть &d60 &fсекунд, чтобы собрать трофеи!'
+          raw_base_color: YELLOW
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_instoped_announce:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fВойна окончена!'
+          raw_base_color: SILVER
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_incanceled_announce:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &cВойна отменена!'
+          raw_base_color: SILVER
+        reason:
+          center: true
+          raw_text: '&c! &fПричина: &d%reason%'
+          raw_base_color: SILVER
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_joined_message_wait:
+      lines:
+        name:
+          center: false
+          raw_text: '%tag% &fОжидание игроков. Статус: &d%clanall_joined_players%&f/&d%max%&f, Время: &d%war_time_next% &fсек.'
+          raw_base_color: SILVER
+        spaceX:
+          raw_text: ' '
+    war_joined_message:
+      lines:
+        name:
+          center: false
+          raw_text: '%tag% &d%player% &fиз клана &d%clan% &fприсоединился: &d%clanall_joined_players%&f/&d%max%&f.'
+          raw_base_color: SILVER
+        spaceX:
+          raw_text: ' '
+    war_receive:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        send:
+          center: true
+          raw_text: '&c! &fВашему клану брошен вызов на войну!'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan war <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        name:
+          center: true
+          raw_text: '&c! &fВызов от клана: &d%clan_tag%'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan war <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        info:
+          center: true
+          raw_text: '&c! &fАрена: &d%arena% &f- Максимально игроков: &d%max%X%max%'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan war <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        expires:
+          center: true
+          raw_text: '&fКит: &d%kit% &f | Осталось &d%sec_expires% &fсек.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan war <accept/deny> %clan_tag_nocolor%
+          raw_base_color: SILVER
+        space2:
+          raw_text: ' '
+        actions:
+          center: true
+          raw_text: ''
+          sublines:
+            '1':
+              raw_text: '&d[Принять]'
+              hover_text: '&fНажмите, чтобы принять.'
+              click_type: RUN_COMMAND
+              click_action: /clan war accept %clan_tag_nocolor%
+              raw_base_color: ''
+            '2':
+              raw_text: '      &c[Отклонить]'
+              hover_text: '&fНажмите, чтобы отклонить.'
+              click_type: RUN_COMMAND
+              click_action: /clan war deny %clan_tag_nocolor%
+              raw_base_color: ''
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_create:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат &dназвание &fнового клана или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить создание клана.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_disband:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат &d%confirm_action% &fдля подтверждения или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить роспуск клана.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_changeleader:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат &d%confirm_action% &fдля подтверждения или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить изменение лидера клана.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_modtag:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат новый &dтэг &fклана или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить изменение тэга клана.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_desc:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат &dописание &fклана или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить изменение описание клана.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_name:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат &dназвание &fклана или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить изменение название клана.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_homecreate:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат &bназвание &fнового кланового дома или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить создание кланового дома.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_homedelete:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат &bназвание &fкланового дома, который хотите удалить или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить удаление кланового дома.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    action_invite:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: false
+          raw_text: '%tag% &fВведите в чат ник игрока, которого вы хотите пригласить в клан или нажмите &c[Отмена]&f!'
+          hover_text: '&fНажмите, чтобы отменить приглашение игрока в клан.'
+          click_type: RUN_COMMAND
+          click_action: /clan cancel
+          raw_base_color: SILVER
+        end:
+          center: false
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    regroup_receive:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        name:
+          center: true
+          raw_text: '&c! &fПолучен запрос на перегрупировку от клана &d%clan_sender%&f.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan regroup <accept/deny>
+          raw_base_color: SILVER
+        expires:
+          center: true
+          raw_text: '&fОсталось &d%sec_expires% &fсек.'
+          hover_text: '&fНажмите, чтобы &dПринять &fили &cОтклонить&f.'
+          click_type: SUGGEST_COMMAND
+          click_action: /clan regroup <accept/deny>
+          raw_base_color: SILVER
+        space2:
+          raw_text: ' '
+        actions:
+          center: true
+          raw_text: ''
+          sublines:
+            '1':
+              raw_text: '&d[Принять]'
+              hover_text: '&fНажмите, чтобы принять.'
+              click_type: RUN_COMMAND
+              click_action: /clan regroup accept
+              raw_base_color: ''
+        end:
+          center: true
+          raw_text: '&d-&7---------------------------------------------&d-'
+        spaceX:
+          raw_text: ' '
+    war_inending_announce2:
+      lines:
+        space1:
+          raw_text: ' '
+        start:
+          center: true
+          raw_text: '&c&m-&7&m---------------------------------------------&c&m-'
+        name:
+          center: true
+          raw_text: '&c&l! &eThe war is over, Winning clan: &b%clan_tag_winner%'
+          raw_base_color: YELLOW
+        end:
+          center: true
+          raw_text: '&c&m-&7&m---------------------------------------------&c&m-'
+        spaceX:
+          raw_text: ' '

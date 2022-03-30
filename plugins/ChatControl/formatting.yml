@@ -1,0 +1,445 @@
+# !-----------------------------------------------------------------------------------------!
+#                  Welcome to ChatControl's Chat Formatting Configuration
+#
+#   In this configuration you can setup how the message in the chat should look like.
+# 
+#   Since we support different message formats per different permissions,
+#   per channels, or many other places in the plugin, you can create a so-called
+#   formats that can be reused multiple times.
+#
+#   For configuration, see:
+#   - https://github.com/kangarko/ChatControl-Pro/wiki/Formats
+#
+#   For variables, see:
+#   - https://github.com/kangarko/ChatControl-Pro/wiki/Variables
+#
+#   Remember, you can remove or edit all formats below, and create your own ones!
+#
+# !-----------------------------------------------------------------------------------------!
+
+# -----------------------------------------------------------------------------------------
+# Enable chat formatting?
+# -----------------------------------------------------------------------------------------
+Enabled: true
+
+# -----------------------------------------------------------------------------------------
+# Integration with other plugins
+# -----------------------------------------------------------------------------------------
+Integration:
+  #
+  # Requires DiscordSRV. 
+  #
+  # Send your normal chat message to your DiscordSRV channel? If so, set the name of the
+  # channel to which we shall send the message.
+  #
+  Discord_Channel: ''
+
+# -----------------------------------------------------------------------------------------
+# Configuration of the default chat types in the game.
+# -----------------------------------------------------------------------------------------
+Formatting:
+  #
+  # The default chat format applied over all worlds.
+  #
+  Default: Chat
+  #
+  # If range mode is enabled, used if the ranged message starts with and "!".
+  # Such messages are send to everyone (if the sender has "chatcontrol.chat.globalrange" permission).
+  #
+  Global: Global_Chat
+  #
+  # A format used in the /me command.
+  #
+  Me: Me
+  #
+  # If range mode is enabled, used to send messages to players with "chatcontrol.chat.spy"
+  # permission that they normally shouldn't see (because it's outside their range).
+  #
+  # To spy on private messages (e.g. /tell or /mail), use /spy feature.
+  #
+  Spy: Spy_Chat
+  #
+  # If party chat is enabled, you can then spy on the messages with "chatcontrol.chat.spy" permission.
+  # Requires mcMMO.
+  #
+  Party_Spy: Spy_Party_Chat
+  #
+  # Used in admin chat via "/chc ach" command, used by staff to communicate with each other.
+  #
+  Admin: Admin_Chat
+  #      
+  # Used in "/chc bungeechat" command which sends messages over bungee.
+  #
+  # Requires BungeeCord support.
+  #
+  Bungee: Bungee_Chat
+
+# -----------------------------------------------------------------------------------------
+# If TownyChat is installed, let it format your Towny channels while letting ChatControl
+# format the normal chat.
+# -----------------------------------------------------------------------------------------
+Towny_Chat:
+  #
+  # Should formatting for listed channels be handled by Towny or ignored?
+  # (Channels not listed will do the opposite)
+  #
+  Channel_Mode_Replace: true
+  #
+  # What channels should we format (or not format)?
+  # The * channel is a placeholder for when a player is not speaking in a channel
+  #
+  Channels:
+  - '*'
+  - 'general'
+
+# -----------------------------------------------------------------------------------------
+# You can optionally enable or disable the formatter depending on the world
+# that the player speaking is in
+# -----------------------------------------------------------------------------------------
+World_Settings:
+  #
+  # Should the listed worlds be the only worlds where the formatter runs?
+  # The default (false) treats the listed worlds as a list of where the formatter does not run.
+  #
+  Use_As_Whitelist: false
+  #
+  # List of worlds to disable (or enable) the formatter
+  #
+  Worlds:
+  - 'World_to_disable_formatter_on'
+
+# -----------------------------------------------------------------------------------------
+# Ranged mode limits the reach of player's message.
+#
+# For per-world chat, give everyone 'chatcontrol.chat.overrideranged' permission.
+# -----------------------------------------------------------------------------------------
+Range:
+  #
+  # Enable ranged mode?
+  #
+  Enabled: true
+  #
+  # Send a ranged message everywhere if it begins with the letter below and player has 
+  # the chatcontrol.chat.globalrange permission.
+  #
+  # Set to none to disable. Traditionally, this used to be "!"
+  #
+  Global_Shortcut: '!'
+  #
+  # How many blocks around the sender should the players see their message?
+  #
+  Distance: 100.0
+  # 
+  # Worlds that shares the same chat.
+  #
+  # If the receiver is in a different world, we ignore the Distance above, 
+  # and he will see the message.
+  #
+  Linked_Worlds:
+    normal:
+    - 'world'
+    - 'world_nether'
+    skyland:
+    - 'skyland'
+    - 'skyland_nether'
+
+# -----------------------------------------------------------------------------------------
+# Here are the actual formats. A format represents how a message should look like.
+# Each format consists of Parts (each part is configured individually).
+#
+# You can re-use them in different parts of the plugin, for example in chat channels.
+#
+# For tutorial, see https://github.com/kangarko/ChatControl-Pro/wiki/Formats
+# -----------------------------------------------------------------------------------------
+Formats:
+  #
+  # This is a very basic format named "Chat" used by default to format your main chat.
+  #
+  # You can name this whatever you want, however you will use
+  # the name in other places of the plugin if you call 'Chat'.
+  #
+  Chat:
+    Global:
+      Message: '&8&l(&9&lL&8&l)&r '
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&7Локальный чат'
+        - ' &8▪ &7Радиус чата: &9100 блоков'
+    guilds:
+      Message: '{uclans_tag_formated}'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - ' &8«&9{uclans_tag_color}&8»'
+        - ''
+        - ' &9Основная информация:'
+        - '  &9- &7Баланс клана: &6{uclans_bank_balance_formated} ❖'
+        - '  &9- &7Основатель клана: &9{uclans_leader}'
+        - '  &9- &7Уровень клана: &9{uclans_level}'
+        - '  &9- &7До следующего уровня: &2{uclans_points_to_nextlevel}&8/&9{uclans_points}'
+        - ''
+        - ' &9Статистика клана:'
+        - '  &9- &7Убийств: &c{uclans_clan_kills} ⚔'
+        - '  &9- &7Смертей: &4{uclans_clan_deaths} ☠'
+        - '  &9- &7Душ: &3{uclans_clan_souls} ❤'
+        - '  &9- &7КДР: &9{uclans_clan_kdr}'
+        - ''
+        - ' &9Статистика игрока:'
+        - '  &9- &7Дата входа: &9{uclans_player_joindate_formated}'
+        - '  &9- &7Убийств: &c{uclans_player_kills} ⚔'
+        - '  &9- &7Смертей: &4{uclans_player_deaths} ☠'
+        - '  &9- &7Душ: &3{uclans_player_souls} ❤'
+        - '  &9- &7КДР: &9{uclans_player_kdr}'
+        - ' '
+      Click_Event:
+        Action: RUN_COMMAND
+        Value: /clan info {uclans_tag_nocolor}
+
+    # The second part simply displays the player's name.
+    Second_Part:
+      # The message that is shown in the chat.
+      # If you want to show player's nick instead, use {nick}
+      Message: '&7{pl_prefix}&7{cmi_user_display_name}&7'
+      # And show some fancy hover text, see above.
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&7Статистика {pl_prefix}&7{player}&7:'
+        - ' &8▪ &7Балансы:'
+        - '  &8- &7Рубли: &a{tm_tokens} &oｐ'
+        - '  &8- &7Баланс: &6Ⓖ {vault_eco_balance}'
+
+    # The third part that simply renders the actual chat message.
+    Third_Part:
+      # The message that is shown in the chat
+      Message: ' &8» &7{message}'
+
+  #
+  # This example format is used in private messages for the sender.
+  #
+  Private_Message_Sender:
+    Everything:
+      Message: '&7вњ‰ &2has been sent!'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '     &8~ &3Private Message &8~     '
+        - '&8&oSent {timestamp}'
+        - '&3Receiver: &f{receiver}'
+        - '&3Body: &f{message}'
+      Click_Event:
+        Action: SUGGEST_COMMAND
+        Value: '/tell {player}&7 '
+  #
+  # This example format is used in private messages for the receiver.
+  #
+  Private_Message_Receiver:
+    Everything:
+      Message: '&7вњ‰ &6from {sender}: &f{message}'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '     &8~ &3Private Message &8~     '
+        - '&8&oReceived {timestamp}'
+        - '&3Sender: &f{sender}'
+        - ''
+        - '&7Click for a reply.'
+      Click_Event:
+        Action: SUGGEST_COMMAND
+        Value: '/r '
+  #
+  # This example format is used in admin chat with "/chc ach".
+  #
+  Admin_Chat:
+    Bracket_Start:
+      Message: '&8[&2A-Chat '
+    Player:
+      Message: '{cmi_user_display_name}&7'
+    Bracket_End:
+      Message: '&8] &2'
+    Message:
+      Message: '{message}'
+  #
+  # This example format is used in global bungee chat with "/chc g".
+  #
+  Bungee_Chat:
+    Everything:
+      Message: '&8[&fG&8] {cmi_user_display_name}&7 &7>&f {message}'
+  #
+  # This example format is used when you send a message from Discord.
+  # Only works if you have DiscordSRV plugin installed and configured properly.
+  #
+  Discord_Chat:
+    Everything:
+      Message: '&8[&3Discord&8] &7{cmi_user_display_name}&7: &f'
+  #
+  # This example format is used in global chat when ranged mode is enabled.
+  #
+  Global_Chat:
+    Global:
+      Message: '&8&l(&c&lG&8&l)&r '
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&7Глобальный чат'
+        - ' &8▪ &7Радиус чата: &9Весь сервер'
+        - ' &8▪ &7Чтобы написать в глобальный'
+        - ' &8▪ &7чат, вставьте перед сообщением'
+        - ' &8▪ &7восклицательный знак &8«&9!&8»&7.'
+    guilds:
+      Message: '{uclans_tag_formated}'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - ' &8«&9{uclans_tag_color}&8»'
+        - ''
+        - ' &9Основная информация:'
+        - '  &9- &7Баланс клана: &6{uclans_bank_balance_formated} ❖'
+        - '  &9- &7Основатель клана: &9{uclans_leader}'
+        - '  &9- &7Уровень клана: &9{uclans_level}'
+        - '  &9- &7До следующего уровня: &2{uclans_points_to_nextlevel}&8/&9{uclans_points}'
+        - ''
+        - ' &9Статистика клана:'
+        - '  &9- &7Убийств: &c{uclans_clan_kills} ⚔'
+        - '  &9- &7Смертей: &4{uclans_clan_deaths} ☠'
+        - '  &9- &7Душ: &3{uclans_clan_souls} ❤'
+        - '  &9- &7КДР: &9{uclans_clan_kdr}'
+        - ''
+        - ' &9Статистика игрока:'
+        - '  &9- &7Дата входа: &9{uclans_player_joindate_formated}'
+        - '  &9- &7Убийств: &c{uclans_player_kills} ⚔'
+        - '  &9- &7Смертей: &4{uclans_player_deaths} ☠'
+        - '  &9- &7Душ: &3{uclans_player_souls} ❤'
+        - '  &9- &7КДР: &9{uclans_player_kdr}'
+        - ' '
+      Click_Event:
+        Action: RUN_COMMAND
+        Value: /clan info {uclans_tag_nocolor}
+    Second_Part:
+      Message: '&7{pl_prefix}&7{cmi_user_display_name}&7'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&7Статистика {pl_prefix}&7{player}&7:'
+        - ' &8▪ &7Балансы:'
+        - '  &8- &7Рубли: &a{tm_tokens} &oｐ'
+        - '  &8- &7Баланс: &6Ⓖ {vault_eco_balance}'
+    Third_Part:
+      Message: ' &8» &7{message}'
+  #
+  # This example format is used in spy chat for admins, when ranged mode is enabled.
+  #
+  Spy_Chat:
+    Global:
+      Message: '&8&l(&4&lS&8&l)&r '
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&7Шпионский чат'
+        - ' &8▪ &7Эти сообщения могут видеть'
+        - ' &8▪ &7все администраторы сервера.'
+        - ' &8▪ &7Тут показываются все сообщения'
+        - ' &8▪ &7которые отправляют игроки.'
+    Spy:
+      Message: '&8(&9&n{world}&8) '
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&7Мир игрока {pl_prefix}&7{player}&7'
+        - ' &8▪ &7Тут отображён мир в котором'
+        - ' &8▪ &7находится игрок при отправке'
+        - ' &8▪ &7этого сообщения.'
+    guilds:
+      Message: '{uclans_tag_formated}'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - ' &8«&9{uclans_tag_color}&8»'
+        - ''
+        - ' &9Основная информация:'
+        - '  &9- &7Баланс клана: &6{uclans_bank_balance_formated} ❖'
+        - '  &9- &7Основатель клана: &9{uclans_leader}'
+        - '  &9- &7Уровень клана: &9{uclans_level}'
+        - '  &9- &7До следующего уровня: &2{uclans_points_to_nextlevel}&8/&9{uclans_points}'
+        - ''
+        - ' &9Статистика клана:'
+        - '  &9- &7Убийств: &c{uclans_clan_kills} ⚔'
+        - '  &9- &7Смертей: &4{uclans_clan_deaths} ☠'
+        - '  &9- &7Душ: &3{uclans_clan_souls} ❤'
+        - '  &9- &7КДР: &9{uclans_clan_kdr}'
+        - ''
+        - ' &9Статистика игрока:'
+        - '  &9- &7Дата входа: &9{uclans_player_joindate_formated}'
+        - '  &9- &7Убийств: &c{uclans_player_kills} ⚔'
+        - '  &9- &7Смертей: &4{uclans_player_deaths} ☠'
+        - '  &9- &7Душ: &3{uclans_player_souls} ❤'
+        - '  &9- &7КДР: &9{uclans_player_kdr}'
+        - ' '
+      Click_Event:
+        Action: RUN_COMMAND
+        Value: /clan info {uclans_tag_nocolor}
+    Second_Part:
+      Message: '&7{pl_prefix}&7{cmi_user_display_name}&7'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&7Статистика {pl_prefix}&7{player}&7:'
+        - ' &8▪ &7Балансы:'
+        - '  &8- &7Рубли: &a{tm_tokens} &oｐ'
+        - '  &8- &7Баланс: &6Ⓖ {vault_eco_balance}'
+    Third_Part:
+      Message: ' &8» &7{message}'
+  #
+  # This example format is used in spy chat when party mode is enabled.
+  #
+  Spy_Party_Chat:
+    Everything:
+      Message: '&8SPY: [{party}&8]&f {pl_prefix}&7{cmi_user_display_name}&7:{pl_suffix} {message}'
+  #
+  # This example format is used in /me
+  #
+  Me:
+    Vip:
+      Message: '&6* '
+      Condition: player.hasPermission("chatcontrol.groups.vip")
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&6This player is VIP'
+        - '&6Check out &9/web &6to obtain VIP'
+    Normal:
+      Message: '&f* '
+      Condition: '!player.hasPermission("chatcontrol.groups.vip")'
+    Player:
+      Message: '{cmi_user_display_name}&7 '
+      Click_Event:
+        Action: SUGGEST_COMMAND
+        Value: '/tell {cmi_user_display_name}&7 '
+    The_Rest:
+      Message: '{message}'
+  #
+  # This example format is used for admins when an advertising message is caught.
+  #  
+  Ad_Info:
+    Info:
+      Message: |-
+          &6&m----------------------------------------------
+          &r              &7&o(( Advertisement! ))
+          
+            &6x &9Player: &f{cmi_user_display_name}&7
+            &6x &9Message: &f{message}
+
+    More_Info:
+      Message: |-
+          &r
+            &8[&9x&8] Hover for more information."
+          &6&m----------------------------------------------
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '     &8~ &3Information &8~     '
+        - '&3Time: &f{timestamp}'
+      Click_Event:
+        Action: SUGGEST_COMMAND
+        Value: /tempban {cmi_user_display_name}&7 10m Advertising is not allowed!

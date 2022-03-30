@@ -1,0 +1,373 @@
+name: '§c§nПремиум'
+default-points-required: 7000
+#required-permission: 'battlepass.premium'
+
+items:
+  doesnt-have-pass: # The item if a player does not have the premium pass.
+    material: 'minecart:0'
+    name: '&cУровень &7&9-&7 &7%tier%'
+    lore:
+      - ''
+      - '&7Награда:'
+      - '%lore_addon%'
+      - ''
+      - '&7Статус: &cНевозможно забрать'
+      - ''
+      - '&c&oЕсли вы хотите забрать эту награду,'
+      - '&c&oто вам нужно приобрести Премиум статус,'
+      - '&c&oна нашем сайте: &9&n&oMcDev.Store'
+      - ''
+  locked-tier-item: # The item if the player has not yet reached the tier.
+    material: 'furnace_minecart:0'
+    name: '&cУровень &7&9-&7 &7%tier%'
+    lore:
+      - ''
+      - '&7Награда:'
+      - '%lore_addon%'
+      - ''
+      - '&7Статус: &cЗакрыто'
+      - ''
+      - '&7&oВы не можете забрать эту награду!'
+  unlocked-tier-item:
+    material: 'chest_minecart:0'
+    name: '&cУровень &7&9-&7 &7%tier%'
+    lore:
+      - ''
+      - '&7Награда:'
+      - '%lore_addon%'
+      - ''
+      - '&7Статус: &aОткрыто'
+      - ''
+      - '&7Нажмите чтобы забрать награду!'
+  claimed-tier-item:
+    material: 'minecart:0'
+    name: '&cУровень &7&9-&7 &7%tier%'
+    lore:
+      - ''
+      - '&7Награда:'
+      - '%lore_addon%'
+      - ''
+      - '&7Статус: &aВзято'
+      - ''
+
+tier-up-actions:
+  - '[message] {&9McDev &7&9-&7 &7Вы достигли уровня: &9%tier%}'
+
+tiers:
+  '1': 
+    rewards: ['1'] 
+    required-points: 7000 
+  '2': 
+    rewards: ['2'] 
+    required-points: 14000 
+  '3': 
+    rewards: ['3'] 
+    required-points: 21000 
+  '4': 
+    rewards: ['4'] 
+    required-points: 28000 
+  '5': 
+    rewards: ['5'] 
+    required-points: 35000 
+  '6': 
+    rewards: ['6'] 
+    required-points: 42000 
+  '7': 
+    rewards: ['7'] 
+    required-points: 49000 
+  '8': 
+    rewards: ['8'] 
+    required-points: 56000 
+  '9': 
+    rewards: ['9'] 
+    required-points: 63000 
+  '10': 
+    rewards: ['10'] 
+    required-points: 70000 
+  '11': 
+    rewards: ['11'] 
+    required-points: 77000 
+  '12': 
+    rewards: ['12'] 
+    required-points: 84000 
+  '13': 
+    rewards: ['13'] 
+    required-points: 91000 
+  '14': 
+    rewards: ['14'] 
+    required-points: 98000 
+  '15': 
+    rewards: ['15'] 
+    required-points: 105000 
+  '16': 
+    rewards: ['16'] 
+    required-points: 112000 
+  '17': 
+    rewards: ['17'] 
+    required-points: 119000 
+  '18': 
+    rewards: ['18'] 
+    required-points: 126000 
+  '19': 
+    rewards: ['19'] 
+    required-points: 133000 
+  '20': 
+    rewards: ['20'] 
+    required-points: 140000 
+  '21': 
+    rewards: ['21'] 
+    required-points: 147000 
+  '22': 
+    rewards: ['22'] 
+    required-points: 154000 
+  '23': 
+    rewards: ['23'] 
+    required-points: 161000 
+  '24': 
+    rewards: ['24'] 
+    required-points: 168000 
+  '25': 
+    rewards: ['25'] 
+    required-points: 175000 
+  '26': 
+    rewards: ['26'] 
+    required-points: 182000 
+  '27': 
+    rewards: ['27'] 
+    required-points: 189000 
+  '28': 
+    rewards: ['28'] 
+    required-points: 196000 
+  '29': 
+    rewards: ['29'] 
+    required-points: 203000 
+  '30': 
+    rewards: ['30'] 
+    required-points: 210000 
+  '31': 
+    rewards: ['31'] 
+    required-points: 217000 
+  '32': 
+    rewards: ['32'] 
+    required-points: 224000 
+  '33': 
+    rewards: ['33'] 
+    required-points: 231000 
+  '34': 
+    rewards: ['34'] 
+    required-points: 238000 
+  '35': 
+    rewards: ['35'] 
+    required-points: 245000 
+  '36': 
+    rewards: ['36'] 
+    required-points: 252000 
+  '37': 
+    rewards: ['37'] 
+    required-points: 259000 
+  '38': 
+    rewards: ['38'] 
+    required-points: 266000 
+  '39': 
+    rewards: ['39'] 
+    required-points: 273000 
+  '40': 
+    rewards: ['40'] 
+    required-points: 280000 
+  '41': 
+    rewards: ['41'] 
+    required-points: 287000 
+  '42': 
+    rewards: ['42'] 
+    required-points: 294000 
+  '43': 
+    rewards: ['43'] 
+    required-points: 301000 
+  '44': 
+    rewards: ['44'] 
+    required-points: 308000 
+  '45': 
+    rewards: ['45'] 
+    required-points: 315000 
+  '46': 
+    rewards: ['46'] 
+    required-points: 322000 
+  '47': 
+    rewards: ['47'] 
+    required-points: 329000 
+  '48': 
+    rewards: ['48'] 
+    required-points: 336000 
+  '49': 
+    rewards: ['49'] 
+    required-points: 343000 
+  '50': 
+    rewards: ['50'] 
+    required-points: 350000 
+  '51': 
+    rewards: ['51'] 
+    required-points: 357000 
+  '52': 
+    rewards: ['52'] 
+    required-points: 364000 
+  '53': 
+    rewards: ['53'] 
+    required-points: 371000 
+  '54': 
+    rewards: ['54'] 
+    required-points: 378000 
+  '55': 
+    rewards: ['55'] 
+    required-points: 385000 
+  '56': 
+    rewards: ['56'] 
+    required-points: 392000 
+  '57': 
+    rewards: ['57'] 
+    required-points: 399000 
+  '58': 
+    rewards: ['58'] 
+    required-points: 406000 
+  '59': 
+    rewards: ['59'] 
+    required-points: 413000 
+  '60': 
+    rewards: ['60'] 
+    required-points: 420000 
+  '61': 
+    rewards: ['61'] 
+    required-points: 427000 
+  '62': 
+    rewards: ['62'] 
+    required-points: 434000 
+  '63': 
+    rewards: ['63'] 
+    required-points: 441000 
+  '64': 
+    rewards: ['64'] 
+    required-points: 448000 
+  '65': 
+    rewards: ['65'] 
+    required-points: 455000 
+  '66': 
+    rewards: ['66'] 
+    required-points: 462000 
+  '67': 
+    rewards: ['67'] 
+    required-points: 469000 
+  '68': 
+    rewards: ['68'] 
+    required-points: 476000 
+  '69': 
+    rewards: ['69'] 
+    required-points: 483000 
+  '70': 
+    rewards: ['70'] 
+    required-points: 490000 
+  '71': 
+    rewards: ['71'] 
+    required-points: 497000 
+  '72': 
+    rewards: ['72'] 
+    required-points: 504000 
+  '73': 
+    rewards: ['73'] 
+    required-points: 511000 
+  '74': 
+    rewards: ['74'] 
+    required-points: 518000 
+  '75': 
+    rewards: ['75'] 
+    required-points: 525000 
+  '76': 
+    rewards: ['76'] 
+    required-points: 532000 
+  '77': 
+    rewards: ['77'] 
+    required-points: 539000 
+  '78': 
+    rewards: ['78'] 
+    required-points: 546000 
+  '79': 
+    rewards: ['79'] 
+    required-points: 553000 
+  '80': 
+    rewards: ['80'] 
+    required-points: 560000 
+  '81': 
+    rewards: ['81'] 
+    required-points: 567000 
+  '82': 
+    rewards: ['82'] 
+    required-points: 574000 
+  '83': 
+    rewards: ['83'] 
+    required-points: 581000 
+  '84': 
+    rewards: ['84'] 
+    required-points: 588000 
+  '85': 
+    rewards: ['85'] 
+    required-points: 595000 
+  '86': 
+    rewards: ['86'] 
+    required-points: 602000 
+  '87': 
+    rewards: ['87'] 
+    required-points: 609000 
+  '88': 
+    rewards: ['88'] 
+    required-points: 616000 
+  '89': 
+    rewards: ['89'] 
+    required-points: 623000 
+  '90': 
+    rewards: ['90'] 
+    required-points: 630000 
+  '91': 
+    rewards: ['91'] 
+    required-points: 637000 
+  '92': 
+    rewards: ['92'] 
+    required-points: 644000 
+  '93': 
+    rewards: ['93'] 
+    required-points: 651000 
+  '94': 
+    rewards: ['94'] 
+    required-points: 658000 
+  '95': 
+    rewards: ['95'] 
+    required-points: 665000 
+  '96': 
+    rewards: ['96'] 
+    required-points: 672000 
+  '97': 
+    rewards: ['97'] 
+    required-points: 679000 
+  '98': 
+    rewards: ['98'] 
+    required-points: 686000 
+  '99': 
+    rewards: ['99'] 
+    required-points: 693000 
+  '100': 
+    rewards: ['100'] 
+    required-points: 700000 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

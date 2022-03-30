@@ -1,0 +1,209 @@
+# !-----------------------------------------------------------------------------------------!
+#                  Welcome to ChatControl's channel configuration
+#
+#   In this configuration you can setup chatting rooms on your server, also known as
+#   chat channels.
+#
+#   Chat channels can reduce spam on big servers because they sort players to individual
+#   channels instead of letting everyone to chat on the main server chat.
+#
+#   Read more:
+#   - https://github.com/kangarko/ChatControl-Pro/wiki/Channels
+#
+# !-----------------------------------------------------------------------------------------!
+
+# -----------------------------------------------------------------------------------------
+# Should the channel functionality be enabled?
+#
+# When you enable this, we disable standard formatting completely (we will ignore Enabled
+# option in formatting.yml and acts as if it was on false). However, admin chat and bungee
+# chat will still be functional and use format in formatting.yml since those are
+# independent of channels.
+# -----------------------------------------------------------------------------------------
+Enabled: false
+
+# -----------------------------------------------------------------------------------------
+# Put players with the autojoin permission automatically into channels?
+# 
+# Give them chatcontrol.channel.autojoin.{channel}.{mode} permission to make this feature
+# function. Replace {channel} with the channel name and {mode} with channel mode (read,
+# write, spy)
+# -----------------------------------------------------------------------------------------
+Auto_Join: true
+
+# -----------------------------------------------------------------------------------------
+# If you join a channel into write mode, your old channels are automatically changed
+# to reading mode. Set this flag to true if you want old channels change to spying instead.
+# -----------------------------------------------------------------------------------------
+Switch_To_Spy: false
+
+# -----------------------------------------------------------------------------------------
+# When you leave your writing channel should we try to turn your first reading channel
+# into writing for your convenience?
+# -----------------------------------------------------------------------------------------
+Auto_Write_On_Leave: true
+
+# -------------------------------------------------------------------------------------------
+# What commands should trigger the channel menu (separated by a comma ,)? 
+# 
+# * THE FIRST ALIAS IS THE MAIN LABEL, PLEASE DO NOT REMOVE IT. *
+# -------------------------------------------------------------------------------------------
+Command_Aliases:
+- 'channel'
+- 'ch'
+
+# -----------------------------------------------------------------------------------------
+# Send "You are in X channel." / "You have no channels" messages to players when they join?
+#
+# You can change the message in the localization (see settings.yml)
+#
+# TIP: To hide "Player X have joined this channel", hide it in the localization as well!
+# -----------------------------------------------------------------------------------------
+Notify_On_Join: true
+
+# -----------------------------------------------------------------------------------------
+# How many channels can the player be at once, maximum?
+#
+# You can override this and give VIP's/staff more channels, see Groups in settings.yml.
+# PS: There is no limit for spying channels.
+# -----------------------------------------------------------------------------------------
+Channel_Limits:
+  Write: 1
+  #
+  # Limit for channels which the player can read.
+  #
+  Read: 3
+
+# -----------------------------------------------------------------------------------------
+# When you use /channel send command must the player be in the given channel for them
+# to be able to use that command? False by default
+# -----------------------------------------------------------------------------------------
+Send_Command_Require_Join: false
+
+# -----------------------------------------------------------------------------------------
+# Since you can be in more then one channel at once, some third party plugins
+# do not like this idea and ChatControl needs to be adjusted.
+# -----------------------------------------------------------------------------------------
+Compatibility:
+  #
+  # Should we fire Player Chat Event for each channel where the player writes separately?
+  # 
+  # Each plugin will get each message from each channel separately to process
+  # multiple times in case of the single chat event that was fired originally.
+  # 
+  # Can conflict with NoCheatPlus and Factions or print doubled messages if not handled correctly.
+  #
+  Multi_Event: false
+  #
+  # If "Multi_Event" is "false", only one message will appear in the console and to other
+  # plugins, no matter how many channels the player is in. Configure the format here.
+  #
+  # All variables are supported, however, no JSON can be added due to Bukkit limitations.
+  # The special variable {channels} will print all channels the player is in.
+  #
+  Single_Event_Format: '[{channels}] {player}: {message}'
+  #
+  # ChatControl listens to "chat event" from which we process the channel message.
+  # Cancel the event? Enable if you have for example Discord and see doubled messages.
+  #
+  Cancel_Event: false
+  #
+  # Settings for when you have DiscordSRV enabled.
+  # TO USE DISCORD FOR CHANNELS, PLACE "Discord: true" KEY AND VALUE FOR THE CHANNELS
+  # WHERE YOU WANT TO USE IT
+  #
+  Discord:
+    #
+    # If true, messages from Discord will be only send into a ChatControl channel
+    # with exactly the same name, in the format below.
+    #
+    Control_Incoming_Messages: true
+    #
+    # If the option above is true, and channel is not installed on the server,
+    # should be block the message from appearing in the chat? If not, DiscordSRV
+    # will handle it and it will display to all players on your server.
+    #
+    Deny_Unknown_Channel: true
+    #
+    # When you are online both on Discord and in-game, apply your in-game formatting 
+    # when you type from Discord? This will cause duplicated messages on Bungee, 
+    # and it is therefore disabled by default.
+    #
+    Apply_Natural_Format_If_Online: false
+    #
+    # If you write a message on discord and you are NOT online under the same name,
+    # the following format will be used. Specify full format or link in formatting.yml
+    # If you are online, we will send it as though it was you from the server.
+    #
+    # Set to "" to use your channel's format, but this is not recommended
+    # because we cannot replace variables since the player is not online!
+    #
+    Format: '&8[&3Discord&8] &7{player}: &f{message}'
+
+# -----------------------------------------------------------------------------------------
+# Configuration of each chat channel.
+#
+# To create or remove channels, simply remove or create new sections down below.
+#
+# FOR TUTORIAL PLEASE SEE https://github.com/kangarko/ChatControl-Pro/wiki/Channels
+# -----------------------------------------------------------------------------------------
+Channels:
+  #
+  # The default channel for all players.
+  # As you can see, you only need to set the options you need!
+  #
+  standard:
+    #
+    # This format is changeable in formatting.yml
+    #
+    Format: Chat
+
+  #
+  # The default global channel with bungee support.
+  # NB: This has nothing to do with our bungee chat (/chc bc), that is a separate feature.
+  #
+  global:
+    #
+    # This format is changeable in formatting.yml
+    #
+    Format: Global_Chat
+    #
+    # This channel sends the messages to the BungeeCord.
+    #
+    Bungee: true
+    #
+    # Channel is logged into ChatControl/logs/channels/global.yml with the following format:
+    #
+    Log_Format: '{player}: {message}'
+
+  #
+  # The default admin chat for staff.
+  #
+  admin:
+    #
+    # You can change the format in formatting.yml
+    #
+    Format: Admin_Chat
+    #
+    # Custom console format.
+    # Requires Compatibility.Multi_Event to true, otherwise Compatibility.Single_Event_Format will be shown.
+    #
+    Console_Format: '[A-chat {player}] {message}'
+    #
+    # Channel is logged into ChatControl/logs/channels/admin.yml with the following format:
+    #
+    Log_Format: '{player}: {message}'
+
+  #
+  # The default ranged chat per world.
+  #
+  ranged:
+    #
+    # You can also set the format directly:
+    #
+    Format: '&6[ranged] &7{pl_prefix}{player}:{pl_suffix} {message}'
+    #
+    # How many blocks around the sender should the other players see sender's message?
+    # To unlimited, simply set to "*"
+    #
+    Range: 100

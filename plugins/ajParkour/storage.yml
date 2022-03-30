@@ -1,0 +1,20 @@
+# 
+# 
+# This file tells the plugin where it
+# should store player high scores.
+# 
+# The method option can either be 'yaml' or 'mysql'.
+# If it is mysql, you must configure the mysql section below.
+# 
+#  
+method: yaml
+mysql:
+  maxConnections: 10
+  useSSL: false
+  allowPublicKeyRetrieval: false
+  password: ''
+  ip: 127.0.0.1:3306
+  database: ''
+  table: ajparkour_scores
+  username: ''
+  minConnections: 1

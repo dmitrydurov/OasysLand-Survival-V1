@@ -1,0 +1,203 @@
+# 
+# 
+# This is the messsages file.
+# You can change any messages that are in this file
+# 
+# If you want to reset a message back to the default,
+# delete the entire line the message is on and restart the server.
+# 	
+# 	
+prefix: '&7[&9Parkour&7] '
+alreadyin: '&7Вы уже проходите паркур!'
+start:
+  score: '&7Вы начали паркур! &7Попробуйте побить свой рекорд &9{SCORE}&7!'
+  first: '&7Вы начали паркур!'
+  no-area-player: '&7Арены с названием {INPUT}, не существует!'
+  unknown-player: '&7Не могу найти игрока!'
+  unknown-area: '&7Не могу найти зону!'
+  started-other: '&7Вы начали паркур игроку {PLY}!'
+  started-other-area: '&7Вы начали паркур за игрока &9{PLY}&9&7 на арене &9{AREA}&9&7!'
+noperm: '&7У вас недостаточно прав!'
+score: '&7Рекорд: &9{SCORE}'
+beatrecord: '&7Поздравляем! Вы побили собственный рекорд &9{SCORE}&7!'
+beatrecord-ingame: '&7Поздравляем! Вы побили собственный рекорд! Продалжайте в том
+  же духе!'
+disabledworld: '&7Вы не можете начать паркур в этом мире!'
+block:
+  potion: '&7Нет!'
+  place: '&7Нет!'
+  break: '&7Нет!'
+numberformatexception: '&7Это не верное число!'
+areafull: '&7Арена максимально заполнена! Попробуйте в другой раз.'
+must-be-ingame: '&7Вы должны быть в игре, чтобы делать это!'
+not-in-game: '&7Эту команду можно использовать только из консоли сервера!'
+couldnt-find-player: '&7Не могу найти игрока {PLAYER}'
+list:
+  header: '&7Игроки которые играю в паркур:'
+  format: '&9&n{NAME}&8 - &9{SCORE} прыжков'
+  none: '&7Пусто'
+nobodys-played-yet: '&7Никто ещё не проходил паркур!'
+first-position: '&7Первая позиция установлена!'
+second-position: '&7Вторая позиция установлена!'
+setup-done: '&7Теперь вы можете использовать &9/ajParjour start&7 для начала паркура!'
+reload:
+  usage: '&7Использование: /{CMD} reload <file>&7 Файлы: {POSS}'
+fallpos:
+  set: '&7Последняя позиция установлена!'
+  removed: '&7Последняя позиция удалена!'
+top:
+  header: '&7Топ игроков:'
+  header-area: '&7Топ игроков {AREA}:'
+  format: '&9{#}. &9&n{NAME}&9 {SCORE} прыжков'
+fall:
+  normal: '&7Вы упали! &7Ваш текущий счёт: &9{SCORE}'
+  force:
+    base: '&7Паркур был прекращён, так-как '
+    reasons:
+      teleport: вы были телепортированы
+    afk: вы были АФК
+errors:
+  blocknotair:
+    base: '&7Ошибка:&9&7 Блок не является воздухом!'
+    player: '&7Расскажите администраторам об этом сообщении.'
+    admin: '&7Убедитесь что паркур был доделан до конца /{CMD} setup.'
+  notsetup:
+    base: '&7Паркур был успешно установлен.'
+    player: '&7Скажите администраторам об этом сообщении!'
+    admin: '&7Для подробной информации введите /{CMD} setup'
+  too-many-players: '&7На паркуре много игроков! Попробуйте позже!'
+migrate:
+  more-args: '&7Пожалуйста, предоставьте количество очков для миграции!'
+  success: '&7Мигрировано {COUNT} очков!'
+  error: '&7Что-то пошло не так, проверьте консоль.'
+placeholders:
+  stats:
+    no-data: '---'
+    time-format: '{m} мин. {s} сек.'
+  current:
+    no-data: '0'
+max-score-reached: '&7Вы достигли максимального количества! Поздравляем'
+console-warn-confirm: |-
+  &7Если вы хотите действительно выполнить эту команду,
+  &7то введите: &9{COMMAND} confirm
+commands:
+  help:
+    header: '&7Паркур &9&lMixStudio'
+    start: '&9/{CMD} start &8-&7 Start parkour!'
+    startarea: '&9/{CMD} start <area> &8-&7 Start parkour in a certain area.'
+    startothers: '&9/{CMD} start <player> [area] &8-&7 Start another player''s parkour
+      in a certain area.'
+    top: '&9/{CMD} top &8-&7 See the top 10 players!'
+    list: '&9/{CMD} list &8-&7 See everyone that is playing parkour, and their current
+      scores.'
+    setup: '&9/{CMD} setup &8-&7 Commands for setting up the plugin. &7(required permssion:
+      ajparkour.setup)'
+    portals: '&9/{CMD} portals &8-&7 Commands for setting up portals.'
+    areas: '&9/{CMD} areas &8-&7 List all loaded areas'
+  setup:
+    header: '&7Команды настройки'
+    create: '&9/{CMD} setup create &8-&7 Create an area'
+    pos1: '&9/{CMD} setup pos1 &8-&7 Set the first position'
+    pos2: '&9/{CMD} setup pos2 &8-&7 Set the second position'
+    we: '&9/{CMD} setup we &8-&7 Select first and second position with worldedit'
+    fallpos: '&9/{CMD} setup fallpos &8-&7 Set fall position!'
+    edit: '&9/{CMD} edit &8-&7 Load an existing area into the editing queue.'
+    info: '&9/{CMD} setup info &8-&7 Show which points you have set so far!'
+    diff: '&9/{CMD} setup difficulty &8-&7 Set the area''s difficulty!'
+    max: '&9/{CMD} setup max &8-&7 Set the maximum number of people allowed in the
+      area!'
+    save: '&9/{CMD} setup save &8-&7 Saves and enabled the area. (This should be done
+      last)'
+  portals:
+    header: '&7Команды портала'
+    list: '&9/{CMD} portals list &8-&7 Lists all portals.'
+    create: '&9/{CMD} portals create &8-&7 Create a portal.'
+    remove: '&9/{CMD} portals remove &8-&7 Remove a portal.'
+  listareas:
+    header: '&7Все паркуры:'
+    format: '&8 - &9{NAME} &7Сложность: &7{DIFFICULTY}'
+    none: '&7Ни одно арены не установлено!'
+  not-on-whitelist: '&7Вы не можете использовать эту команду во время паркура!'
+not-from-console: '&7Эта команда только для игроков!'
+setup:
+  no-name: '&7You must name your area!'
+  edit:
+    no-name: '&7Please enter the name of an area to edit!'
+    loaded: '&7Area loaded for editing! Re-set positions using /{CMD} setup'
+    no-area: '&7An area with that name does not exist!'
+  need-to-create: '&7You must create an area before editing it!'
+  we:
+    not-installed: '&7You need to have WorldEdit installed to use this command!&7
+      Try using the built-in pos1 and pos2 setup commands.'
+    incomplete-selection: '&7You must make a complete worldedit selection before doing
+      this!'
+  created: '&7Area created and added to the editing queue. See &9/ajParkour setup&7
+    or view the plugin page for steps to set it up!'
+  already-creating: '&7An arena is currently being set up. &7Please either save that
+    arena, or run this command again to override. (&7NOTE:&9&7 Overriding will erase
+    all of the data of the arena being set up before!)'
+  info:
+    header: '&9Colors: &7Set &7Not set (optional) &7Not set (required)'
+  set:
+    pos1: '&7First position set!'
+    pos2: '&7Second position set!'
+    fallpos: '&7Fall position set!'
+    we: '&7Positions set!'
+    diff: '&7Difficulty set!'
+    max: '&7Max players set!'
+  max:
+    need-args: '&7Please enter a number!'
+  diff:
+    not-valid: '&7Invalid difficulty! &7Valid difficulties are &9easy&7, &9medium&7,
+      &9hard&7, &9expert&7, and &9balanced'
+    need-args: |-
+      &7Please enter a difficulty! &7Valid difficulties are &9easy&7, &9medium&7, &9hard&7, &9expert&7, and &9balanced&7.
+      &7Balanced difficulty will make the parkour get harder as the player gets higher scores.
+  save:
+    not-done: '&7You have not set all of the required settings! &7Check &9/{CMD} setup
+      info&7 to see what you have left.'
+    success: '&7Arena {NAME} saved and loaded!'
+portals:
+  list:
+    header: '&9Паркуры-Порталы'
+    format:
+      area: '&9{NAME} &8-&7 {COORDS} &8-&7 {AREA}'
+      no-area: '&9{NAME} &8-&7 {COORDS}'
+  create:
+    help: '&7Использование: /{CMD} portals create <name> [area]'
+    success: '&7Created a portal named ''{NAME}'' at your current location! &7You
+      might have to restart the server for the portal to start working.'
+  remove:
+    help: '&7Please enter the name of the portal to be removed!'
+    cannot-find: '&7Cannot find a portal with that name! Make sure you spelled it
+      correctly, and that you put the same caps too.'
+    success: '&7Removed portal ''{NAME}''!'
+    no-portals: '&7No portals have been set up yet! Please create portals before removing
+      them.'
+gui:
+  selector:
+    title: Block Selector
+    items:
+      random:
+        title: '&9Random Blocks'
+        lore: '&7Will pick a random block.'
+      selected:
+        lore: '&7Currently Selected'
+      nextpage:
+        name: '&a&lNext Page'
+      prevpage:
+        name: '&a&lPrevious Page'
+items:
+  blockselector:
+    name: '&7Выбор блока'
+reset:
+  usage: '&7Использование: /{CMD} reset <player>'
+  success: '&7Reset score of {PLAYER} to 0'
+blockselector:
+  openedfor: '&7Opened block selector for {PLAYER}'
+areas:
+  remove:
+    help: '&7Please enter the name of the area to be removed!'
+    cannot-find: '&7Cannot find an area with that name! Make sure you spelled it correctly,
+      and that you put the same caps too.'
+    success: '&7Removed area ''{NAME}''!'

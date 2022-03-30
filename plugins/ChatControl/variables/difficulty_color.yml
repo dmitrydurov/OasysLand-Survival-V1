@@ -1,0 +1,29 @@
+# -------------------------------------------------------------------------------------------
+# 
+#  Your file has been automatically updated at 24.12.2021 17:26:00
+#  to ChatControl 8.11.3
+# 
+#  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
+#  preserve the documentation comments in your file. We apologize.
+# 
+#  If you'd like to view the default file, you can either:
+#  a) Open the ChatControl-8.11.3.jar with a WinRar or similar
+#  b) or, visit: https://github.com/kangarko/ChatControl/wiki
+# 
+# -------------------------------------------------------------------------------------------
+
+Key: difficulty_color
+Value: |-
+  var world = player.getWorld();
+
+  // This line returns the value.
+  getColor() + world.getName() + "&8";
+
+  // You can create methods inside the script, too.
+  function getColor() {
+      var diff = world.getDifficulty().getValue();
+
+      var diffs = ["&a", "&2", "&6"];
+      return diffs[diff] !== undefined ? diffs[diff] : "&c";
+  }
+Type: format

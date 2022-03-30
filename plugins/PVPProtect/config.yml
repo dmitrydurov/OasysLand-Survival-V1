@@ -1,0 +1,24 @@
+Anti-Relog:
+ enable: true
+ time: 10
+ message:
+  add_combat_damager: "&7[&9McDev&7] &7Вы начали пвп с игроком &9{player}."
+  add_combat_entity: "&7[&9McDev&7] &7Игрок &9{player} &7начал пвп с вами."
+  remove_combat_mode: "&7[&9McDev&7] &7Режим пвп отключен."
+  error_block_command: "&7[&9McDev&7] &7Эту команду нельзя использовать во время пвп."
+ white_list_command:
+  - 'l'
+  - 'login'
+Anti-Pvp:
+ enable: true
+ mobProtect: false
+ regionProtect: false
+ regions: ['pvp']
+ remove:
+  creative: true
+  disguise: true
+  vanish: true
+  fly: true
+  god: true
+  speed: true
+ message: "&7[&9McDev&7] &7Пвп в данном режиме отключено!"

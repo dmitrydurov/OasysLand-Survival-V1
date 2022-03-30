@@ -1,0 +1,11 @@
+Variables:
+  Custom_Enabled: false
+  Replace_In_Custom: true
+  Replace_Own_In_Custom: false
+  Vault:
+    Multi_Prefix: false
+    Multi_Suffix: false
+Private_Messages:
+  Deep_Search: true
+MySQL:
+  Aggressive: false

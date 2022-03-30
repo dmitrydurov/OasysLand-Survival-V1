@@ -1,0 +1,420 @@
+messages:
+  prefix:
+    type: TCHAT
+    message: '&7[&9Auction&7] '
+  time:
+    day:
+      type: TCHAT
+      message: '%02d д. %02d ч. %02d м. %02d с.'
+    hour:
+      type: TCHAT
+      message: '%02d ч. %02d м. %02d с.'
+    minute:
+      type: TCHAT
+      message: '%02d м. %02d с.'
+    second:
+      type: TCHAT
+      message: '%02d с.'
+  command:
+    syntaxe:
+      error:
+        type: TCHAT
+        message: '&7Испоользование&7: &9%command%'
+      help:
+        type: TCHAT
+        message: '&8»&7 &9%syntaxe%&7 &8- &9%description%'
+    'no':
+      permission:
+        type: TCHAT
+        message: '&7У вас нет разрешения!'
+      console:
+        type: TCHAT
+        message: '&7Только игрок может использовать эту команду.'
+      arg:
+        type: TCHAT
+        message: '&7Этот аргумент не существует!'
+    help:
+      custom:
+        type: TCHAT
+        messages:
+        - '&8- &9/ah sell <аргументы> &7- &7Команда продажи'
+        - '&8- &7Другая команда'
+    reload:
+      type: TCHAT
+      message: '&7Плагин был успешно перезагружен.'
+    sell:
+      argument:
+        price:
+          type: TCHAT
+          message: цена
+        amount:
+          type: TCHAT
+          message: кол-во
+    is:
+      disable:
+        type: TCHAT
+        message: '&7Эта команда отключена.'
+  description:
+    auction:
+      type: TCHAT
+      message: Открыть аукцион
+    sub:
+      items:
+        type: TCHAT
+        message: Открывает инвентарь предметов
+      categories:
+        type: TCHAT
+        message: Открывает инвентарь категорий
+      buying:
+        type: TCHAT
+        message: Открывает закупочный инвентарь
+      expire:
+        type: TCHAT
+        message: Открывает инвентарь с истёкшими предметами
+    blacklist:
+      list:
+        type: TCHAT
+        message: Посмотреть игроков в черный список.
+      add:
+        type: TCHAT
+        message: Добавить игрока в черный список
+      remove:
+        type: TCHAT
+        message: Удалить игрока из черного списка
+    version:
+      type: TCHAT
+      message: Показать версию плагина
+    reload:
+      type: TCHAT
+      message: Перезагрузить плагин
+    sell:
+      type: TCHAT
+      message: Продать предмет
+      inventory:
+        type: TCHAT
+        message: Sell an inventory
+    help:
+      type: TCHAT
+      message: См. Список команд.
+    config:
+      type: TCHAT
+      message: Настроить плагин в игре
+    claim:
+      type: TCHAT
+      message: Требуйте свои деньги
+    search:
+      type: TCHAT
+      message: Искать товар
+    lang:
+      type: TCHAT
+      message: Смотрите список переводов.
+    convert:
+      type: TCHAT
+      message: Преобразование предметов из другого плагина в Auctions
+    history:
+      type: TCHAT
+      message: Посмотреть свою историю
+    transaction:
+      type: TCHAT
+      message: Просмотр транзакций игрока.
+    purge:
+      type: TCHAT
+      message: Remove old transaction
+  'no':
+    holding:
+      item:
+        type: TCHAT
+        message: '&7Вы не можете продавать воздух!'
+    money:
+      button:
+        type: ITEMSTACK
+        itemstack:
+          material: BARRIER
+          data: 0
+          amount: 1
+          durability: 0
+          name: '&9У тебя нет денег на это!'
+    enought:
+      money:
+        type: TCHAT
+        message: '&7У тебя нет денег на это!'
+      place:
+        type: TCHAT
+        message: '&9You don''t have enough room in your inventory to buy this item.'
+  plugin:
+    disable:
+      type: TCHAT
+      message: '&7Аукционный дом в настоящее время недоступен.'
+    not:
+      ready:
+        type: TCHAT
+        message: '&7Инициализация плагина не завершена, подождите...'
+  sell:
+    cooldown:
+      type: TCHAT
+      message: '&7Ты должен подождать &9%time%&9.'
+    max:
+      price:
+        type: TCHAT
+        message: '&7Вы не можете положить больше, чем &9%max%&7!'
+    min:
+      price:
+        type: TCHAT
+        message: '&7Вы не можете положить меньше, чем &9%max%&7!'
+    message:
+      default:
+        type: TCHAT
+        message: '&7Вы выставили на продажу &9x&9%amount%&7 &9%item%&7 &7за &6%price%%currency%&7.'
+      inventory:
+        type: TCHAT
+        message: '&7Вы выставили на продажу &9x&9%amount%&7 &7предметов &7за &6%price%%currency%&7.'
+    creative:
+      error:
+        type: TCHAT
+        message: '&7Вы не можете продать товар в творческом режиме!'
+    item:
+      error:
+        type: TCHAT
+        message: '&7Вы не можете продать этот предмет, он запрещен плагином.'
+      break:
+        type: TCHAT
+        message: '&7Вы не можете продать сломанный предмет.'
+      tax:
+        default:
+          type: TCHAT
+          message: '&7Вам надо &9%tax%%currency%&7 &7чтобы продать предмет.'
+    world:
+      error:
+        type: TCHAT
+        message: '&7Вы не можете продавать в этом мире'
+    items:
+      error:
+        type: TCHAT
+        message: '&7Вы не можете продать больше, чем &9%max%&7 &7предметов!'
+    inventory:
+      error:
+        type: TCHAT
+        message: '&7Вы не выставили ни одного товара, продажа отменена.'
+      item:
+        type: ITEMSTACK
+        itemstack:
+          material: CHEST
+          data: 0
+          amount: 1
+          durability: 0
+          name: '&7Продажа инвентаря'
+  item:
+    purchased:
+      type: TCHAT
+      message: '&7Вы купили &9%item%&7.'
+    remove:
+      admin:
+        type: TCHAT
+        message: '&7Вы только что удалили &9%item%&7.'
+      seller:
+        get:
+          type: TCHAT
+          message: '&7Администратор только что удалил &9%item%&7, вы можете получить
+            его из списка просроченных товаров.'
+        delete:
+          type: TCHAT
+          message: '&7Администратор только что удалил &9%item%&7, вы не можете получить
+            свой предмет.'
+    lore:
+      default:
+        type: TCHAT
+        messages:
+        - '&9&m-+------------------------------+-'
+        - '  &8- &7Статус: &9%status%'
+        - ''
+        - '  &8- &7Продавец&7: &9%seller%'
+        - '  &8- &7Цена&7: &6%price%'
+        - '  &8- &7Истекает&7: &9%time%'
+        - '&9&m-+------------------------------+-'
+      expire:
+        type: TCHAT
+        messages:
+        - '&9&m-+------------------------------+-'
+        - '  &8- &7Нажмите, чтобы получить предмет'
+        - ''
+        - '  &8- &7Истекает&7: &9%time%'
+        - '&9&m-+------------------------------+-'
+      buying:
+        type: TCHAT
+        messages:
+        - '&9&m-+------------------------------+-'
+        - '  &8- &7Нажмите, чтобы получить предмет'
+        - ''
+        - '  &8- &7Истекает&7: &9%time%'
+        - '&9&m-+------------------------------+-'
+      items:
+        type: TCHAT
+        messages:
+        - '&9&m-+------------------------------+-'
+        - '  &8- &7Нажмите, чтобы получить предмет'
+        - ''
+        - '  &8- &7Истекает&7: &9%time%'
+        - '&9&m-+------------------------------+-'
+      inventory:
+        type: TCHAT
+        messages:
+        - '&9&m-+------------------------------+-'
+        - '  &8- &7Статус: &9%status%'
+        - ''
+        - '  &8- &7Тип&7: &9Инвентарь'
+        - '  &8- &7Продавец&7: &9%seller%'
+        - '  &8- &7Цена&7: &6%price%'
+        - '  &8- &7Истекает&7: &9%time%'
+        - ''
+        - '  &8- &9&oПКМ для покупки!'
+        - '  &8- &9&oЛКМ чтобы просмотреть содержимое'
+        - '&9&m-+------------------------------+-'
+    economy:
+      full:
+        type: TCHAT
+        message: '&7У вас есть полный инвентарь, ваши предметы пропали в инвентаре
+          просроченных предметов.'
+  buyer:
+    purchased:
+      type: TCHAT
+      message: '&9%buyer%&7 &7только что купил &9%item%&7 &7за &6%price%%currency%&7.'
+  remove:
+    message:
+      type: TCHAT
+      message: '&7Вы только что сняли этот товар с продажи!'
+  ascending:
+    price:
+      type: TCHAT
+      message: Цена по возрастанию
+    date:
+      type: TCHAT
+      message: Дата по возрастанию
+  decreasing:
+    date:
+      type: TCHAT
+      message: Дата убывания
+    price:
+      type: TCHAT
+      message: Снижение цены
+  price:
+    format:
+      item:
+        type: TCHAT
+        message: '&6%price%%currency%&7'
+  status:
+    player:
+      type: TCHAT
+      message: Нажмите, чтобы получить предмет
+    buyer:
+      type: TCHAT
+      message: Нажмите, чтобы купить этот товар
+  error:
+    buy:
+      type: TCHAT
+      message: '&7Вы не можете купить этот товар'
+  broadcast:
+    sell:
+      annonce:
+        type: TCHAT
+        message: '&7Игрок &9%player%&7 &7добавил &9%item%&7 &7за &6%price%%currency%
+          &7на аукцион!'
+    buy:
+      annonce:
+        type: TCHAT
+        message: '&7Игрок &9%player%&7 &7купил &9%item%&7 &7за &6%price%%currency%
+          &7на аукцион!'
+  world:
+    is:
+      banned:
+        type: TCHAT
+        message: '&7Вы не можете использовать аукцион здесь.'
+  inventory:
+    full:
+      type: TCHAT
+      message: '&7Ваш инвентарь полон.'
+  blacklist:
+    information:
+      type: TCHAT
+      message: '&7Вы занесены в черный список, вы не можете пользоваться аукцион.'
+    list:
+      type: TCHAT
+      message: '&7Список запрещённых игроков: &9%players%'
+    empty:
+      type: TCHAT
+      message: '&7Нет игроков в черном списке'
+    add:
+      type: TCHAT
+      message: '&7Вы только что добавили игрока &9%player%&7 &7в чёрный список аукционов.'
+    remove:
+      type: TCHAT
+      message: '&7Вы убрали игрока &9%player%&7 &7из чёрного списка аукционов.'
+  transaction:
+    empty:
+      purchase:
+        type: TCHAT
+        message: '&7Вы не совершали покупок.'
+      sale:
+        type: TCHAT
+        message: '&7Вы не совершали никаких сделок по продаже.'
+      both:
+        type: TCHAT
+        message: '&7Вы не совершали никаких транзакций.'
+    message:
+      list:
+        type: TCHAT
+        messages:
+        - '&7Транзакции &9%type%&7 &8(&9%page%&8/&9%maxPage%&8)'
+        - ''
+        - '%content%'
+        - ''
+        - '&8(&9?&8) &7Используйте &9/ah history %nextPage%&7 %type%&7 для перехода
+          на следующую страницу!'
+      show:
+        type: TCHAT
+        messages:
+        - '&7Транзакции &9%type%&7, &7игрока &9%player%&7 &8(&9%page%&8/&9%maxPage%&8)'
+        - ''
+        - '%content%'
+        - ''
+        - '&8(&9?&8) &7Используйте &9/ah history %player% %nextPage%&7 %type%&7 для
+          перехода на следующую страницу!'
+      content:
+        sale:
+          type: TCHAT
+          message: ' &8- &9%seller%&7 продал x&9%amount% %item%&7 &7игроку &9%buyer%&7
+            за &6%price%%currency%&7 &8(&9%date%&8)'
+        purchase:
+          type: TCHAT
+          message: ' &8- &9%buyer%&7 купил x&9%amount% %item%&7 &7у игрока &9%seller%&7
+            за &6%price%%currency%&7 &8(&9%date%&8)'
+        you:
+          type: TCHAT
+          message: Вы
+  connect:
+    claim:
+      type: TCHAT
+      message: '&7Вы можете взять деньги, воспользуйтесь &9/ah claim &7чтобы забрать
+        их!'
+    transactions:
+      type: TCHAT
+      message: '&8- &7Вы продали %item%&7 во время вашего отсутствия.'
+  claim:
+    money:
+      error:
+        type: TCHAT
+        message: '&7У вас нет незавершенных транзакций.'
+      success:
+        type: TCHAT
+        message: '&7Вы только что вернули свои деньги.'
+  cooldown:
+    message:
+      type: ACTION
+      message: ' &7Ты должен подождать &9%cooldown%&7 &7перед тем как исполнять это
+        действие!'
+  purge:
+    start:
+      type: TCHAT
+      message: '&aPurge start. &8(&7Wait few seconds&8)'
+    end:
+      type: TCHAT
+      message: '&aThe purge of transactions is over.'

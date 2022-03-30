@@ -1,0 +1,17 @@
+debug: false
+# Triggered when you use /rtp without any additional paramters
+# Just write your command as you would use it ingame here
+# Don't use the -p parameter, this will get added automaticly with the senders name/the specified playername
+presets:
+   default: "/rtp 100 7000 -f -w world -c 40"
+# add more to use /rtp <rtpname>, player needs "randomteleport.presets.<rtpname>"
+#   <rtpname>: "/rtp 1 2"
+   test: "rtp 10 200 -f"
+
+msg:
+   search: "&7[&9RTP&7] Ищем свободное место..."
+   teleport: "&7[&9RTP&7] Телепортирую вас на координаты &9X: {x} Y: {y} Z: {z}!"
+   setspawnpoint: "&7Your Respawnpoint has been set to your current location!"
+   error:
+      location: "&4Error: &cRandomTeleport could not find a save location!"
+      cooldown: "&7[&9RTP&7] Придется подождать {cooldown_text} перед следующим телепортом!"

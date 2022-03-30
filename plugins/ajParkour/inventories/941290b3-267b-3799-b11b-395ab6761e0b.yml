@@ -1,0 +1,64 @@
+inventory:
+  armor:
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  - null
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  - null
+  - null

@@ -1,0 +1,145 @@
+# Detailed explanation of all options available at https://github.com/NEZNAMY/TAB/wiki/config.yml
+
+change-nametag-prefix-suffix: true
+change-tablist-prefix-suffix: true
+enable-header-footer: true
+unlimited-nametag-prefix-suffix-mode:
+  enabled: true
+  modify-npc-names: false
+  use-marker-tag-for-1-8-x-clients: false
+  disable-on-boats: true
+header:
+- ''
+- '&f&l» &9&lOasysLand&f&l «'
+- ''
+- '&5♚ &a&lSurvival &5♚'
+- ''
+- '&5&l-+-&6&l✦&5&l-+-'
+footer:
+- '&5&l-+-&6&l✦&5&l-+-'
+- ''
+- ' &5-=( &fОбщий онлайн > &9%bungee_total%&5 | &9%server_online% &f< Онлайн режима&5
+  )=- '
+- ' &5-=( &fПобывало игроков &9%server_unique_joins% &5)=-'
+- ''
+enable-collision: false
+do-not-move-spectators: false
+group-sorting-priority-list:
+- dev
+- moder
+- glmoder
+- buysrv
+- owner
+- ag
+- profit
+- xelper
+- opka
+- deluxe
+- emperator
+- elite
+- gladmin
+- admin
+- legenda
+- creative
+- premium
+- vip
+- default
+rank-aliases: {}
+Groups:
+  _OTHER_:
+    tabprefix: '%vault-prefix%&f'
+    tabsuffix: ' &r%uclans_tag_formated%'
+    tagprefix: '%vault-prefix%&f'
+    belowname: '&6❖ &7Кредиты: &6❖ %vault_eco_balance%'
+Users: {}
+per-world-settings:
+  world1:
+    header:
+    - an example of world with custom
+    footer:
+    - header/footer and prefix/suffix
+    Groups:
+      Owner:
+        tabprefix: '&0&l[&a&lOwner&0&l] &a'
+        tagprefix: '&2&lOwner &a'
+        header:
+        - ur server man
+        footer:
+        - welcome
+      Admin:
+        tabprefix: '&2&lAdmin &1&l'
+        tagprefix: '&2&lAdmin &1&l'
+      Player:
+        tabprefix: '&5&lPlayer &3&l'
+        tagprefix: '&5&lPlayer &3&l'
+    Users:
+      Player1:
+        tabprefix: ''
+        tagprefix: ''
+        tabsuffix: ''
+        tagsuffix: ''
+placeholders:
+  afk-yes: ' &4*&4&lAFK&4*&r'
+  afk-no: ''
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 0
+  remove-strings:
+  - '[] '
+  - '< > '
+disable-features-in-worlds:
+  header-footer:
+  - disabledworld
+  tablist-names:
+  - disabledworld
+  nametag:
+  - disabledworld
+  bossbar:
+  - disabledworld
+  belowname:
+  - disabledworld
+  yellow-number:
+  - disabledworld
+revert-collision-rule-in-worlds:
+- revertedworld
+yellow-number-in-tablist: ''
+classic-vanilla-belowname:
+  number: '%health%'
+  text: Health
+  enabled: false
+sort-players-by-nickname: false
+sort-players-by-permissions: false
+fix-pet-names: false
+use-primary-group: true
+primary-group-finding-list:
+- Owner
+- Admin
+- Helper
+- default
+per-world-playerlist:
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - spawn
+  shared-playerlist-world-groups:
+    lobby:
+    - lobby1
+    - lobby2
+    DoNotDoThis:
+    - ThisIsASingleWorldSoThereIsNoPointInEvenCreatingGroupForIt
+    minigames:
+    - paintball
+    - bedwars
+  allow-bypass-permission: false
+  enabled: false
+assign-groups-by-permissions: false
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 100
+  server:
+    '%server_uptime%': 1000
+    '%server_tps_1_colored%': 1000
+  player:
+    '%vault_prefix%': 1000
+    '%player_health%': 200
+    '%player_ping%': 1000
+  relational:
+    '%rel_factionsuuid_relation_color%': 500

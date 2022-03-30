@@ -1,0 +1,41 @@
+command:
+  no-permission: '&cYou do not have permission for this command.'
+  player-required: '&cYou must be a player to use this command.'
+  player-invalid: '&cPlease specify a valid player.'
+  group-invalid: '&cPlease specify a valid group.'
+  see-help: '&7See &e/{label} help &7for available commands.'
+  usage: '&7Usage: &d/{label} &e{command} &f{args}'
+  unknown: '&7Unknown sub-command &d/{label} &c{command}'
+  page-number-invalid: '&cPlease specify a valid page number between 1 and {max_page}'
+  help:
+    title: '&d&lShowing command help &7(Page &e&l{page} &7of &e&l{max_page}&7)'
+    format: '&7/{label} &e{command} &f{args}&7- {description}'
+    description: Show available commands.
+  toggle-off:
+    self: '&7You''re scoreboard has been toggled &coff.'
+    other: '&7You have toggled &e{player}''s&7 scoreboard &coff.'
+    description: Toggle the scoreboard off.
+  toggle:
+    description: '&7Toggle scoreboard on/off'
+    other-no-permission: '&cYou do not have permission to toggle {player}''s scoreboard.'
+  toggle-on:
+    self: '&7You''re scoreboard has been toggled &aon.'
+    other: '&7You have toggled &e{player}''s&7 scoreboard &aon.'
+    description: Toggle the scoreboard on.
+  set-group:
+    self: '&7You''re scoreboard group has been set to &e{group}.'
+    other: '&7You set &e{player}''s&7 scoreboard group to &e{group}.'
+    other-no-permission: '&cYou do not have permission to change {players}''s scoreboard
+      group.'
+    description: Change you're current scoreboard group.
+  reset-group:
+    self: '&7You''re scoreboard group has been reset.'
+    other: '&7You reset &e{player}''s&7 scoreboard group.'
+    other-no-permission: '&cYou do not have permission to reset {players}''s scoreboard
+      group.'
+    description: Reset you're current scoreboard group.
+  list-groups:
+    title: '&d&lShowing registered groups &7(Page &e&l{page} &7of &e&l{max_page}&7)'
+    format: '&7- &f{name}, &7type: &f{type} &7priority: &f{priority}'
+    description: Show registered groups
+  group-type-invalid: '&cPlease specify a valid group type (scoreboard / tablist).'

@@ -1,0 +1,19 @@
+npc-data:
+  npc-5:
+    cooldown: 0
+    right-click-commands:
+    - '[none] customgui open free'
+    left-click-commands: []
+    price: 0
+  npc-4:
+    cooldown: 0
+    right-click-commands:
+    - '[none] ac'
+    left-click-commands: []
+    price: 0
+  npc-3:
+    cooldown: 0
+    right-click-commands:
+    - '[none] bpass'
+    left-click-commands: []
+    price: 0

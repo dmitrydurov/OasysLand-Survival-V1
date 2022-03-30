@@ -1,0 +1,36 @@
+# Формат:
+# "<Материал>:<Кол-во>":
+#   level: <Уровень>
+#   price: <Цена>
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+items:
+  "furnace:64;0":
+    level: 1
+    price: 250
+  "anvil:64;0":
+    level: 1
+    price: 15000
+  "magma:64;0":
+    level: 1
+    price: 750
+  "obsidian:64;0":
+    level: 1
+    price: 2000
+  "beetroot:64;0":
+    level: 1
+    price: 600
+  "eye_of_ender:64;0":
+    level: 1
+    price: 2250
+  "coal:64;0":
+    level: 1
+    price: 500

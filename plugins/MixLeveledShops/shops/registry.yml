@@ -1,0 +1,24 @@
+# Формат регистрации:
+# "farmer":
+#   name: "&8&lФермер" # Название которое будет везде отображаться
+#   initial-balance: 200000 # Начальный баланс
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+registered-shops:
+  "farmer":
+    name: "&8&lФермер"
+    initial-balance: 200000
+  "alchemist":
+    name: "&8&lАлхимик"
+    initial-balance: 200000
+  "gunsmith":
+    name: "&8&lОружейник"
+    initial-balance: 200000

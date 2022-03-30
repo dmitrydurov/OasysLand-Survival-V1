@@ -1,0 +1,59 @@
+# Формат:
+# "<Материал>:<Кол-во>":
+#   level: <Уровень>
+#   price: <Цена>
+#   refill: <Восполнять на>
+#   max: <Максимально на складе>
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+items:
+  "anvil:1;0":
+    level: 1
+    price: 650
+    initial: 1300
+    refill: 6
+    max: 1300
+  "furnace:1;0":
+    level: 1
+    price: 150
+    initial: 2500
+    refill: 10
+    max: 2500
+  "diamond_sword:1;0":
+    level: 1
+    price: 650
+    initial: 150
+    refill: 1
+    max: 150
+  "diamond_helmet:1;0":
+    level: 1
+    price: 650
+    initial: 150
+    refill: 1
+    max: 150
+  "diamond_chestplate:1;0":
+    level: 1
+    price: 1500
+    initial: 150
+    refill: 1
+    max: 150
+  "diamond_leggings:1;0":
+    level: 1
+    price: 950
+    initial: 150
+    refill: 1
+    max: 150
+  "diamond_boots:1;0":
+    level: 1
+    price: 450
+    initial: 150
+    refill: 1
+    max: 150

@@ -1,0 +1,50 @@
+TestReward:
+    Icon:
+        material: "DIAMOND"
+        materialData: 0
+        skull: ""
+        headName: "&6Diamond"
+    Vault: 0
+    PlayerPoints: 0
+    Commands:
+    - "money give {player} 150"
+T_R_1:
+    Icon:
+        material: "IRON_BLOCK"
+        materialData: 0
+        skull: ""
+        headName: "&6Iron Block"
+    Vault: 0
+    PlayerPoints: 0
+    Commands:
+    - "give {player} IRON_BLOCK 1"
+T_R_2:
+    Icon:
+        material: "COAL_ORE"
+        materialData: 0
+        skull: ""
+        headName: "&6Coal Ore"
+    Vault: 0
+    PlayerPoints: 0
+    Commands:
+    - "give {player} COAL_ORE 1"
+T_R_3:
+    Icon:
+        material: "LOG"
+        materialData: 0
+        skull: ""
+        headName: "&6Log"
+    Vault: 0
+    PlayerPoints: 0
+    Commands:
+    - "give {player} LOG 1"
+T_R_4:
+    Icon:
+        material: "SKULL_ITEM"
+        materialData: 3
+        skull: "SobkySK"
+        headName: "&6Skull Item"
+    Vault: 0
+    PlayerPoints: 10
+    Commands:
+    - "say Hey {player}!"

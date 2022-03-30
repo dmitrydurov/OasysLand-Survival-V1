@@ -1,0 +1,24 @@
+no-permission: '&7[&9McDev&7]&7 У вас недостаточно прав!'
+enabled-edit-mode: '&a&lYou entered in treasure creator mode. Click a block to set
+  it a treasure opener. Click an existing block to remove it. Current openers are
+  displayed as Emerald Blocks.'
+disabled-edit-mode: '&c&lYou leaved treasure creator mode.'
+added-treasure-opener: '&a&lYou added a treasure opener here!'
+removed-treasure-opener: '&a&lYou removed a treasure opener here!'
+not-existing-player: '&c&lThis player doesn''t exist!'
+not-number: '&c&lValue must be a number!'
+unknown-modifier: '&c&lUnknown modifier! Use <set>, <add>, or <remove>!'
+their-key: '&a&l%player%''s now has %amount% %chest% keys!'
+already-in-use: '&7[&9McDev&7]&7 Кто-то уже открывает этот кейс!'
+not-enough-money: '&7[&9McDev&7]&7 Вы не можете позволить себе этот кейс!'
+not-enough-money-sound: BLOCK_ANVIL_LAND
+purchased-key: '&aYou successfully purchased this key!'
+purchased-key-sound: ENTITY_PLAYER_LEVELUP
+not-purchaseable-key: '&cYou can''t purchase a key for this chest!'
+too-much-key: '&cYou have too many keys!'
+cant-open-permission: '&7[&9McDev&7]&7 У вас недостаточно прав!'
+not-enough-keys: '&7[&9McDev&7]&7 У вас нету ключей! Приобрести их можно на сайте:
+  &9McDev.Store'
+limited-creative-deny: '&cYou aren''t allowed to open a treasure in creative mode!'
+edit-no-opener: '&cEditor is not specified. Defaulting it to &ndefaultopener.yml&c.'
+only-open-one: '&7[&9McDev&7]&7 Вы можете открывать только 1 кейс!'

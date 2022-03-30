@@ -1,0 +1,203 @@
+name: '§eБесплатный'
+default-points-required: 8000
+
+items:
+  locked-tier-item:
+    material: 'furnace_minecart:0'
+    name: '&cУровень &7▪ &7%tier%'
+    lore:
+      - ''
+      - '&7Награда:'
+      - '%lore_addon%'
+      - ''
+      - '&7Статус: &cЗакрыто'
+      - ''
+      - '&7&oВы не можете забрать эту награду!'
+  unlocked-tier-item:
+    material: 'chest_minecart:0'
+    name: '&cУровень &7▪ &7%tier%'
+    lore:
+      - ''
+      - '&7Награда:'
+      - '%lore_addon%'
+      - ''
+      - '&7Статус: &aОткрыто'
+      - ''
+      - '&7Нажмите чтобы забрать награду!'
+  claimed-tier-item:
+    material: 'minecart:0'
+    name: '&cУровень &7▪ &7%tier%'
+    lore:
+      - ''
+      - '&7Награда:'
+      - '%lore_addon%'
+      - ''
+      - '&7Статус: &aВзято'
+      - ''
+
+tier-up-actions:
+  - '[message] {&9McDev &7▪ &7Вы достигли уровня: &9%tier%}'
+
+tiers:
+  '4': 
+    rewards: ['4'] 
+    required-points: 28000 
+  '5': 
+    rewards: ['5'] 
+    required-points: 35000 
+  '6': 
+    rewards: ['6'] 
+    required-points: 42000 
+  '7': 
+    rewards: ['7'] 
+    required-points: 49000 
+  '8': 
+    rewards: ['8'] 
+    required-points: 56000 
+  '9': 
+    rewards: ['9'] 
+    required-points: 63000 
+  '10': 
+    rewards: ['10'] 
+    required-points: 70000 
+  '11': 
+    rewards: ['11'] 
+    required-points: 77000 
+  '12': 
+    rewards: ['12'] 
+    required-points: 84000 
+  '13': 
+    rewards: ['13'] 
+    required-points: 91000 
+  '16': 
+    rewards: ['16'] 
+    required-points: 112000 
+  '17': 
+    rewards: ['17'] 
+    required-points: 119000 
+  '18': 
+    rewards: ['18'] 
+    required-points: 126000 
+  '19': 
+    rewards: ['19'] 
+    required-points: 133000 
+  '20': 
+    rewards: ['20'] 
+    required-points: 140000 
+  '21': 
+    rewards: ['21'] 
+    required-points: 147000 
+  '22': 
+    rewards: ['22'] 
+    required-points: 154000 
+  '26': 
+    rewards: ['26'] 
+    required-points: 182000 
+  '27': 
+    rewards: ['27'] 
+    required-points: 189000 
+  '28': 
+    rewards: ['28'] 
+    required-points: 196000 
+  '29': 
+    rewards: ['29'] 
+    required-points: 203000 
+  '30': 
+    rewards: ['30'] 
+    required-points: 210000 
+  '34': 
+    rewards: ['34'] 
+    required-points: 238000 
+  '35': 
+    rewards: ['35'] 
+    required-points: 245000 
+  '36': 
+    rewards: ['36'] 
+    required-points: 252000 
+  '37': 
+    rewards: ['37'] 
+    required-points: 259000 
+  '38': 
+    rewards: ['38'] 
+    required-points: 266000 
+  '39': 
+    rewards: ['39'] 
+    required-points: 273000 
+  '40': 
+    rewards: ['40'] 
+    required-points: 280000 
+  '41': 
+    rewards: ['41'] 
+    required-points: 287000 
+  '46': 
+    rewards: ['46'] 
+    required-points: 322000 
+  '51': 
+    rewards: ['51'] 
+    required-points: 357000 
+  '56': 
+    rewards: ['56'] 
+    required-points: 392000 
+  '57': 
+    rewards: ['57'] 
+    required-points: 399000 
+  '58': 
+    rewards: ['58'] 
+    required-points: 406000 
+  '70': 
+    rewards: ['70'] 
+    required-points: 490000 
+  '71': 
+    rewards: ['71'] 
+    required-points: 497000 
+  '72': 
+    rewards: ['72'] 
+    required-points: 504000 
+  '73': 
+    rewards: ['73'] 
+    required-points: 511000 
+  '74': 
+    rewards: ['74'] 
+    required-points: 518000 
+  '79': 
+    rewards: ['79'] 
+    required-points: 553000 
+  '80': 
+    rewards: ['80'] 
+    required-points: 560000 
+  '81': 
+    rewards: ['81'] 
+    required-points: 567000 
+  '82': 
+    rewards: ['82'] 
+    required-points: 574000 
+  '83': 
+    rewards: ['83'] 
+    required-points: 581000 
+  '84': 
+    rewards: ['84'] 
+    required-points: 588000 
+  '85': 
+    rewards: ['85'] 
+    required-points: 595000 
+  '86': 
+    rewards: ['86'] 
+    required-points: 602000 
+  '87': 
+    rewards: ['87'] 
+    required-points: 609000 
+  '88': 
+    rewards: ['88'] 
+    required-points: 616000 
+  '97': 
+    rewards: ['97'] 
+    required-points: 679000 
+  '98': 
+    rewards: ['98'] 
+    required-points: 686000 
+  '99': 
+    rewards: ['99'] 
+    required-points: 693000 
+  '100': 
+    rewards: ['100'] 
+    required-points: 700000 

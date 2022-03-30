@@ -1,0 +1,27 @@
+# ##############################################################################
+# DrugsFTW by Ahmet094 v0.1
+# -------------------------
+# <target> is the player you hit with the mushrooms!
+# You can only use it for "VictimNowOnDrugs" and "VictimAlreadyOnDrugs"
+# ---------------------------------------------------------------------
+# <player> is the player who hits you and makes you confused!
+# You can only use it for "GotSetOnDrugs"
+# ---------------------------------------
+# EffectDuration is the value for how long the drug-effect is active in seconds.
+# ------------------------------------------------------------------------------
+# You can find all ColorCodes here:
+# http://specialcraft.de/colorcodes.png
+# -------------------------------------
+# ##############################################################################
+messages:
+  MyselfNowOnDrugs: '&6Вы приняли наркотик!'
+  MyselfAlreadyOnDrugs: '&6Вы уже приняли наркотик!'
+  VictimNowOnDrugs: '&8You just set &6<target> &8on &6Drugs&8!'
+  VictimAlreadyOnDrugs: '&6<target> &8is &6already &8on &6Drugs&8!'
+  GotSetOnDrugs: '&8You &6got set &8on &6drugs &8by &6<player>&8!'
+  info: '&e'
+  ChatPrefix: '&4[&bНаркотитки&4] '
+options:
+  EffectDuration: 60
+  amountNeeded: 1
+  enableWheat: true

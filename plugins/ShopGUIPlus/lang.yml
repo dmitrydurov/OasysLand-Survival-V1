@@ -1,0 +1,135 @@
+PREFIX: '&7[&9McDev&7] '
+MSG:
+  INGAMEONLY: Эта команда может быть использована только в игре.
+  NOACCESS: У Вас нет доступа для этого.
+  NOTLOADED: Ваши данные не загружены еще, пожалуйста, повторите попытку позже.
+  NOTLOADEDTARGET: Данные этого игрока не загружены еще, пожалуйста, повторите попытку
+    позже.
+  RELOADED: Конфигурация перезагружается!
+  INVALIDSHOP: Магазин с ID &c%shop%&7 не найден.
+  NOACCESSTOSHOP: У вас нет доступа к &c%shop%&7 магазину.
+  NODIRECTACCESSTOSHOP: Вы не можете получить доступ к &c%shop%&7 магазину.
+  MAINMENUDISABLED: Вы не можете использовать эту команду. Пожалуйста, используйте
+    /shop <id> вместо.
+  GAMEMODEBANNED: Вы не сможете получить доступ в магазин, когда вы в моде %gamemode%.
+  GAMEMODEBANNEDTARGET: '%player% не могу попасть в магазин, когда вы в моде %gamemode%.'
+  ITEM:
+    FULLINVENTORY: Вам не хватает свободного места в инвентаре.
+    CANNOTAFFORD: Вам нужно &c%price%$&7 для покупки &c%amount% x %item%&7.
+    CANNOTBUY: Вы не можете купить этот предмет.
+    CANNOTSELL: Вы не можете продать этот товар.
+    BOUGHT: Вы купили &c%amount% x %item%&7 за &c%price%$&7.
+    BOUGHTFREE: Вы получили &c%amount% x %item%&7.
+    NOTENOUGH: У вас нет &c%amount% x %item%&7 что б продать.
+    SOLD: Вы продали &9%amount% x %item%&7 за &9%price%$&7.
+    SOLDFREE: Вы отдали &9%amount% x %item%&7.
+    SOLDALL: Вы продали все %item%&7 (&9%amount% x %item%&7) за &9%price%$&7.
+    SOLDALLFREE: Вы отдали все %item%&7 (&9%amount% x %item%&7).
+    NOACCESS: У вас нет доступа к данному элементу.
+  ENCHANT:
+    CANNOTAPPLY: Чары &c%enchantment%&7 не могут быть применены к товару, который
+      Вы держите.
+    ALREADYAPPLIED: Этот пункт уже есть &c%enchantment%&7 нанесенный.
+    LEVELDIFF: Вам нужно по крайней мере элемент с &c%enchantment% %level%&7 нанесенными.
+    CANNOTAFFORD: Вам нужно &c%price%$&7 что б купить &c%enchantment%&7.
+    MAX: Этот пункт уже имеет максимальное количество зачарований (%amount%).
+    TOOMANY: Вы не можете очаровать более %amount% предметов сразу.
+    BOUGHT: Вы купили &c%enchantment%&7 чары для &c%price%$&7.
+  PERMISSION:
+    PERMISSIONSDISABLED: Разрешения выключены, пожалуйста, свяжитесь с администратором
+      сервера.
+    ALREADYHAVE: У вас уже есть &c%permission%&7 право.
+    CANNOTAFFORD: Вам нужно &c%price%$&7 что б купить &c%permission%&7.
+    BOUGHT: Вы купили &c%permission%&7 право за &c%price%$&7.
+  COMMAND:
+    BOUGHT: Вы купили команду &c%price%$&7.
+    CANNOTAFFORD: Вам нужно &c%price%$&7 что б купить эту команду.
+  ERROR: Ошибка, пожалуйста, свяжитесь с владельцем сервера.
+  USAGE:
+    SUBCOMMAND: 'Неверный Формат команды. Правильное использование: %usage%'
+  CMD:
+    SHOP:
+      ADDMODIFIER:
+        ITEM:
+          USAGE: /shop addmodifier item <player> <shop> <item> <value> [buy|sell]
+          ADDED: Вы установили &c%player%&7's %type% цена модификатор для %item% предмет
+            в %shop% магазин &c%modifier%&7.
+          ADDEDBY: Ваш %type% цена модификатор для %item% предмета в %shop% магазин
+            был &c%modifier%&7 у &c%player%&7.
+        SHOP:
+          USAGE: /shop addmodifier shop <player> <shop> <value> [buy|sell]
+          ADDED: Вы установили &c%player%&7's %type% цену модификатор для всех элементов
+            %shop% магазин &c%modifier%&7.
+          ADDEDBY: Ваш %type% цена модификатор для всех элементов %shop% магазин был
+            &c%modifier%&7 у &c%player%&7.
+        GLOBAL:
+          USAGE: /shop addmodifier global <player> <value> [buy|sell]
+          ADDED: Вы установили &c%player%&7's %type% цена модификатор &c%modifier%&7.
+          ADDEDBY: Вы %type% цена модификатор был &c%modifier%&7 у &c%player%&7.
+      CHECKMODIFIERS:
+        VIEW:
+          VIEW: |-
+            &c%player%&7's модификатор;:
+            Global modifiers:
+            %global%
+            Shop modifiers:
+            %shop%
+            Item modifiers:
+            %item%
+          ENTRY:
+            ITEM: 'Предмет: &c%item%&7, магазин: &c%shop%&7, покупка: &c%buy%&7, продажа:
+              &c%sell%&7'
+            SHOP: 'Магазин: &c%shop%&7, покупка: &c%buy%&7, продажа: &c%sell%&7'
+            GLOBAL: 'Покупка: &c%buy%&7, продажа: &c%sell%&7'
+      RESETMODIFIER:
+        ITEM:
+          USAGE: /shop resetmodifier item <player> <shop> <item> [buy|sell]
+          RESET: Сброс &c%player%&7's %type% цена модификатор для %item% пункт в %shop%
+            магазин.
+          RESETBY: Ваш %type% цена модификатор для %item% предмет в %shop% магазин
+            был сброшен &c%player%&7.
+        SHOP:
+          USAGE: /shop resetmodifier shop <player> <shop> [buy|sell]
+          RESET: Сброс &c%player%&7's %type% цена модификатор для всех элементов %shop%
+            магазин.
+          RESETBY: Ваш %type% цена модификатор для всех элементов %shop% магазин был
+            установлен &c%player%&7.
+        GLOBAL:
+          USAGE: /shop resetmodifier global <player> [buy|sell]
+          RESET: Сброс &c%player%&7's %type% цена модификатор.
+          RESETBY: Ваш %type% цена модификатор был &c%modifier%&7 у &c%player%&7.
+  MODIFIER:
+    INVALIDAMOUNT: Указанное значение недопустимый модификатор. Допустимыми являются
+      значения например 0,50, которая составляет 50%, 2.0, которая составляет 200%
+      и т.д..
+    INVALIDTYPE: Указан недопустимый модификатор типа. Допустимыми значениями являются
+      Купить, продать и оба.
+    BUY: покупка
+    SELL: продажа
+    BOTH: покупка & продажа
+  INVALIDPLAYER: Недопустимое имя игрока указано.
+  INVALIDITEM: Элемент с ID &c%item%&7 не нашел в &c%shop%&7.
+  WORLDBANNED: Не удается получить доступ к магазин в этом мире.
+  WORLDBANNEDTARGET: '%player% не удается получить доступ к магазин в этом мире.'
+  SELLHAND:
+    NOITEM: You have to hold an item in your hand in order to sell it.
+    INVALIDQUANTITY: Invalid quantity specified. Must be between 1 and %max%.
+    CANNOTSELL: You can't sell this item.
+    MULTIPLEQUANTITYONLY: You can't sell that quantity. Only multiples of %quantity%
+      are allowed for this item.
+DIALOG:
+  AMOUNTSELECTION:
+    BUY:
+      NAME: '&2Покупка %item%'
+    SELL:
+      NAME: '&cПродажа %item%'
+    BULKBUY:
+      NAME: '&cBuying stacks of %item%'
+    BULKSELL:
+      NAME: '&cSelling stacks of %item%'
+LANG:
+  CONSOLE: Console
+SHOP:
+  PERMISSION:
+    ALREADYOWNED: '&4(Already owned)'
+    NOTOWNED: '&9(Not owned)'

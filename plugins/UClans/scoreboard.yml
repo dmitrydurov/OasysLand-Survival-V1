@@ -1,0 +1,23 @@
+#Simple scoreboard
+#If you have a scoreboard plugin disable this!
+Scoreboard:
+  enabled: false
+  #in seconds
+  reload: 1
+  disabled_worlds:
+  - disabled_world
+  #You can use placeholder from UClans or any other placeholder from PAPI
+  title: '&7= &6&lYOUR &a&lSERVER &7='
+  #You can use placeholder from UClans or any other placeholder from PAPI
+  lines:
+  - ' '
+  - ' &fClan: &c%uclans_hasclan_formated%'
+  - ' '
+  - ' &fLevel: &b%uclans_level%'
+  - ' &fPoints: &b%uclans_points%'
+  - ' &fBank: &a$%uclans_bank_balance_formated%'
+  - ''
+  - ' &fK/D: &6%uclans_clan_kills%&7/&b%uclans_clan_deaths%'
+  - ' &fKDR: &b%uclans_clan_kdr%'
+  - ' '
+  - '&a&nYOUR_SITE.COM'

@@ -1,0 +1,73 @@
+menu-title: '&0Награды'
+menu-rows: 6
+draw-past-max-tier: false # Whether the stained glass in the middle of the page will go past the max tier in the menu.
+
+free-reward-slots:
+  slots: '10...16' # Feel free to just use slot, slot, slot such as 0, 1, 2 instead if it's easier.
+
+premium-reward-slots:
+  slots: '28...34'
+
+progress-track-slots:
+  slots: '19...25'
+
+menu:
+  '47':
+    item:
+      material: arrow:0
+      name: '&7« &7Предыдущая страница'
+      lore:
+        - ''
+        - '&7Нажмите чтобы перейти,'
+        - '&7на предыдущую страницу.'
+    actions:
+      - '[menu](page = 1) {portal}' # If the page is 1, take them to the portal page
+      - '[menu](page ! 1) {previous-page}' # If their page is not 1, take them to the previous page
+  '49':
+    item:
+      material: book:0
+      name: '&9Награды'
+      lore:
+        - ''
+        - '&7Награды вы получаете по достиженю'
+        - '&7определённого уровня боевого пропуска,'
+        - '&7тут вы сможете их получить.'
+        - ''
+    actions: []
+  '51':
+    item:
+      material: arrow:0
+      name: '&7Следующая страница &7»'
+      lore:
+        - ''
+        - '&7Нажмите чтобы перейти,'
+        - '&7на следующую страницу.'
+    actions:
+      - '[menu] {next-page}'
+  '27':
+    item:
+      material: gold_ingot:0
+      name: '&9&nПремиум&9 награды'
+      lore:
+        - ''
+        - '&7Тут отображены все награды,'
+        - '&7которые доступны от &9&nПремиум&7'
+        - '&7улучшения боевого пропуска.'
+    actions:
+      - '[message] {&7» &7Купить &9&nПремиум&7 улучшения боевого пропуска, можно на сайте: &9&nMcDev.Store}'
+  '9':
+    item:
+      material: gold_nugget:0
+      name: '&9Бесплатные&9 награды'
+      lore:
+        - ''
+        - '&7Тут отображены все награды,'
+        - '&7которые доступны от всем.'
+    actions: []
+static-items:
+  progress-track-locked-item:
+    material: 'black_stained_glass_pane:0'
+    name: '&7Уровень %tier%'
+  progress-track-unlocked-item:
+    material: 'lime_stained_glass_pane:0'
+    name: '&aУровень %tier%'

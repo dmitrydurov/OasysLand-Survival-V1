@@ -1,0 +1,216 @@
+bounty-created:
+  format:
+  - '&eMcDev &8▪&7 &7Вы успешно создали контракт на игрока &e{target}&7.'
+  - '&eMcDev &8▪&7 &7Первый игрок, кто его убьёт и получит &6Ⓖ {reward}&7.'
+  sound:
+    name: ENTITY_PLAYER_LEVELUP
+    vol: 1.0
+    pitch: 2.0
+new-bounty-on-you:
+  format:
+  - '&eMcDev &8▪&7 {creator} &7установил &6Ⓖ {reward}&7 за вашу голову! Бегите!'
+  sound:
+    name: ENTITY_ENDERMEN_HURT
+    vol: 1.0
+    pitch: 0.0
+new-bounty-on-you-illegal:
+  format:
+  - '&eMcDev &8▪&7 &7Вы убили его не взяв контракт! Теперь контракт на него в размере
+    &6Ⓖ {reward}&7 установлен на вас!'
+  sound:
+    name: ENTITY_ENDERMEN_HURT
+    vol: 1.0
+    pitch: 0.0
+new-bounty-on-you-undefined:
+  format:
+  - '&eMcDev &8▪&7 &7Кто-то установил за вашу голову награду, в размере &e{reward}
+    ❖&7'
+  sound:
+    name: ENTITY_ENDERMEN_HURT
+    vol: 1.0
+    pitch: 0.0
+new-bounty-on-player:
+  format:
+  - '&eMcDev &8▪&7 {creator} &7установил контракт на игрока &e{target}&7! Убейте его
+    и получите &6Ⓖ {reward}&7!'
+  sound:
+    name: ENTITY_EXPERIENCE_ORB_PICKUP
+    vol: 1.0
+    pitch: 1.0
+new-bounty-on-player-illegal:
+  format:
+  - '&eMcDev &8▪&7 {target}&7 убил игрока, не взяв контракт! Убейте его т получите
+    &6Ⓖ {reward}&7!'
+  sound:
+    name: ENTITY_EXPERIENCE_ORB_PICKUP
+    vol: 1.0
+    pitch: 1.0
+new-bounty-on-player-undefined:
+  format:
+  - '&eMcDev &8▪&7 &7Кто-то установид награду за голову на &e{target}&7! Убейте его
+    и получите &6Ⓖ {reward}&7!'
+  sound:
+    name: ENTITY_EXPERIENCE_ORB_PICKUP
+    vol: 1.0
+    pitch: 1.0
+bounty-change:
+  format:
+  - '&eMcDev &8▪&7 &7Контракт на игрока &e{player}&7, был изменён! Теперь награда
+    за его голову: &6Ⓖ {reward}&7.'
+  sound:
+    name: ENTITY_EXPERIENCE_ORB_PICKUP
+    vol: 1.0
+    pitch: 1.0
+bounty-claimed:
+  format:
+  - '&eMcDev &8▪&7 {killer} &7забрал &e{target}&7 нагрда: &6Ⓖ {reward}&7!'
+  sound:
+    name: ENTITY_PLAYER_LEVELUP
+    vol: 1.0
+    pitch: 1.0
+bounty-claimed-by-you:
+  format:
+  - '&eMcDev &8▪&7 &7Вы успешно забрали контракт на голову игрока &e{target}&7. Награда:
+    &6Ⓖ {reward}&7!'
+  sound:
+    name: ENTITY_PLAYER_LEVELUP
+    vol: 1.0
+    pitch: 1.0
+head-dropped:
+  format:
+  - '&eMcDev &8▪&7 &7Вы убили игрока &e{victim}&7 и получили его голову, принесите
+    её игроку &e{creator}&7 чтобы забрать награду.'
+  sound:
+    name: ENTITY_PLAYER_LEVELUP
+    vol: 1.0
+    pitch: 1.0
+error-player:
+  format:
+  - '&eMcDev &8▪&7 Игрок с ником {arg} не найден.'
+not-valid-number:
+  format:
+  - '&eMcDev &8▪&7 {arg} не является числом.'
+new-hunter-alert:
+  format:
+  - '&eMcDev &8▪&7 {hunter} теперь преследует вас.'
+  sound:
+    name: ENTITY_ENDERMEN_HURT
+    vol: 1.0
+    pitch: 0.0
+empty-inv-first:
+  format:
+  - '&eMcDev &8▪&7 Очистите свой инвентраь'
+not-enough-perms:
+  format:
+  - '&eMcDev &8▪&7 У вас нет прав.'
+command-usage:
+  format:
+  - '&eMcDev &8▪&7 Использование: {command}'
+bounty-imun:
+  format:
+  - '&eMcDev &8▪&7 Вы не можете установить награду за этого игрока.'
+track-imun:
+  format:
+  - '&eMcDev &8▪&7 Вы не можете преследовать этого игрока.'
+cant-track-creator:
+  format:
+  - '&eMcDev &8▪&7 Вы создали этот контракт. Смысл преследовать игрока за голову которого
+    вы установили награду?'
+target-cooldown:
+  format:
+  - '&eMcDev &8▪&7 Подождите {remain} сек.{s} чтобы установить награду за голову.'
+cant-set-bounty-on-yourself:
+  format:
+  - '&eMcDev &8▪&7 Вы не можете установить награду за самого себя!'
+bounty-expired:
+  format:
+  - '&eMcDev &8▪&7 &7Награда за голову игрока &e{target} &7истекла.'
+  sound:
+    name: ENTITY_VILLAGER_NO
+    vol: 1.0
+    pitch: 2.0
+bounty-expired-inactivity:
+  format:
+  - '&eMcDev &8▪&7 &7Награда за голову игрока &e{target} &7истекла, так-как игрок
+    не активен'
+bounty-decreased:
+  format:
+  - '&eMcDev &8▪&7 &7Награда за голову игрока &e{target} &7снизился с &e{old} ❖ &7до
+    &6{new} ❖&7.'
+reward-must-be-higher:
+  format:
+  - '&eMcDev &8▪&7 Награда должна быть выше &6{min} ❖&7!'
+reward-must-be-lower:
+  format:
+  - '&eMcDev &8▪&7 Награда должна быть меньше &6{max} ❖&7!'
+not-enough-money:
+  format:
+  - '&eMcDev &8▪&7 У вас не достаточно кредитов.'
+bounty-set-restriction:
+  format:
+  - '&eMcDev &8▪&7 Подождите {left} больше сек.{s} до создания контраткта.'
+target-set:
+  format:
+  - '&eMcDev &8▪&7 &7Цель установлена.'
+target-removed:
+  format:
+  - '&eMcDev &8▪&7 &7Цель удалена.'
+bought-compass:
+  format:
+  - '&eMcDev &8▪&7 &7Вы успешно купили &eКомпас охотника&7.'
+  sound:
+    name: ENTITY_PLAYER_LEVELUP
+    vol: 1.0
+    pitch: 2.0
+tax-explain:
+  format:
+  - '&eMcDev &8▪&7 {percent}%&7 от награды (&6{price} ❖&7) была вычтена в качестве
+    налога.'
+player-must-be-connected:
+  format:
+  - '&eMcDev &8▪&7 Игрок должен быть подключен к отслеживания.'
+bounty-indication:
+  format:
+  - '&eMcDev &8▪&7 &7Награда за голову игрока &e{player}&7 теперь составляет &6{reward}
+    м&7.'
+no-bounty-indication:
+  format:
+  - '&eMcDev &8▪&7 {player} не имеет контракта.'
+must-redeem-head:
+  format:
+  - '&eMcDev &8▪&7 &7Вы взяли голову игрока &e{target}&7 Используйте &e/redeembountyheads&7
+    когда у вас будет лишнее место в инвентаре'
+obtained-head:
+  format:
+  - '&eMcDev &8▪&7 &7Вы получили голову игрока &e{target}&7.'
+redeem-head:
+  format:
+  - '&eMcDev &8▪&7 &7Вы успещно получили голову игрока &e{target}&7.'
+  sound:
+    name: ENTITY_EXPERIENCE_ORB_PICKUP
+    vol: 1.0
+    pitch: 2.0
+no-head-to-redeem:
+  format:
+  - '&eMcDev &8▪&7 У вас нет голов для того чтобы их принять.'
+level-up:
+  format:
+  - '&8&l◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼'
+  - '&8&l| &e&lОтлично!&7 Теперь ваш уровень &e{level}&7!'
+  - '&8&l| &7Забери &e{bounties} &7и повышай свой уровень!'
+  - '&8&l◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼'
+successfully-selected:
+  format:
+  - '&eMcDev &8▪&7 &7Вы успешно выбрали &e{item}&7.'
+  sound:
+    name: ENTITY_PLAYER_LEVELUP
+    vol: 1.0
+    pitch: 2.0
+unlocked-titles:
+  format:
+  - '&8&l◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼'
+  - '&7Открытые звания:'
+unlocked-quotes:
+  format:
+  - '&8&l◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼'
+  - '&7Открытые цитаты:'

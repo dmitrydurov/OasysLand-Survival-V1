@@ -1,0 +1,358 @@
+# Down: 108 135 -45 | UP: 134 145 -63
+quests:
+  1: 
+    name: 'Шахтёр (1)' 
+    type: block-break 
+    variable: coal_ore:0 
+    required-progress: 256
+    points: 7000  
+    item: 
+      material: stone_pickaxe:0
+      amount: 1
+      name: '&9Шахтёр &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно добыть &9256 угольной руды'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+  2: 
+    name: 'Лесоруб (1)' 
+    type: block-break 
+    variable: log:0 
+    required-progress: 128
+    points: 7000 
+    item: 
+      material: stone_axe:0
+      amount: 1
+      name: '&9Лесоруб &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно нарубить &9128 брёвен дуба'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+  3: 
+    name: 'Фермер (1)' 
+    type: kill-mob
+    variable: cow 
+    required-progress: 25
+    points: 7000 
+    item: 
+      material: raw_beef:0
+      amount: 1
+      name: '&9Фермер &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно убить &925 коров'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+  4: 
+    name: 'Ходок (1)' 
+    type: walk
+    #variable: coal_ore:0 
+    required-progress: 7000
+    points: 7000 
+    item: 
+      material: leather_boots:0
+      amount: 1
+      name: '&9Ходок &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно пройти &97000 блоков'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+  5: 
+    name: 'Рыболов (1)' 
+    type: fish
+    #variable: coal_ore:0 
+    required-progress: 64
+    points: 7000 
+    item: 
+      material: fishing_rod:0
+      amount: 1
+      name: '&9Рыболов &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно поймать &964 предмета'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  6: 
+    name: 'Чародей (1)' 
+    type: enchant
+    #variable: coal_ore:0 
+    required-progress: 30
+    points: 7000 
+    item: 
+      material: enchanted_book:0
+      amount: 1
+      name: '&9Чародей &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам зачаровать &930 предметов'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  7: 
+    name: 'Кузнец (1)' 
+    type: craft
+    variable: iron_sword:0 
+    required-progress: 25
+    points: 7000 
+    item: 
+      material: anvil:0
+      amount: 1
+      name: '&9Кузнец &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно скрафтить &925 железных мечей'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  8: 
+    name: 'Печник (1)' 
+    type: smelt
+    #variable: coal_ore:0 
+    required-progress: 128
+    points: 7000 
+    item: 
+      material: furnace:0
+      amount: 1
+      name: '&9Печник &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно переплавить &9128 любых руд'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  9: 
+    name: 'Пастух (1)' 
+    type: shear
+    #variable: coal_ore:0 
+    required-progress: 25
+    points: 7000 
+    item: 
+      material: shears:0
+      amount: 1
+      name: '&9Пастух &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно подстрич &925 овец'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)'
+        - ''
+  10: 
+    name: 'Дояр (1)' 
+    type: milk
+    #variable: coal_ore:0 
+    required-progress: 30
+    points: 7000 
+    item: 
+      material: milk_bucket:0
+      amount: 1
+      name: '&9Дояр &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам подоить &930 коров'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  11: 
+    name: 'Обжора (1)' 
+    type: consume
+    variable: cooked_beef:0 
+    required-progress: 192
+    points: 7000 
+    item: 
+      material: cooked_beef:0
+      amount: 1
+      name: '&9Обжора &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно съесть &9192 жареные говядины'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  12: 
+    name: 'Берсерк (1)' 
+    type: kill-player
+    required-progress: 35
+    points: 7000 
+    item: 
+      material: skull_item:1
+      amount: 1
+      name: '&9Берсерк &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно убить &935 игроков'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+  13: 
+    name: 'Плавец (1)' 
+    type: swim 
+    required-progress: 1200
+    points: 7000 
+    item: 
+      material: water_bucket:0
+      amount: 1
+      name: '&9Плавец &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно проплыть &91200 блоков'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  14: 
+    name: 'Друг животных (1)' 
+    type: tame
+    variable: coal_ore:0 
+    required-progress: 20
+    points: 7000 
+    item: 
+      material: leash:0
+      amount: 1
+      name: '&9Друг животных &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно подружиться с'
+        - '&920 попугаями и/или оцелотами'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  15: 
+    name: 'Воин (1)' 
+    type: damage-player
+    #variable: coal_ore:0 
+    required-progress: 500
+    points: 7000 
+    item: 
+      material: shield:0
+      amount: 1
+      name: '&9Воин &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно нанести &9500 урона'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)'
+        - ''
+  16: 
+    name: 'Строитель (1)' 
+    type: block-place 
+    #variable: coal_ore:0 
+    required-progress: 128
+    points: 7000 
+    item: 
+      material: wood:0
+      amount: 1
+      name: '&9Строитель &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно установить &9128 блоков'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  17: 
+    name: 'Подмостерье (1)' 
+    type: gain-experience
+    variable: coal_ore:0 
+    required-progress: 20
+    points: 7000 
+    item: 
+      material: experience_bottle:0
+      amount: 1
+      name: '&9Подмостерье &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно добыть &920 опыта'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  18: 
+    name: 'Хиллер (1)' 
+    type: regenerate
+    #variable: coal_ore:0 
+    required-progress: 100
+    points: 7000 
+    item: 
+      material: golden_apple:0
+      amount: 1
+      name: '&9Хиллер &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно восполнить,'
+        - ' &7&9-&7 &7своё здоровье &9100 раз'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  19: 
+    name: 'Конюх (1)' 
+    type: ride-mob
+    variable: horse
+    required-progress: 25
+    points: 7000 
+    item: 
+      material: saddle:0
+      amount: 1
+      name: '&9Конюх &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно оседлать коня,'
+        - ' &7&9-&7 &925 раз'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)' 
+        - ''
+  20: 
+    name: 'Каменьщик (1)' 
+    type: block-break 
+    variable: stone:0 
+    required-progress: 512
+    points: 7000 
+    item: 
+      material: cobblestone:0
+      amount: 1
+      name: '&9Каменьщик &7&9-&7 &71 уровнь'
+      lore:
+        - ''
+        - '&7Описание квеста:'
+        - ' &7&9-&7 &7Вам нужно сломать &9512 камня'
+        - ''
+        - '&7Прогресс квеста:'
+        - ' &7&9-&7 &7%progress_bar% &7(&9%percentage_progress%&7)'     
+        - ''

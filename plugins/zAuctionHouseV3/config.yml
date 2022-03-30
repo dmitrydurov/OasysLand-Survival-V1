@@ -1,0 +1,38 @@
+customInventories:
+
+
+#Monde d�sactiv�
+disableWorlds:
+  - world_the_end
+  
+bannedItems:
+  goldenappel:
+    material: GOLDEN_APPLE   
+    
+bannedItemsWithMaterial:
+  - BEDROCK    
+    
+permissions:
+  zauctionhouse_max_3: 3
+  zauctionhouse_max_6: 6
+  zauctionhouse_max_9: 9
+  zauctionhouse_max_12: 12
+  zauctionhouse_max_15: 15
+  zauctionhouse_max_18: 18
+  zauctionhouse_max_21: 21
+  zauctionhouse_max_24: 24
+  zauctionhouse_max_27: 27
+  zauctionhouse_max_37: 37
+  
+#SQL
+sql:
+  user: "homestead"
+  password: "secret"
+  port: 3306
+  host: "192.168.10.10"
+  database: "zauctionhouse" 
+  
+citizen:
+  1:
+    name: "Auction"
+    inventory: "auction"  

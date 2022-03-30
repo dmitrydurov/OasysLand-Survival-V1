@@ -1,0 +1,1473 @@
+#    _______                                     
+#   |__   __|                                    
+#      | |_ __ ___  __ _ ___ _   _ _ __ ___  ___ 
+#      | | '__/ _ \/ _` / __| | | | '__/ _ \/ __|
+#      | | | |  __/ (_| \__ \ |_| | | |  __/\__ \
+#      |_|_|  \___|\__,_|___/\__,_|_|  \___||___/
+#   Official, default config.
+# -------------------------------------------------
+# Result effects:
+# LIGHTNING, EXPLOSION, FLAME_EXPLOSION, SPELL
+# -------------------------------------------------
+# required-perm usage:
+# You need to put required-perm entry, which is a list
+# in a reward.
+# Example:
+#        reward4:
+#            reward-type: money
+#            value: 420
+#            required-perm:
+#            - permission.test
+#            - permission.test2
+#            - !permission.test3
+#            item:
+#                name: '&a420 dollar'
+#                type: EMERALD
+# This line means:
+# Player must have permission.test, and permission.test2
+# to get this reward, but MUST NOT have permission
+# permission.test3.
+# -------------------------------------------------
+# sound-play-system:
+# Determines how the sound plays.
+# It has 2 types.
+# ALL, and WORLD.
+# ALL will be played to everyone, but WORLD will
+# be played to people only in that world.
+# If has-radius is true, then it will only play
+# to people who are in the radius of the chest
+# -------------------------------------------------
+# Currency:
+# VAULT, COINSAPI, TOKENENCHANT, ITEM
+# -------------------------------------------------
+# Particle Effects:
+# http://pastebin.com/JLce1Y0x
+# -------------------------------------------------
+# Items:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# -------------------------------------------------
+# Sounds:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# 1.8 Sounds:
+# https://github.com/Attano/Spigot-1.8/blob/master/org/bukkit/Sound.java
+# -------------------------------------------------
+# Use the links above for help.
+# You can make as many Treasure/Rarity/Reward as you want.
+# Just copy that path, paste it, and edit it.
+# -------------------------------------------------
+# Tip for chances:
+# Chances are not in percents, but X to <all chances added together for a treasure>
+# So, in a treasure, if there's common with chance 800, rare with 195, and mythical with 5 chance,
+# mythical would be 0.5% (5 / (800 + 195 + 5) * 100)
+# -------------------------------------------------
+# only-open-one:
+# enabled: If this is true, the player can open
+# only one treasure at a time.
+# deny-menu-open: If a player is already opening
+# a treasure, then don't open the GUI menu.
+# remove-on-reward: If this is enabled,
+# player may access the menu once he has been
+# rewarded. If it's false, then he may access
+# it only after 'usuable-again-tick' time.
+# -------------------------------------------------
+# Don't modify first-start-up!
+# -------------------------------------------------
+# Pro tip: Remove the '_default' from the names.
+# It will prevent reading the default config if
+# there are any errors.
+# -------------------------------------------------
+
+decimal-formatter: .
+currency: VAULT
+item-currency-item: PAPER
+placeholderapi: false
+debug-mode: false
+item-stay-tick: 100
+usable-again-tick: 60
+sound-play-system:
+  type: ALL
+  has-radius: true
+  radius: 5
+limited-creative: false
+only-open-one:
+  enabled: false
+  deny-menu-open: false
+  remove-on-reward: false
+duplicates:
+  enabled: false
+  randomvalue: 20-80
+  message-enabled: false
+  messages:
+  - '&4[&cDuplicate!&4] &eYou found a duplicate!'
+  - '&4[&cDuplicate!&4] &eYou got &6%randomvalue% &emoney!'
+  rarity-random-value:
+    common_default: 10-20
+    rare_default: 40-80
+    legendary_default: 120-250
+    mythical_default: 1000-2500
+  change-item-name: '&7(DUPLICATE) %name%'
+  commands:
+  - money give %player% %randomvalue%
+rarity-find:
+  randomvalue: 10-20
+  msgs-enabled: false
+  messages:
+  - '[center] &8&m==================================&7'
+  - '[center] &c&l&nКЕЙС ОТКРЫТ'
+  - '[center] &e+ %randomvalue% bonus dirt!'
+  - '[center] &7(You may want to change the config!)'
+  in-between:
+    duplicate-event:
+    - '[center] &cYou also found a Duplicate!'
+    - '[center] &cYou got %duplicatevalue% money!'
+  final-msg:
+  - '[center] &7&m------------------------'
+  commands-enabled: false
+  commands:
+  - give %player% dirt %randomvalue%
+loots:
+  skull:
+    global-prefix: '&c'
+    name: ''
+    display-name-for-item: true
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил %item%'
+    sound-enabled: true
+    sound: BLOCK_PORTAL_TRIGGER
+    level5:
+      reward-type: command
+      value: iv give %player% skull_5 1
+      item:
+        name: '&5&k|&7 &cКоробка черепов &8- &75 уровня &5&k|&7'
+        type: FIREWORK_ROCKET
+    level4:
+      reward-type: command
+      value: iv give %player% skull_4 1
+      item:
+        name: '&5&k|&7 &cКоробка черепов &8- &74 уровня &5&k|&7'
+        type: FIREWORK_ROCKET
+    level3:
+      reward-type: command
+      value: iv give %player% skull_3 1
+      item:
+        name: '&5&k|&7 &cКоробка черепов &8- &73 уровня &5&k|&7'
+        type: FIREWORK_ROCKET
+    level2:
+      reward-type: command
+      value: iv give %player% skull_2 1
+      item:
+        name: '&5&k|&7 &cКоробка черепов &8- &72 уровня &5&k|&7'
+        type: FIREWORK_ROCKET
+    level1:
+      reward-type: command
+      value: iv give %player% skull_1 1
+      item:
+        name: '&5&k|&7 &cКоробка черепов &8- &71 уровня &5&k|&7'
+        type: FIREWORK_ROCKET
+    skuller_1:
+      reward-type: command
+      value: te add %player% 500
+      item:
+        name: '&e☠ 500&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_2:
+      reward-type: command
+      value: te add %player% 1000
+      item:
+        name: '&e☠ 1000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_3:
+      reward-type: command
+      value: te add %player% 2000
+      item:
+        name: '&e☠ 2000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_4:
+      reward-type: command
+      value: te add %player% 3000
+      item:
+        name: '&e☠ 3000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_5:
+      reward-type: command
+      value: te add %player% 4000
+      item:
+        name: '&e☠ 4000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_6:
+      reward-type: command
+      value: te add %player% 5000
+      item:
+        name: '&e☠ 5000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_7:
+      reward-type: command
+      value: te add %player% 6000
+      item:
+        name: '&e☠ 6000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_8:
+      reward-type: command
+      value: te add %player% 7000
+      item:
+        name: '&e☠ 7000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_9:
+      reward-type: command
+      value: te add %player% 8000
+      item:
+        name: '&e☠ 8000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_10:
+      reward-type: command
+      value: te add %player% 9000
+      item:
+        name: '&e☠ 9000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_11:
+      reward-type: command
+      value: te add %player% 10000
+      item:
+        name: '&e☠ 10000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_12:
+      reward-type: command
+      value: te add %player% 11000
+      item:
+        name: '&e☠ 11000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_13:
+      reward-type: command
+      value: te add %player% 12000
+      item:
+        name: '&e☠ 12000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_14:
+      reward-type: command
+      value: te add %player% 13000
+      item:
+        name: '&e☠ 13000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_15:
+      reward-type: command
+      value: te add %player% 14000
+      item:
+        name: '&e☠ 14000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_16:
+      reward-type: command
+      value: te add %player% 15000
+      item:
+        name: '&e☠ 15000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_17:
+      reward-type: command
+      value: te add %player% 16000
+      item:
+        name: '&e☠ 16000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_18:
+      reward-type: command
+      value: te add %player% 17000
+      item:
+        name: '&e☠ 17000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_19:
+      reward-type: command
+      value: te add %player% 18000
+      item:
+        name: '&e☠ 18000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_20:
+      reward-type: command
+      value: te add %player% 19000
+      item:
+        name: '&e☠ 19000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_21:
+      reward-type: command
+      value: te add %player% 20000
+      item:
+        name: '&e☠ 20000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_22:
+      reward-type: command
+      value: te add %player% 21000
+      item:
+        name: '&e☠ 21000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_23:
+      reward-type: command
+      value: te add %player% 22000
+      item:
+        name: '&e☠ 22000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_24:
+      reward-type: command
+      value: te add %player% 23000
+      item:
+        name: '&e☠ 23000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_25:
+      reward-type: command
+      value: te add %player% 24000
+      item:
+        name: '&e☠ 24000&7 черепов'
+        type: FIREWORK_ROCKET
+    skuller_26:
+      reward-type: command
+      value: te add %player% 25000
+      item:
+        name: '&e☠ 25000&7 черепов'
+        type: FIREWORK_ROCKET
+  pets:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m              &e Кейс открыт! &7&m              &7'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7(Отлично, спасибо за открытый кейс)'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил питомца %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    festivedragons:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.AdultDragon.Festive
+      item:
+        name: '&dFestive Dragons'
+        type: COMMAND
+    darkdragons:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Dragons.Dark
+      item:
+        name: '&0Dark Dragons'
+        type: COMMAND
+    firedragon:
+      reward-type: command
+      value: luckperms user %player% permission set &cMinaturePets.AdultDragon.Fire
+      item:
+        name: '&4Fire Dragon'
+        type: COMMAND
+    earthdragon:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Dragons.Earth
+      item:
+        name: '&aEarth Dragon'
+        type: COMMAND
+    chinesedragon:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Dragons.Chinese
+      item:
+        name: '&6Chinese Dragon'
+        type: COMMAND
+    festivedragon:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Dragons.Festive
+      item:
+        name: '&3Festive Dragon'
+        type: COMMAND
+    pug:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Pug
+      item:
+        name: '&cPug'
+        type: COMMAND
+    40:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.squirtle
+      item:
+        name: '&aСквиртл'
+        type: COMMAND
+    tigercub:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.TigerCub
+      item:
+        name: '&eTigerCub'
+        type: COMMAND
+    darkdragon:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.AdultDragon.Dark
+      item:
+        name: '&0Dark Dragon'
+        type: COMMAND
+    goblindragon:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.AdultDragon.Goblin
+      item:
+        name: '&2Goblin Dragon'
+        type: COMMAND
+    firedragons:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Dragons.Fire
+      item:
+        name: '&4Fire Dragons'
+        type: COMMAND
+    koala:
+      reward-type: command
+      value: luckperms user %player% permission set MiniaturePets.Koala
+      item:
+        name: '&1Koala'
+        type: COMMAND
+    polarbearcub:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.PolarBearCub
+      item:
+        name: '&fPolar BearCub'
+        type: COMMAND
+    lion:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Lion
+      item:
+        name: '&6Lion'
+        type: COMMAND
+    lioncub:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.LionCub
+      item:
+        name: '&bPolarBearCub'
+        type: COMMAND
+    mp8:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.MP8
+      item:
+        name: '&dMP8'
+        type: COMMAND
+    36:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.penguin
+      item:
+        name: '&aПингвин'
+        type: COMMAND
+    37:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.pikachu
+      item:
+        name: '&aПикачу'
+        type: COMMAND
+    34:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.odddish
+      item:
+        name: '&aОдиш'
+        type: COMMAND
+    panda:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Panda
+      item:
+        name: '&aPanda'
+        type: COMMAND
+    magicaldragon:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.AdultDragon.Magical
+      item:
+        name: '&5Magical Dragon'
+        type: COMMAND
+    youtubelogoair:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.YouTubeLogoAir
+      item:
+        name: '&cYouTube LogoAir'
+        type: COMMAND
+    duck:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Duck
+      item:
+        name: '&eDuck'
+        type: COMMAND
+    frog:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Frog
+      item:
+        name: '&2Frog'
+        type: COMMAND
+    19:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.geodude
+      item:
+        name: '&aГеодуд'
+        type: COMMAND
+    giraffe:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Giraffe
+      item:
+        name: '&6Giraffe'
+        type: COMMAND
+    boxer:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Boxer
+      item:
+        name: '&9Boxer'
+        type: COMMAND
+    chimp:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Chimp
+      item:
+        name: '&bChimp'
+        type: COMMAND
+    dove:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Dove
+      item:
+        name: '&3Dove'
+        type: COMMAND
+    wasp:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.wasp
+      item:
+        name: '&dWasp'
+        type: COMMAND
+    42:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.toilet
+      item:
+        name: '&aТуалет'
+        type: COMMAND
+    44:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.vileplume
+      item:
+        name: '&aВайлплум'
+        type: COMMAND
+    46:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.yoda
+      item:
+        name: '&aЙода'
+        type: COMMAND
+    bee:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Bee
+      item:
+        name: '&fBee'
+        type: COMMAND
+    halloweenfreeghost:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.halloween.freeghost
+      item:
+        name: '&cHalloween FreeGhost'
+        type: COMMAND
+    gorilla:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Gorilla
+      item:
+        name: '&8Gorilla'
+        type: COMMAND
+    dogsjake:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.dogs.jake
+      item:
+        name: '&6Dogs Jake'
+        type: COMMAND
+    penguin:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Penguin
+      item:
+        name: '&bPenguin'
+        type: COMMAND
+    earthdragons:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.AdultDragon.Earth
+      item:
+        name: '&5Earth Dragons'
+        type: COMMAND
+    icedragons:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.Dragons.Ice
+      item:
+        name: '&bIce Dragons'
+        type: COMMAND
+    5:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.charmendar
+      item:
+        name: '&aЧармандер'
+        type: COMMAND
+    4:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.bulbasaur
+      item:
+        name: '&aБульбасавр'
+        type: COMMAND
+    2:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.bigbird
+      item:
+        name: '&aВорон'
+        type: COMMAND
+    8:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.coffindancev2
+      item:
+        name: '&aНегры танцуют с гробом'
+        type: COMMAND
+    20:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.halloween.freeghost
+      item:
+        name: '&aПривидение'
+        type: COMMAND
+    27:
+      reward-type: command
+      value: luckperms user %player% permission set MinaturePets.koopa
+      item:
+        name: '&aКупа'
+        type: COMMAND
+  donate:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m              &e Кейс открыт! &7&m              &7'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7(Отлично, спасибо за открытый кейс)'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил привилегию %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    hero:
+      reward-type: command
+      value: lp user %player% parent set vip
+      item:
+        name: '&9&lВип'
+        type: COMMAND
+    god:
+      reward-type: command
+      value: lp user %player% parent set premium
+      item:
+        name: '&b&lПремиум'
+        type: COMMAND
+    supreme:
+      reward-type: command
+      value: lp user %player% parent set creative
+      item:
+        name: '&e&lКреатив'
+        type: COMMAND
+    legend:
+      reward-type: command
+      value: lp user %player% parent set legend
+      item:
+        name: '&a&lЛегенда'
+        type: COMMAND
+    wither:
+      reward-type: command
+      value: lp user %player% parent set adm
+      item:
+        name: '&2&lАдмин'
+        type: COMMAND
+    avenger:
+      reward-type: command
+      value: lp user %player% parent set gladmin
+      item:
+        name: '&4&lГл.Админ'
+        type: COMMAND
+    phoenix:
+      reward-type: command
+      value: lp user %player% parent set elite
+      item:
+        name: '&e&lЭлита'
+        type: COMMAND
+    phantom:
+      reward-type: command
+      value: lp user %player% parent set emperator
+      item:
+        name: '&c&lИмператор'
+        type: COMMAND
+    phantom2:
+      reward-type: command
+      value: lp user %player% parent set deluxe
+      item:
+        name: '&a&lДелюкс'
+        type: COMMAND
+    phantom3:
+      reward-type: command
+      value: lp user %player% parent set opka
+      item:
+        name: '&6&lОпка'
+        type: COMMAND
+    phantom4:
+      reward-type: command
+      value: lp user %player% parent set xelper
+      item:
+        name: '&e&lХелпер'
+        type: COMMAND
+    phantom5:
+      reward-type: command
+      value: lp user %player% parent set profit
+      item:
+        name: '&c&lПрофит'
+        type: COMMAND
+  vote:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m              &e Кейс открыт! &7&m              &7'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7&o(( Отлично, спасибо за открытый кейс ))'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    1:
+      reward-type: command
+      value: money give %player% 5
+      item:
+        name: '&65 Ⓖ'
+        type: COMMAND
+    2:
+      reward-type: command
+      value: money give %player% 10
+      item:
+        name: '&610 Ⓖ'
+        type: COMMAND
+    3:
+      reward-type: command
+      value: money give %player% 15
+      item:
+        name: '&615 Ⓖ'
+        type: COMMAND
+    4:
+      reward-type: command
+      value: money give %player% 20
+      item:
+        name: '&620 Ⓖ'
+        type: COMMAND
+    5:
+      reward-type: command
+      value: money give %player% 25
+      item:
+        name: '&625 Ⓖ'
+        type: COMMAND
+    6:
+      reward-type: command
+      value: money give %player% 30
+      item:
+        name: '&630 Ⓖ'
+        type: COMMAND
+    7:
+      reward-type: command
+      value: money give %player% 35
+      item:
+        name: '&635 Ⓖ'
+        type: COMMAND
+    8:
+      reward-type: command
+      value: money give %player% 40
+      item:
+        name: '&640 Ⓖ'
+        type: COMMAND
+    9:
+      reward-type: command
+      value: money give %player% 45
+      item:
+        name: '&645Ⓖ'
+        type: COMMAND
+    10:
+      reward-type: command
+      value: money give %player% 50
+      item:
+        name: '&650 Ⓖ'
+        type: COMMAND
+    11:
+      reward-type: command
+      value: money give %player% 55
+      item:
+        name: '&6155 Ⓖ'
+        type: COMMAND
+    12:
+      reward-type: command
+      value: money give %player% 60
+      item:
+        name: '&660 Ⓖ'
+        type: COMMAND
+    13:
+      reward-type: command
+      value: money give %player% 65
+      item:
+        name: '&665 Ⓖ'
+        type: COMMAND
+    14:
+      reward-type: command
+      value: money give %player% 70
+      item:
+        name: '&670 Ⓖ'
+        type: COMMAND
+    15:
+      reward-type: command
+      value: money give %player% 75
+      item:
+        name: '&675 Ⓖ'
+        type: COMMAND
+    16:
+      reward-type: command
+      value: money give %player% 80
+      item:
+        name: '&680 Ⓖ'
+        type: COMMAND
+    17:
+      reward-type: command
+      value: money give %player% 85
+      item:
+        name: '&685 Ⓖ'
+        type: COMMAND
+    18:
+      reward-type: command
+      value: money give %player% 90
+      item:
+        name: '&690 Ⓖ'
+        type: COMMAND
+    19:
+      reward-type: command
+      value: money give %player% 95
+      item:
+        name: '&695 Ⓖ'
+        type: COMMAND
+    20:
+      reward-type: command
+      value: money give %player% 100
+      item:
+        name: '&6100 Ⓖ'
+        type: COMMAND
+    21:
+      reward-type: command
+      value: money give %player% 105
+      item:
+        name: '&6105 Ⓖ'
+        type: COMMAND
+    22:
+      reward-type: command
+      value: money give %player% 110
+      item:
+        name: '&6110 Ⓖ'
+        type: COMMAND
+    23:
+      reward-type: command
+      value: money give %player% 115
+      item:
+        name: '&6115 Ⓖ'
+        type: COMMAND
+    24:
+      reward-type: command
+      value: money give %player% 102
+      item:
+        name: '&6102 Ⓖ'
+        type: COMMAND
+    25:
+      reward-type: command
+      value: money give %player% 200
+      item:
+        name: '&6200 Ⓖ'
+        type: COMMAND
+  money:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m              &e Кейс открыт! &7&m              &7'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7&o(( Отлично, спасибо за открытый кейс ))'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    1:
+      reward-type: command
+      value: money give %player% 1000
+      item:
+        name: '&61.000 Ⓖ'
+        type: COMMAND
+    2:
+      reward-type: command
+      value: money give %player% 2000
+      item:
+        name: '&62.000 Ⓖ'
+        type: COMMAND
+    3:
+      reward-type: command
+      value: money give %player% 3000
+      item:
+        name: '&63.000 Ⓖ'
+        type: COMMAND
+    4:
+      reward-type: command
+      value: money give %player% 4000
+      item:
+        name: '&64.000 Ⓖ'
+        type: COMMAND
+    5:
+      reward-type: command
+      value: money give %player% 5000
+      item:
+        name: '&65.000 Ⓖ'
+        type: COMMAND
+    6:
+      reward-type: command
+      value: tm add %player% 1 R
+      item:
+        name: '&61 рубль (Гриф)'
+        type: COMMAND
+    7:
+      reward-type: command
+      value: tm add %player% 2 
+      item:
+        name: '&62 рубля (Гриф)'
+        type: COMMAND
+    8:
+      reward-type: command
+      value: tm add %player% 3 
+      item:
+        name: '&63 рубля (Гриф)'
+        type: COMMAND
+    9:
+      reward-type: command
+      value: money give %player% 1 X
+      item:
+        name: '&61 эрис (MSO)'
+        type: COMMAND
+    10:
+      reward-type: command
+      value: money give %player% 2 X
+      item:
+        name: '&62 эриса (MSO)'
+        type: COMMAND
+    11:
+      reward-type: command 
+      value: money give %player% 3 X
+      item:
+        name: '&63 эриса (MSO)'
+        type: COMMAND
+    12:
+      reward-type: command
+      value: money give %player% 4 X
+      item:
+        name: '&64 эриса (MSO)'
+        type: COMMAND
+    13:
+      reward-type: command
+      value: money give %player% 5 X
+      item:
+        name: '&65 эриса (MSO)'
+        type: COMMAND
+    14:
+      reward-type: command
+      value: money give %player% 6 X
+      item:
+        name: '&66 эрисов (MSO)'
+        type: COMMAND
+    15:
+      reward-type: command
+      value: money give %player% 7 X
+      item:
+        name: '&67 эрисов (MSO)'
+        type: COMMAND
+    16:
+      reward-type: command
+      value: money give %player% 8 X
+      item:
+        name: '&68 эрисов (MSO)'
+        type: COMMAND
+    17:
+      reward-type: command
+      value: money give %player% 9 X
+      item:
+        name: '&69 эрисов (MSO)'
+        type: COMMAND
+    18:
+      reward-type: command
+      value: money give %player% 10 X
+      item:
+        name: '&610 эрисов (MSO)'
+        type: COMMAND
+    19:
+      reward-type: command
+      value: money give %player% 1 R
+      item:
+        name: '&61 электронный (S.T.A.L.K.E.R)'
+        type: COMMAND
+    20:
+      reward-type: command
+      value: money give %player% 2 R
+      item:
+        name: '&62 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    21:
+      reward-type: command
+      value: money give %player% 3 R
+      item:
+        name: '&63 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    22:
+      reward-type: command
+      value: money give %player% 4 R
+      item:
+        name: '&64 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    23:
+      reward-type: command
+      value: money give %player% 5 R
+      item:
+        name: '&65 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    24:
+      reward-type: command
+      value: money give %player% 6 R
+      item:
+        name: '&66 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    25:
+      reward-type: command
+      value: money give %player% 7 R
+      item:
+        name: '&67 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    26:
+      reward-type: command
+      value: money give %player% 8 R
+      item:
+        name: '&68 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    27:
+      reward-type: command
+      value: money give %player% 9 R
+      item:
+        name: '&69 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    28:
+      reward-type: command
+      value: money give %player% 10 R
+      item:
+        name: '&610 электронных (S.T.A.L.K.E.R)'
+        type: COMMAND
+    29:
+      reward-type: command
+      value: snowmans %player% addstars 1000
+      item:
+        name: '&e1.000✪'
+        type: COMMAND
+    30:
+      reward-type: command
+      value: snowmans %player% addstars 2000
+      item:
+        name: '&e2.000✪'
+        type: COMMAND
+    31:
+      reward-type: command
+      value: snowmans %player% addstars 3000
+      item:
+        name: '&e3.000✪'
+        type: COMMAND
+    32:
+      reward-type: command
+      value: snowmans %player% addstars 4000
+      item:
+        name: '&e4.000✪'
+        type: COMMAND
+    33:
+      reward-type: command
+      value: snowmans %player% addstars 5000
+      item:
+        name: '&e5.000✪'
+        type: COMMAND
+    34:
+      reward-type: command
+      value: snowmans %player% addstars 6000
+      item:
+        name: '&e6.000✪'
+        type: COMMAND
+    35:
+      reward-type: command
+      value: snowmans %player% addstars 7000
+      item:
+        name: '&e7.000✪'
+        type: COMMAND
+    36:
+      reward-type: command
+      value: snowmans %player% addstars 8000
+      item:
+        name: '&e8.000✪'
+        type: COMMAND
+    37:
+      reward-type: command
+      value: snowmans %player% addstars 9000
+      item:
+        name: '&e9.000✪'
+        type: COMMAND
+    38:
+      reward-type: command
+      value: snowmans %player% addstars 10000
+      item:
+        name: '&e10.000✪'
+        type: COMMAND
+  adcase:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m              &e Кейс открыт! &7&m              &7'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7&o(( Отлично, спасибо за открытый кейс ))'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    1:
+      reward-type: command
+      value: say
+      item:
+        name: '&fПустота'
+        type: COMMAND
+  naebka:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m              &e Кейс открыт! &7&m              &7'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7&o(( Отлично, спасибо за открытый кейс ))'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    1:
+      reward-type: command
+      value: say
+      item:
+        name: '&fПустота'
+        type: COMMAND
+  csgo_weapons:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m------------&8&l Кейс открыт! &7&m------------'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7&o(( Отлично, спасибо за открытый кейс ))'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил оружие %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    1:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Galil-AR-Eko
+      item:
+        name: '&cGalil-AR-Eko'
+        type: COMMAND
+    2:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.FAMAS-Pulse
+      item:
+        name: '&cFAMAS-Pulse'
+        type: COMMAND
+    3:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.AK-47-Vulcano
+      item:
+        name: '&cAK-47-Vulcano'
+        type: COMMAND
+    4:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.M4A4-VOI
+      item:
+        name: '&cM4A4-VOI'
+        type: COMMAND
+    5:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.SG-553-Pulse
+      item:
+        name: '&cSG-553-Pulse'
+        type: COMMAND
+    6:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.SSG-08-Blood
+      item:
+        name: '&cSSG-08-Blood'
+        type: COMMAND
+    7:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.AWP-Azimov
+      item:
+        name: '&cAWP-Azimov'
+        type: COMMAND
+    8:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.AUG-Twisted
+      item:
+        name: '&cAUG-Twisted'
+        type: COMMAND
+    9:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.XM1014-Pig
+      item:
+        name: '&cXM1014-Pig'
+        type: COMMAND
+    10:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.AK-47-Guardian
+      item:
+        name: '&cAK-47-Guardian'
+        type: COMMAND
+    11:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.M4A4-Ender
+      item:
+        name: '&cM4A4-Ender'
+        type: COMMAND
+    12:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Nova-Carp-Coi
+      item:
+        name: '&cNova-Carp-Coi'
+        type: COMMAND
+    13:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.XM1014-Calm
+      item:
+        name: '&cXM1014-Calm'
+        type: COMMAND
+    14:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.PP-19-Bizon-Blue
+      item:
+        name: '&cPP-19-Bizon-Blue'
+        type: COMMAND
+    15:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.P90-Azimov
+      item:
+        name: '&cP90-Azimov'
+        type: COMMAND
+    16:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Glock-18-Gradient
+      item:
+        name: '&cGlock-18-Gradient'
+        type: COMMAND
+    17:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.P2000-Spirid
+      item:
+        name: '&cP2000-Spirid'
+        type: COMMAND
+    18:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.P250-DeadMan
+      item:
+        name: '&cP250-DeadMan'
+        type: COMMAND
+    19:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.CZ75-Auto-Tiger
+      item:
+        name: '&cCZ75-Auto-Tiger'
+        type: COMMAND
+    20:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Desert-Eagle-Flame
+      item:
+        name: '&cDesert-Eagle-Flame'
+        type: COMMAND
+    21:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Desert-Eagle-Gold
+      item:
+        name: '&cDesert-Eagle-Gold'
+        type: COMMAND
+    22:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Knife-GradientC
+      item:
+        name: '&cKnife-GradientC'
+        type: COMMAND
+    23:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Knife-KillC
+      item:
+        name: '&cKnife-KillC'
+        type: COMMAND
+    24:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Knife-DiamondC
+      item:
+        name: '&cKnife-DiamondC'
+        type: COMMAND
+    25:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Sword-DiamondC
+      item:
+        name: '&cSword-DiamondC'
+        type: COMMAND
+    26:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Knife-GradientT
+      item:
+        name: '&cKnife-GradientT'
+        type: COMMAND
+    27:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Knife-KillT
+      item:
+        name: '&cKnife-KillT'
+        type: COMMAND
+    28:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Knife-DiamondT
+      item:
+        name: '&cKnife-DiamondT'
+        type: COMMAND
+    29:
+      reward-type: command
+      value: lp user %player% permission set cs.weapon.Sword-DiamondT
+      item:
+        name: '&cSword-DiamondT'
+        type: COMMAND
+  codz_weapons:
+    global-prefix: '&a'
+    name: 'Лут: '
+    display-name-for-item: true
+    rarity-find-randomvalue-override: 10-20
+    rarity-find-message-override:
+    - '[center] &7&m------------&8&l Кейс открыт! &7&m------------'
+    - '[center] &c%rarity%%item%'
+    - '[center] &7&o(( Отлично, спасибо за открытый кейс ))'
+    - '[center] &cУдачной игры &8| &ewww.McDev.Store'
+    broadcast-enabled: true
+    broadcast: '&7[&9McDev&7] &c%player%&7 открыл кейс и выбил набор CODZ с %item%'
+    sound-enabled: true
+    sound: ENTITY_ARROW_SHOOT
+    1:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.Scorpion
+      item:
+        name: '&cScorpion'
+        type: COMMAND
+    2:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.P2000
+      item:
+        name: '&cP2000'
+        type: COMMAND
+    3:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.M1911
+      item:
+        name: '&cM1911'
+        type: COMMAND
+    4:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.M9
+      item:
+        name: '&cM9'
+        type: COMMAND
+    5:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.Dragunov
+      item:
+        name: '&cDragunov'
+        type: COMMAND
+    6:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.L118A
+      item:
+        name: '&cL118A'
+        type: COMMAND
+    7:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.Barrett-50Cal
+      item:
+        name: '&cBarrett-50Cal'
+        type: COMMAND
+    8:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.Raygun
+      item:
+        name: '&cRaygun'
+        type: COMMAND
+    9:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.SCAR-H
+      item:
+        name: '&cSCAR-H'
+        type: COMMAND
+    10:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.MP5
+      item:
+        name: '&cMP5'
+        type: COMMAND
+    11:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.M16A4
+      item:
+        name: '&cM16A4'
+        type: COMMAND
+    12:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.AK-47
+      item:
+        name: '&cAK-47'
+        type: COMMAND
+    13:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.P90
+      item:
+        name: '&cP90'
+        type: COMMAND
+    14:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.AA12
+      item:
+        name: '&cAA12'
+        type: COMMAND
+    15:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.Flamethrower
+      item:
+        name: '&cFlamethrower'
+        type: COMMAND
+    16:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.USAS-12
+      item:
+        name: '&cUSAS-12'
+        type: COMMAND
+    17:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.Minigun
+      item:
+        name: '&cMinigun'
+        type: COMMAND
+    18:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.M320
+      item:
+        name: '&cM320'
+        type: COMMAND
+    19:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.Bazooka
+      item:
+        name: '&cBazooka'
+        type: COMMAND
+    20:
+      reward-type: command
+      value: lp user %player% permission set ZombieSurvival.Kit.M249
+      item:
+        name: '&cM249'
+        type: COMMAND
+first-start-up: false

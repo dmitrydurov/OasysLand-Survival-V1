@@ -1,0 +1,278 @@
+ 
+ 
+ 
+ 
+# PAGINATION GUI
+ 
+ 
+ 
+ 
+Pagination:
+  rival:
+    title: '&7Список врагов '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:14;STAINED_GLASS_PANE:1
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        data: 0
+        amount: 1
+        glow: true
+        name: '&7Клан &9%uclans_tag_color%'
+        lore:
+        - '&9-&9---------------------------------&9-'
+        - ' &7Информация о клане'
+        - ' &7'
+        - ' &7Уровень: &9%uclans_level%'
+        - ' &7'
+        - ' &7Тэг: &9%uclans_tag_color%'
+        - ' &7Лидер: &9%uclans_leader%'
+        - ' &7Участников: &9%uclans_count_members%'
+        - '&9-&9---------------------------------&9-'
+        - ' &7Щелкните ПКМ, чтобы просмотреть информацию.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&9<< &7Предыдущая страница'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        data: 8
+        amount: 1
+        glow: false
+        name: '&7Следущая страница &9>>'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        data: 0
+        amount: 1
+        glow: false
+        name: '&7Вернуться назад'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+  ally:
+    title: '&7Список союзников '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:3;STAINED_GLASS_PANE:11
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: true
+        name: '&7Клан &9%uclans_tag_color%'
+        lore:
+        - '&9-&9---------------------------------&9-'
+        - ' &7Информация о клане'
+        - ' &7'
+        - ' &7Уровень: &9%uclans_level%'
+        - ' &7'
+        - ' &7Тэг: &9%uclans_tag_color%'
+        - ' &7Лидер: &9%uclans_leader%'
+        - ' &7Участников: &9%uclans_count_members%'
+        - '&9-&9---------------------------------&9-'
+        - ' &7Щелкните ПКМ, чтобы просмотреть информацию.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&9<< &7Предыдущая страница'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&7Следущая страница &9>>'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&7Вернуться назад'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+  members:
+    title: '&7Список участников '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5;STAINED_GLASS_PANE:13
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: SKULL_ITEM:3
+        texture: '%uclans_player%'
+        amount: 1
+        glow: false
+        name: '&9%uclans_player%'
+        lore:
+        - '&9-&9---------------------------------&9-'
+        - ' &7Лидер: &9%uclans_player_leader_yes_no%'
+        - ' &7Помощник: &9%uclans_player_mod_yes_no%'
+        - ' &7Ник: &9%uclans_player%'
+        - ' &7К/Д: &9%uclans_player_kills%&7/&b%uclans_player_deaths% &9(%uclans_player_kdr%)'
+        - ' &7Вступил в клан: &9%uclans_player_joindate_formated%'
+        - ' &7Последний вход: &9%uclans_player_lastsee_formated%'
+        - '&9-&9---------------------------------&9-'
+        - ' &7Нажмите, для просмотра профиля.'
+        nbt:
+          string:
+          - NbtExample:teste
+          integer:
+          - NbtExample2:0001
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&9<< &7Предыдущая страница'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&7Следущая страница &9>>'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&7Вернуться назад'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+  clans:
+    title: '&aVerified clans '
+    opensound: ''
+    items:
+      fill:
+        # Use ; "<ITEM>;<ITEM>;<ITEM>" to add more than one item to the fill.
+        material: STAINED_GLASS_PANE:5
+        amount: 1
+        glow: false
+        name: ' '
+        lore: [
+          ]
+        nbt:
+          string:
+          - example:example_nbt_string
+          integer:
+          - CustomModelData:00000001
+      current:
+        clicksound: ''
+        material: '%CLAN_BANNER%'
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&7Клан &9%uclans_tag_color%'
+        lore:
+        - '&9-&9---------------------------------&9-'
+        - ' &7Информация о клане'
+        - ' &7'
+        - ' &7Уровень: &9%uclans_level%'
+        - ' &7'
+        - ' &7Тэг: &9%uclans_tag_color%'
+        - ' &7Лидер: &9%uclans_leader%'
+        - ' &7Участников: &9%uclans_count_members%'
+        - '&9-&9---------------------------------&9-'
+        - ' &7Щелкните ПКМ, чтобы просмотреть информацию.'
+      previous:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&9<< &7Предыдущая страница'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      next:
+        clicksound: ''
+        material: ARROW
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&7Следущая страница &9>>'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: false
+        name: '&7Вернуться назад'
+        lore:
+        - ''
+        - ' &7Нажмите, для перехода.'

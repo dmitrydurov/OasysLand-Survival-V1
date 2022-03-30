@@ -1,0 +1,12 @@
+click-buy-compass: '&eНажмите чтобы купить компас за &6Ⓖ {price}&7.'
+no-title: '&cНет звания'
+no-player: '&c- Нет игрока -'
+gui-name: Контракты ({page}/{max_page})
+leaderboard-gui-name: '&7Топ охотников за головами'
+redeemable-heads: Получите свои головы
+click-select: '&eНажмите чтобы выбрать.'
+compass-format: '&7&l[ &e&l{blocks} блоков &7&l]'
+console: Консоль
+level-up-rewards: '&eНаведитесь на это сообщение чтобы посмотреть свою награду.'
+level-up-reward: '&7- &6Ⓖ {reward}'
+level-up-reward-money: '&7- &6Ⓖ {amount}'

@@ -1,0 +1,42 @@
+menu-title: '&0Квесты (Задания) недели %week%'
+menu-rows: 5
+
+quest-slots:
+  slots: '11...15, 20...24'
+
+menu:
+  '38':
+    item:
+      material: arrow:0
+      name: '&7« &7Предыдущая страница'
+      lore:
+        - ''
+        - '&7Нажмите чтобы перейти,'
+        - '&7на предыдущую страницу.'
+    actions:
+      - '[menu](page = 1) {quest-overview}' # If the page is 1, take them to the portal page
+      - '[menu](page ! 1) {previous-page}' # If their page is not 1, take them to the previous page
+  '40':
+    item:
+      material: book:0
+      name: '&9Что такое квесты (Задания)?'
+      lore:
+        - ''
+        - '&7Выполняя квесты вы получаете'
+        - '&7поинты, каждый уровень стоит'
+        - '&97000&7 поинтов.'
+        - '&7По достижению 7000 поинтов,'
+        - '&7у вас разблокируется новый уровень'
+        - '&7а вместе с ним и награда за него.'
+        - ''
+    actions: []
+  '42':
+    item:
+      material: arrow:0
+      name: '&7Следующая страница &7»'
+      lore:
+        - ''
+        - '&7Нажмите чтобы перейти,'
+        - '&7на следующую страницу.'
+    actions:
+      - '[menu] {next-page}'

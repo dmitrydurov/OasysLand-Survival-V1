@@ -1,0 +1,77 @@
+settings:
+  damage-per-hit: 5.0
+  repair-cost: 500
+  fire-adjustment: -1.5
+  hologram-adjustment: 0.0
+  total-printer-limit: -1
+  disable-stealing: false
+  disable-printer-damage: false
+  disable-hologram: false
+  disable-public-gui: false
+  disable-offline-printing: true
+  money-format: '0.0'
+  hologram:
+  - '%printername%'
+  - '&6&m--&r &7⇓ &6Владелец &7⇓ &r&6&m--'
+  - '&6&m--&r &6%printerowner% &r&6&m--'
+  - '&6%storedmoney% Ⓖ &7&l/ &6%maxstorage% Ⓖ'
+  - '%printerhealthbar%'
+  disabled-worlds:
+  - example_world1
+  - example_world2
+printer-types:
+  Coal:
+    name: '&8Угольный &6генератор Ⓖ &8[ &a1 уровень &8]'
+    texture: 189e657eddc67026b39567f67e4c23e48c2fc38efe70f5ee6dd0f14fb93daca
+    permission: moneyprinters.use.coal
+    max-health: 20
+    max-storage: 2000
+    max-print-amount: -1
+    print-amount: 20.0
+    print-delay: 30
+    limit: -1
+    price: 1000
+  Iron:
+    name: '&7Железный &6генератор Ⓖ &8[ &a2 уровень &8]'
+    texture: 99f18cfc247a9ebff3dda492d488e3bf97caf7657293cf49c2382689c1445
+    permission: moneyprinters.use.iron
+    max-health: 40
+    max-storage: 6000
+    max-print-amount: -1
+    print-amount: 40.0
+    print-delay: 35
+    limit: -1
+    price: 2000
+  Gold:
+    name: '&eЗолотой &6генератор Ⓖ &8[ &a3 уровень &8]'
+    texture: 31b1f32972c0d1df5cc6334c0f4c897ff47841399265557b9f885c731f9b6
+    permission: moneyprinters.use.gold
+    max-health: 80
+    max-storage: 10000
+    max-print-amount: -1
+    print-amount: 60.0
+    print-delay: 40
+    limit: -1
+    price: 4000
+  Diamond:
+    name: '&bАлмазный &6генератор Ⓖ &8[ &a4 уровень &8]'
+    texture: 48eefc54f267e3b1e22ce4958d8becb48fb936e661845f8ef8f017e348bde6f
+    permission: moneyprinters.use.diamond
+    max-health: 160
+    max-storage: 15000
+    max-print-amount: -1
+    print-amount: 80.0
+    print-delay: 45
+    limit: -1
+    price: 8000
+  Emerald:
+    name: '&aИзумрудный &6генератор Ⓖ &8[ &a5 уровень &8]'
+    texture: f0c7a7c71720de238e46f786999f44dff3f40a75389b677bb92a293f5423f24
+    permission: moneyprinters.use.emerald
+    max-health: 320
+    max-storage: 22000
+    max-print-amount: -1
+    print-amount: 120.0
+    print-delay: 50
+    limit: -1
+    price: 12000

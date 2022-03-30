@@ -1,0 +1,88 @@
+name: "Категории"
+size: 54
+type: CATEGORIES
+items:
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item:
+      material: STAINED_GLASS_PANE
+      data: 7
+      name: "&e"
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 18
+      - 27
+      - 17
+      - 26
+      - 35
+      - 36
+      - 44
+      - 45
+      - 46
+      - 47
+      - 53
+      - 52
+      - 51
+      - 48
+      - 50
+  back:
+    type: BACK
+    item:
+      material: NETHER_STAR
+      name: "&9На главную"
+    slot: 49   
+  block:
+    type: CATEGORIES
+    category: "blocks"
+    item:
+      material: GRASS
+      name: "&9Категория: Блоки"
+      lore:
+        - "&8»&7 &7Тут есть &9%zauctionhouse_category_item_blocks% &7предметов в этой категории."
+    slot: 20
+  weapons:
+    type: CATEGORIES
+    category: "weapons"
+    item:
+      material: DIAMOND_SWORD
+      name: "&9Категория: Оружие"
+      lore:
+        - "&8»&7 &7Тут есть &9%zauctionhouse_category_item_weapons% &7предметов в этой категории."
+    slot: 21         
+  tools:
+    type: CATEGORIES
+    category: "tools"
+    item:
+      material: IRON_AXE
+      name: "&9Категория: Инструменты"
+      lore:
+        - "&8»&7 &7Тут есть &9%zauctionhouse_category_item_tools% &7предметов в этой категории."
+    slot: 22
+  potions:
+    type: CATEGORIES
+    category: "potions"
+    item:
+      material: BLAZE_ROD
+      name: "&9Категория: Зелья"
+      lore:
+        - "&8»&7 &7Тут есть &9%zauctionhouse_category_item_potions% &7предметов в этой категории."
+    slot: 23    
+  misc:
+    type: CATEGORIES
+    category: "misc"
+    item:
+      material: CHEST
+      name: "&9Категория: Разное"
+      lore:
+        - "&8»&7 &7Тут есть &9%zauctionhouse_category_item_misc% &7предметов в этой категории."
+    slot: 24    

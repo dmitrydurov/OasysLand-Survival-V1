@@ -1,0 +1,33 @@
+# Формат: "<Материал>:<Кол-во>":   level: <Уровень>   price: <Цена>
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+items:
+  "seeds:64;0":
+    level: 1
+    price: 50
+  "chorus_fruit_popped:64;0":
+    level: 1
+    price: 550
+  "wheat:64;0":
+    level: 1
+    price: 500
+  "chorus_flower:64;0":
+    level: 2
+    price: 2200
+  "wool:64;0":
+    level: 3
+    price: 600
+  "book:64;0":
+    level: 3
+    price: 2750
+  "raw_fish:64;0":
+    level: 4
+    price: 3500

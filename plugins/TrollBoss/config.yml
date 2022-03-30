@@ -1,0 +1,5 @@
+# Define if the plugin should auto-update when a new version is available
+Auto-Update: true
+language: english
+Troll-Operators: true
+Trolls: 8

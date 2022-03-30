@@ -1,0 +1,22 @@
+# KiteBoard 3
+# (C) 2015-2020
+general:
+  update-check:
+    enabled: true
+  command-aliases:
+  - kboard
+  - kb
+scoreboard:
+  enabled: true
+  compatibility:
+    enabled: false
+    interval: 50
+  pretty-numbers:
+    enabled: true
+    number: 1
+group-refresh:
+  enabled: true
+  interval: 50
+  async: true
+tablist:
+  enabled: false

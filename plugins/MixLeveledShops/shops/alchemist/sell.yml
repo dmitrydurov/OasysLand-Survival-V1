@@ -1,0 +1,42 @@
+# Формат:
+# "<Материал>:<Кол-во>":
+#   level: <Уровень>
+#   price: <Цена>
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+items:
+  "rotten_flesh:64;0":
+    level: 1
+    price: 460
+  "spider_eye:64;0":
+    level: 1
+    price: 600
+  "redstone:64;0":
+    level: 1
+    price: 900
+  "nether_wart_block:32;0":
+    level: 1
+    price: 6500
+  "red_nether_brick:64;0":
+    level: 1
+    price: 750
+  "ghast_tear:1;0":
+    level: 1
+    price: 2000
+  "dragons_breath:32;0":
+    level: 1
+    price: 1000
+  "cactus:64;0":
+    level: 1
+    price: 500
+  "mycel:64;0":
+    level: 1
+    price: 4500

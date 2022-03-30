@@ -1,0 +1,38 @@
+currentLang: russian
+broadcastWin: true
+broadcastWinWorld: false
+holographicRanking: false
+lightnings: true
+standingLimit: true
+tpToLastLoc: false
+snowballs: false
+instantGiveShovel: false
+randomSpawn: false
+spectators: false
+noScoreboard: false
+sheepBonuses: false
+diamondSpade: false
+yamlStatistics: false
+allowShowIP: false
+allowShowIPAsked: false
+serverIP: McDev.Store
+disabledCommands:
+- fly
+- gamemode
+- gm
+- gmc
+- gmsp
+timer:
+  start: 120
+  blockStanding: 7
+sql:
+  tableName: spleef
+reward:
+  win: -1
+  loose: -1
+leaveItem:
+  type: BARRIER
+  data: 0
+snowballsGivenOnBlockBreak: 16
+snowballCooldown: 0
+spleef: {}

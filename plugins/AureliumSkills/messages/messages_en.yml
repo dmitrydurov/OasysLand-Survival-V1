@@ -1,0 +1,814 @@
+# Aurelium Skills message file
+abilities:
+  farming:
+    bountiful_harvest:
+      name: Обильный урожай
+      desc: '{value}% шанс получить двойной дроп\n&7  с урожая.'
+      info: '{value}% 2x Дропа'
+    farmer:
+      name: Фермер
+      desc: Зарабатывайте {value}% больше опыта собирательства.
+      info: +{value}% ОП
+    scythe_master:
+      name: Мастер мотыги
+      desc: Увеличивает урон от мотыги на {value}%
+      info: +{value}% Урон мотыги
+    geneticist:
+      name: Генетик
+      desc: Увеличивает насыщенность от\n&7  растительной пищи на {value}.
+      info: +{value} Насыщенность
+    triple_harvest:
+      name: Тройной урожай
+      desc: '{value}% шанс получить тройной дроп\n&7  с уражая.'
+      info: '{value}% 3x Дропа'
+  foraging:
+    lumberjack:
+      name: Лесоруб
+      desc: '{value}% шанс получить двойной дроп\n&7  с рубки дерева.'
+      info: '{value}% 2x Дропа'
+    forager:
+      name: Собиратель
+      desc: Зарабатывайте {value}% больше опыта собирательства.
+      info: +{value}% ОП
+    axe_master:
+      name: Мастер Топора
+      desc: Увеличивает урон от топоров на {value}%
+      info: +{value}% Урона топора
+    valor:
+      name: Значение
+      desc: Даёт +{value} силы пока в руке\n&7  топор
+      info: +{value} Силы
+    shredder:
+      name: Измельчитель
+      desc: '{value}% шанс нанести тройную стойкость\n&7  урона от топора.'
+      info: '{value}% 3x Повреждение прочности'
+  mining:
+    lucky_miner:
+      name: Удачливый шахтёр
+      desc: '{value}% шанс получить двойной дроп\n&7  с руд.'
+      info: '{value}% 2x Дропа'
+    miner:
+      name: Шахтёр
+      desc: Зарабатывайте {value}% больше опыта шахтёра.
+      info: +{value}% ОП
+    pick_master:
+      name: Мастер шахтёр
+      desc: Даёт {value}% больше урона кирке.
+      info: +{value}% Урон кирки
+    stamina:
+      name: Стамина
+      desc: Даёт +{value} Стойкость пока\n&7  держите кирку
+      info: +{value} Стойкость
+    hardened_armor:
+      name: Закалённая броня
+      desc: '{value}% шанс не потерять\n&7  прочность брони.'
+      info: '{value}% Отсутсвия'
+  fishing:
+    lucky_catch:
+      name: Удачливый рыбак
+      desc: '{value}% шанс получить двойной дроп\n&7  с рыболовства.'
+      info: '{value}% 2x Дропа'
+    fisher:
+      name: Рыболов
+      desc: Зарабатывайте {value}% больше опыта рыболовства
+      info: +{value}% ОП
+    treasure_hunter:
+      name: Охотник за сокровищами
+      desc: '{value}% шанс получить редкий\n&7  лут во время рыболовства.'
+      info: '{value}% Редкий лут'
+    grappler:
+      name: Гаплер
+      desc: Притягивайте с {value}% скоростью.
+      info: +{value}% Скорость притягивания
+    epic_catch:
+      name: Эпический рыболов
+      desc: '{value}% шанс получить эпический\n&7  лут во время рыболовства.'
+      info: '{value}% Эпический лут'
+  excavation:
+    metal_detector:
+      name: Металоискатель
+      desc: '{value}% шанс получить редкий лут во время раскопок.'
+      info: '{value}% Редкий лут'
+    excavator:
+      name: Экскаватор
+      desc: Зарабатывайте {value}% больше опыта Excavation XP
+      info: +{value}% ОП
+    spade_master:
+      name: Мастер лопаты
+      desc: Даёт {value} больше урона от лопаты.
+      info: +{value}% Урона лопаты
+    bigger_scoop:
+      name: Большой совок
+      desc: '{value}% шанс получить тройной дроп во время раскопок.'
+      info: '{value}% 3x Дроп'
+    lucky_spades:
+      name: Лаки Пики
+      desc: '{value}% шанс получить эпический лут во время раскопок.'
+      info: '{value}% Эпический лут'
+  archery:
+    crit_chance:
+      name: Шанс крита
+      desc: +{value}% шанс нанести критический удар.
+      info: +{value}% Шанс крита
+    archer:
+      name: Лучник
+      desc: Зарабатывайте {value}% больше опыта лучника.
+      info: +{value}% ОП
+    bow_master:
+      name: Мастер лука
+      desc: Даёт {value}% больше урона от лука.
+      info: +{value}% Урон лука
+    piercing:
+      name: Пронзительность
+      desc: '{value}% шанс пронзить стрелой\n&7  при попадании по мобу.'
+      info: '{value}% Шанс пронзить'
+    stun:
+      name: Оглушительность
+      desc: '{value}% шанс уменьшает скорость\n&7  противника на 20%, на 2 секунды.'
+      info: '{value}% Шанс оглушения'
+  defense:
+    shielding:
+      name: Экранирование
+      desc: Уменьшайте получаемый урон {value}%\n&7  пока вы в присяде.
+      info: -{value}% Входящий урон в присяде
+    defender:
+      name: Защитник
+      desc: Зарабатывайте {value}% больше опыта защиты
+      info: +{value}% ОП
+    mob_master:
+      name: Мастер мобов
+      desc: Снижает получаемый урон по мобов на {value}%
+      info: -{value}% Получаемый урон от мобов
+    immunity:
+      name: Иммунитет
+      desc: '{value}% шанс снизить урон\n&7  от атак противника.'
+      info: '{value}% Иммунитет'
+    no_debuff:
+      name: Без дебафов
+      desc: '{value}% шанс не получить\n&7  вредоносные эффекты.'
+      info: '{value}% Без дебафов'
+  fighting:
+    crit_damage:
+      name: Критический урон
+      desc: Увеличивает урон от критического удара на {value}%
+      info: +{value}% Критический урон
+    fighter:
+      name: Боец
+      desc: Зарабатывайте {value}% больше опыта бойца
+      info: +{value}% ОП
+    sword_master:
+      name: Мастер меча
+      desc: Даёт {value}% больше урона от меча.
+      info: +{value}% Урон меча
+    first_strike:
+      name: Похоронный удар
+      desc: Даёт {value}% больше урона при ударе кулаком.
+      info: +{value}% Похоронного удара
+      dealt: '&cВы сделали похоронный удар!'
+    bleed:
+      name: Кровотечение
+      desc: '{value}% шанс заставить врага истекать кровью\n&7  3 тика, теряя {value_2}
+        здоровья при тике.'
+      info: '{value}% Шанс нанести, {value_2} урон'
+      enemy_bleeding: '&cПротивник истекает кровью!'
+      self_bleeding: '&cВы истекаете кровью!'
+      stop: '&7Кровотечение остановилось'
+  endurance:
+    anti_hunger:
+      name: Анти голод
+      desc: '{value}% chance to stop hunger loss.'
+      info: '{value}% No Hunger Loss'
+    runner:
+      name: Бегун
+      desc: Даёт {value} больше очко выносливости.
+      info: +{value}% XP
+    golden_heal:
+      name: Золотое ХП
+      desc: Увеличивает эффект регенерации\n&7  на {value}%
+      info: +{value}% Эффект
+    recovery:
+      name: Восстановление
+      desc: Увеличивает естественную регенерацию, когда\n&7  при менее чем половине
+        здоровья {value}%
+      info: +{value}% Лоу ХП регенерация
+    meal_steal:
+      name: Кража еды
+      desc: '{value}% шанс украсть 1 очко голода\n&7  когда атакуете противника.'
+      info: '{value}% Украсть очко еды'
+  agility:
+    light_fall:
+      name: Легкое падение
+      desc: Reduces all fall damage by {value}%
+      info: -{value}% Fall Damage
+    jumper:
+      name: Прыгун
+      desc: Зарабатывайте {value}% больше опыта Agility XP
+      info: +{value}% XP
+    sugar_rush:
+      name: Сахарный всплеск
+      desc: Consumed and splashed speed and jump boost\n&7  potions last {value}%
+        longer.
+      info: '{value}% Longer Speed'
+    fleeting:
+      name: Мимолетный
+      desc: Gain +{value}% movement speed when below 20% health
+      info: +{value}% Speed
+      start: '&7You have gained a fleeting speed boost! &7(+{value}% Speed)'
+      end: '&7Fleeting speed boost has worn off'
+    thunder_fall:
+      name: Падение грома
+      desc: Когда вы крадетесь при падении, у вас {value}% шанс\n&7  нанести {value_2}%
+        урона мобам в радиусе\n&7  3х блоков
+      info: '{value}% Шанс, {value_2}% урона'
+  alchemy:
+    alchemist:
+      name: Алхимик
+      desc: Зелья, которые вы варите, имеют {value}% длинее\n&7  действие.
+      info: +{value}% Действие зелья
+      lore: '&c(+{duration})'
+    brewer:
+      name: Зельевар
+      desc: Зарабатывайте {value}% больше опыта алхимии
+      info: +{value}% ОП
+    splasher:
+      name: Разбрызгиватель
+      desc: Зелья, которые вы выбрасываете {value}% длинее\n&7  продолжительность
+        для каждого затронутого игрока.
+      info: +{value}% Длительность/Игрок
+    lingering:
+      name: Затяжной
+      desc: Затяжные зелья естественным образом разлагаются {value}%\n&7  медленнее
+        и распад {value_2}% меньше на затронутый объект.
+      info: -{value}% Натуральный, -{value_2}% Распад сущности
+    wise_effect:
+      name: Эффект мудрости
+      desc: Получайте {value} очки мудрости за каждый\n&7  уникальный эффект.
+      info: +{value} Мудрость/Эффект
+  enchanting:
+    xp_convert:
+      name: Преобразователь опыта
+      desc: Зарабатывайте 1 опыт Minecraft за каждый {value}\n&7  навык ОП, который
+        вы получаете.
+      info: 1 ОП/{value} Уровень скила
+    enchanter:
+      name: Зачарователь
+      desc: Зарабатывайте {value}% больше опыта зачарования.
+      info: +{value}% ОП
+    xp_warrior:
+      name: Защитник опыта
+      desc: Мобов которых вы убиваете, имеют шанс {value}%\n&7  на дроп двойного опыта.
+      info: '{value}% 2x Опыта с мобов'
+    enchanted_strength:
+      name: Зачарованная сила
+      desc: Получайте {value} Силы за каждое\n&7  зачарование предмета.
+      info: '{value} Сила/Чары'
+    lucky_table:
+      name: Удачный стол
+      desc: Предметы, которые вы зачаровываете с помощью стола\n&7  зачарования имеют
+        шанс {value}% на\n&7  увеличение если не максимальный уровень.
+      info: '{value}% Шанс улучшения для чар'
+  healing:
+    life_essence:
+      name: Жизненная эсенция
+      desc: Мгновенные зелья здоровья исцеляют {value}% больше.
+      info: +{value}% Мгновенно здоровье
+    healer:
+      name: Хилер
+      desc: Зарабатывайте {value}% больше опыта регенерации.
+      info: +{value}% ОП
+    life_steal:
+      name: Вампир
+      desc: Вылечите себя на {value}% от вашего максимального здоровья\n&7  при убийстве
+        моба или игрока.
+      info: Кража {value}% Здоровья
+    golden_heart:
+      name: Золоте сердце
+      desc: Шанс урона при поглощении\n&7  уменьшается на {value}%
+      info: -{value}% Урона при поглощении
+    revival:
+      name: Ангел
+      desc: Получайте &c+{value} Здоровья &7и &c+{value_2} регенерации\n&7  на 30
+        секунд после каждого возраждения.
+      info: +{value} Здоровье, +{value_2} регенерация
+      message: '&7YТы получил бонус к возрождению на 30 секунд! &7(&c+{value} Здоровье,
+        &c+{value_2} регенерация&7)'
+  forging:
+    disenchanter:
+      name: Разочарователь
+      desc: Получайте {value}% больше опыта при разочаровании\n&7  предметов используя
+        точильный камень.
+      info: +{value}% Опыт точильного камня
+    forger:
+      name: Ковка
+      desc: Зарабатывайте {value}% больше опыта ковки.
+      info: +{value}% ОП
+    repairing:
+      name: Починка
+      desc: Ремонт предметов на наковальне с использованием необработанного\n&7  материала,
+        из которого они были изготовлены.\n&7  {value}% больше прочности.
+      info: +{value}% Починки наковальни
+    anvil_master:
+      name: Мастер наковальни
+      desc: Увеличивает максимальную стоимость ремонта наковальни.\n&7  пока не стало
+        слишком дорого {value}.
+      info: '{value} Максимальная стоимость'
+    skill_mender:
+      name: Чинитель
+      desc: Получая опыт скила, вы имеете шанс {value}% на починку\n&7  предметов
+        брони и текущего предмета с\n&7  зачарованиями починки и прочности.
+      info: '{value}% Шанс починки'
+acf:
+  core:
+    permission_denied: '&cУ вас недостаточно прав!'
+    permission_denied_parameter: '&cУ вас недостаточно прав!'
+    error_generic_logged: '&cОшибка выполнения!'
+    unknown_command: '&cНеизвестная команда, воспользуйтесь командой &7/sk help'
+    invalid_syntax: '&7Использование: &7{command} &c{syntax}'
+    error_prefix: '&cОшибка: {message}'
+    error_performing_command: '&cОшибка выполнения!'
+    info_message: '{message}'
+    please_specify_one_of: '&cОшибка: укажите одно из (&7{valid}&c)'
+    must_be_a_number: '&cОшибка: {num} должно быть числом.'
+    must_be_min_length: '&cОшибка: Слишком короткий текст, минимальный размер {min}
+      символов.'
+    must_be_max_length: '&cОшибка: Слишком большой текст, максимальный размер {min}
+      символов.'
+    please_specify_at_most: '&cОшибка: Пожалуйста, укажите значение не более {max}.'
+    please_specify_at_least: '&cОшибка: Укажите значение не менее {min}.'
+    not_allowed_on_console: '&cОшибка: Невозможно использовать из консоли.'
+    could_not_find_player: '&cОшибка: Неизветный игрок: &7{search}'
+    no_command_matched_search: '&cНету подкоманд &7{search}.'
+    help_page_information: '&c - Показываю страницу &c{page} &cиз &c{totalpages} &c(&7{results}&c
+      результатов).'
+    help_no_results: '&cОшибка: Нету больше результатов.'
+    help_header: '&7=== &cПомощь &c{commandprefix}{command}&7 ==='
+    help_format: '&c{commandprefix}{command} &c{parameters} &7{separator} {description}'
+    help_detailed_header: '&7=== &cОтображение подробной справки для &c{commandprefix}{command}&7
+      ==='
+    help_detailed_command_format: '&c{command} &c{parameters} &7{separator} {description}'
+    help_detailed_parameter_format: '&c{syntaxorname}: &7{description}'
+    help_search_header: '&7=== &cРезультаты поиска для &c{commandprefix}{command}
+      {search}&7 ==='
+  minecraft:
+    invalid_world: '&cОшибка: Этого мира не существует.'
+    you_must_be_holding_item: '&cОшибка: You must be holding an item in your main
+      hand.'
+    player_is_vanish_confirm: '&7Предупреждение: &c{vanished} &7сейчас использует
+      ванишь!\n&7Для подтверждеия своего действия добавьте &c:confirm &7в конец ника.\n&7Пример:
+      {vanished}:confirm'
+    username_too_short: '&cОшибка: Ник слишком короткий.'
+    is_not_a_valid_name: '&cОшибка: &7{name} &cневерный ник.'
+    multiple_players_match: '&cОшибка: Много игроков было найдено по запросу &c{search}
+      &7({all})&c, укажите кого-то конкретного.'
+    no_player_found_server: '&cИгрок под ником &7{search} &cсейчас не на сервере.'
+    no_player_found_offline: '&cИгрок под ником &7{search}&c сейчас оффлайн.'
+    no_player_found: '&cИгрок под ником &7{search}&c не найден.'
+    location_please_specify_world: '&cОшибка: Пожалуйста укажите мир, пример: &7world:x,y,z.'
+    location_please_specify_xyz: '&cОшибка: Пожалуйста укажите локацию, пример: &7world:x,y,z.'
+    location_console_not_relative: '&cОшибка: Консоль не может использовать относительные
+      координаты для определения местоположения.'
+action_bar:
+  idle: '&c{hp}/{max_hp} {hp_unit}                &c{mana}/{max_mana} {mana_unit}'
+  xp: '&c{hp}/{max_hp} {hp_unit}  &c+{xp_gained} {skill} {xp_unit} &7({current_xp}/{level_xp}
+    {xp_unit})  &c{mana}/{max_mana} {mana_unit}'
+  xp_removed: '&c{hp}/{max_hp} {hp_unit}  &c-{xp_removed} {skill} {xp_unit} &7({current_xp}/{level_xp}
+    {xp_unit})  &c{mana}/{max_mana} {mana_unit}'
+  maxed: '&c{hp}/{max_hp} {hp_unit}  &c+{xp_gained} {skill} {xp_unit} &7(МАКСИМУМ)  &c{mana}/{max_mana}
+    {mana_unit}'
+  maxed_removed: '&c{hp}/{max_hp} {hp_unit}  &c-{xp_removed} {skill} {xp_unit} &7(МАКСИМУМ)  &c{mana}/{max_mana}
+    {mana_unit}'
+  ability: '{message}'
+  boss_bar_xp: '&c{skill} {level} &7({current_xp}/{level_xp} {xp_unit})'
+  boss_bar_maxed: '&c{skill} {level} &7(МАКСИМУМ)'
+commands:
+  prefix: '&7[&cMixSkills&7] '
+  armor:
+    modifier:
+      add:
+        added: '{color}{stat} &7модификатор с уровнемс &c{value} &7был добавлен на
+          ваш предмет'
+        already_exists: '&7Модификатор брони {color}{stat} &7уже имеется! Удалите
+          его с помощью /sk armor modifier remove'
+        lore: '&7{stat}: {color}+{value}'
+        lore_subtract: '&7{stat}: {color}-{value}'
+      remove:
+        does_not_exist: '&7YВаш предмет не имеет модификатора {color}{stat}&7!'
+        removed: '{color}{stat} &7был убран с вашего предмета'
+      list:
+        header: '&7Найдены модификаторы брони:'
+        entry: '  {color}{stat}&7 - {value}'
+      removeall:
+        removed: '&7Все модификаторы брони были удалены с вашего предмета.'
+    requirement:
+      add:
+        added: '&c{skill}&7 требование к броне с уровнем &c{level}&7 был добавлен
+          в ваш пердмет'
+        already_exists: '&7Предмет уже имеет &c{skill}&7 требование брони! Сначала
+          удалите его с помощью &c/sk armor requirement remove'
+        lore: '&cНужно &c{skill} {level}'
+      remove:
+        does_not_exist: '&7У вашего предмета нет &c{skill}&7 требование брони!'
+        removed: '&c{skill}&7 требование брони было удалено из вашего предмета'
+      list:
+        header: '&7Найдены требования к броне:'
+        entry: '  &c{skill} &7- &c{level}'
+      removeall:
+        removed: '&7С вашего предмета сняты все требования к броне.'
+      equip: '&7Вы не соответствуете требованиям для экипировки этого предмета!'
+      entry: '&b{skill} {level}&7, '
+  item:
+    modifier:
+      add:
+        added: '{color}{stat} &7модификатор с уровнем &c{value} &7был добавлен на
+          ваш предмет.'
+        already_exists: '&7Модификатор предмета со статистикой {color}{stat} &7уже
+          есть на вашей броне! Сначала удалите его с помощью /sk item modifier remove'
+        lore: '&7{stat}: {color}+{value}'
+        lore_subtract: '&7{stat}: {color}-{value}'
+      remove:
+        does_not_exist: '&7Ваш предмет не имеет модификатора {color}{stat}&7!'
+        removed: '{color}{stat} &7модификатор был убран с вашего предмета'
+      list:
+        header: '&7Найдены модификаторы предметов:'
+        entry: '  {color}{stat}&7 - {value}'
+      removeall:
+        removed: '&7Все модификаторы предметов были удалены из вашего предмета'
+    requirement:
+      add:
+        added: '&c{skill}&7 требование к элементу с уровнем &c{level}&7 был добавлен
+          в ваш товар'
+        already_exists: '&7Предмет уже имеет &c{skill}&7 требование к позиции! Сначала
+          удалите его с помощью &c/sk item requirement remove'
+        lore: '&cТребует &c{skill} {level}'
+      remove:
+        does_not_exist: '&7У вашего предмета нет &c{skill}&7 требования!'
+        removed: '&c{skill}&7 требование к предмету было удалено из него'
+      list:
+        header: '&7Найдены требования к предмету:'
+        entry: '  &c{skill} &7- &c{level}'
+      removeall:
+        removed: '&7Все требования к предмету были удалены из него'
+      use: '&7Вы не соответствуете требованиям для использования этого предмета!'
+      entry: '&b{skill} {level}&7, '
+    give:
+      sender: '&fGave &b{amount}x {key} &fto {player}'
+      receiver: '&fYou were given &b{amount}x {key}'
+    register:
+      registered: '&fRegistered held item to key {key}'
+      already_registered: '&eThere is already an item registered to key &f{key}&e,
+        use &f/skills item unregister &eto unregister it first'
+      no_spaces: '&eItem key cannot contain spaces!'
+    unregister:
+      unregistered: '&fUnregistered item with key {key}'
+      not_registered: '&eThere is no item registered with key {key}'
+  lang:
+    set: '&7Язык установлен на &c{lang}'
+    not_found: '&7Язык не найден'
+  mana:
+    display: '&7Ваша {mana_unit}: &c{current}/{max}'
+    display_other: '&7{mana_unit} из {player}: &c{current}/{max}'
+    add: '&7Добавлено &c{amount} {mana_unit} &7игроку &c{player}'
+    remove: '&7Удалено &c{amount} {mana_unit} &7from player &c{player}'
+    set: '&7Установлена игроку &c{player} &7на &c{amount} {mana_unit}'
+    at_least_zero: '&7{mana_unit} должно быть больше или равно 0!'
+    console_specify_player: '&7Укажите игрока!'
+  modifier:
+    add:
+      added: '{color}{stat} &7уровень модификатора &c{value} &7 с названием &7{name}
+        &7добавлено игроку &c{player}'
+      already_exists: '&7Модификатор с название {name} уже имеется у игрока &c{player}&7!
+        Удалите его с помощью &c/sk modifier remove {игрок} {название}'
+    remove:
+      not_found: '&7Модификатор {name} не найден у игрока &c{player}'
+      removed: '&7Модификатор &c{name} &7удалён у игрока &c{player}'
+    list:
+      all_stats_header: '&7Модификаторы характеристик для игрока &c{player}:'
+      all_stats_entry: '  &7{name} - {color}{stat} &7Уровень &c{value}'
+      one_stat_header: '&7Статистика модификатора ({color}{stat}&7) игрока &c{player}:'
+      one_stat_entry: '  &7{name} - {color}{stat} &7Уровень &c{value}'
+      players_only: '&7Укажите ник игрока!'
+    removeall:
+      removed_all_stats: '&7Удалено &c{num} &7статистики со всех модификаторов игрока
+        &c{player}'
+      removed_one_stat: '&7Удалено &c{num}&7 с 7Модификатора {color}{stat} &7у игрока
+        &c{player}'
+      players_only: '&7Укажите ник игрока!'
+  multiplier:
+    list: '&7Увелечитель опыта игрока &c{player}&7: &c{multiplier}x / +{percent}%'
+    players_only: '&7Укажите ник игрока'
+  rank:
+    header: '&c&lВаш рейтинг навыков'
+    power: '&7Сила &7(Всех скилов): &7#{rank} из {total}'
+    entry: '&c{skill}&7: &7#{rank} из {total}'
+  reload: '&cКонфиг перезагружен!'
+  save:
+    already_saving: '&7Данные уже сохраняются!'
+    mysql_not_enabled: '&7MySQL не был включен при запуске сервера, вместо этого сохранялось
+      в файл!'
+    saved: '&cДанные о навыках сохранены!'
+  skill:
+    reset:
+      reset_all: '&7Все скилы для были сброшены до &c1 уровня &7для игрока &c{player}'
+      reset_skill: '&7Скил &c{skill} &7был сброшен до &c1 уровня &7для игрока &c{player}'
+    setall:
+      at_least_one: '&7Уровень должен быть как минимум 1!'
+      set: '&7Все скилы были установлены на &c{level} ур. &7для игрока &c{player}'
+    setlevel:
+      at_least_one: '&7Уровень должен быть не менее 1!'
+      set: '&7Для скила &c{skill} &7был установлен &c{level} ур. &7у игрока &c{player}'
+  toggle:
+    enabled: '&cПанель действий была включена'
+    disabled: '&cПанель действий была отключена'
+    not_enabled: '&7Фишка не работает!'
+  top:
+    power_entry: '&7{rank}. &c{player} &7- {level}'
+    power_header: '&7--==&c&lТаблица лидеров всех навыков&7==--'
+    power_header_page: '&7--==&c&lТаблица лидеров всех навыков &7(Страница {page})==--'
+    skill_header: '&7--==&c&l{skill} Лидеров&7==--'
+    skill_header_page: '&7--==&c&l{skill} Лидеров &7(Страница {page})==--'
+    skill_entry: '&7{rank}. &c{player} &7- {level}'
+    usage: '&7Использование: &c/sk top &7<страница> &7или &c/sk top &7[скилл] <страница>'
+    average_header: '&f--==&b&lSkill Average Leaderboard&f==--'
+    average_header_page: '&f--==&b&lSkill Average Leaderboard &f(Page {page})==--'
+    average_entry: '&f{rank}. &b{player} &f- {level}'
+  updateleaderboards:
+    already_updating: '&7Статистика уже обновляетсчя!'
+    updated: '&cСтатистика обновлена!'
+  xp:
+    add: '&7Добавлено &c{amount} {skill} &7опыта игроку &7{player}'
+    set: '&7Установлено &c{skill} &7опыта для игрока &7{player} &7на {amount}'
+    remove: '&7Убрано &c{amount} {skill} &7опыта у игрока &c{player}'
+  unknown_skill: '&7Неизвестный скилл!'
+  no_profile: '&7Игрок не имеет профиля!'
+  backup:
+    load:
+      confirm: '&cLoading a backup will revert all skill data of players. This action
+        is permanent and cannot be undone. You may want to save a backup before loading
+        one. Type the command again to confirm this action'
+      loading: '&fLoading backup...'
+      loaded: '&aSuccessfully loaded backup'
+      error: '&cError loading backup: {error}'
+      must_be_yaml: '&eFile must be a .yml file!'
+      file_not_found: '&eA backup of this file name does not exist in the backups
+        folder!'
+    save:
+      saving: '&fSaving backup...'
+      saved: '&fBacked up {type} data as {file}'
+      error: '&cError backing up {type} data! See error in console/below for details'
+  claimitems:
+    no_items: '&eYou have no items to claim'
+leveler:
+  title: '&c{skill} Уровень повышен'
+  subtitle: '&c{old} ➜ {new}'
+  level_up: '&c&m----------------------------------------\n&r &cУровень скила повышен!
+    &c&l{skill} &7{old}➜&c&l{new}\n \n &cНаграда:{stat_level}{ability_unlock}{ability_level_up}{mana_ability_unlock}{mana_ability_level_up}{money_reward}\n&c&m----------------------------------------'
+  stat_level: \n  {color}+{num}{symbol} {stat}
+  ability_unlock: \n  &cСпособность разблокирована! &c&l{ability} &7был разблокирован
+  ability_level_up: \n  &cУровень способности повышен! &c&l{ability} &7теперь имеет
+    уровень &c{level}
+  mana_ability_unlock: \n  &cСпособность маны разблокирована! &c&l{mana_ability} &7был
+    разблокирован
+  mana_ability_level_up: \n  &cУровень способности маны повышен! &c&l{mana_ability}
+    &7теперь имеет уровень &c{level}
+  money_reward: \n  &c${amount}
+  unclaimed_item: '&cYou have unclaimed items because your inventory was full, use
+    &e/skills claimitems &cto claim them'
+menus:
+  common:
+    close: '&cЗакрыть'
+    level: '&7Уровень: &c{level}'
+    progress_to_level: '&7Прогресс до уровня &c{level}&7: &c{percent}%\n  &c{current_xp}/{level_xp}
+      {xp_unit}'
+    max_level: '&cМАКСИМАЛЬНЫЙ УРОВЕНЬ'
+    ability_levels: '\n&7Уровень способностей:\n  {ability_1}\n  {ability_2}\n  {ability_3}\n  {ability_4}\n  {ability_5}\n '
+    ability_level_entry: '&c{ability} {level} &7({info})'
+    ability_level_entry_locked: '&7&m{ability}'
+    primary_stat: '&7Основая статистика: {color}{stat}'
+    secondary_stat: '&7Вторичная статистика: {color}{stat}'
+    mana_ability: '\n&d&lСпосбность Мана &9{mana_ability} {level}\n &7Действие: &c{duration}сек.
+      &7Цена маны: &c{mana_cost} &7Задержка: &7{cooldown}s\n '
+    stats_leveled: '\n&7Stats Leveled: {stats}\n '
+  skills_menu:
+    skills_menu_title: Ваши скилы
+    your_skills: '&cСкилы - &c{player}'
+    your_skills_desc: '&7Повышайте уровень скилов выполняя\n&7различные задания, чтобы
+      получать определённый\n&7буст к ним и различным навыкам.'
+    your_skills_hover: '&7Чтобы получить дополнительную информацию, курсор на навык!'
+    your_skills_click: '&7Нажмите чтобы увидеть прогресс скила!'
+    skill_click: '&7Нажмите чтобы просмотреть прогресс скила!'
+    skill_locked: '&cУ вас недостаточно прав для просмотра этого скила!'
+  level_progression_menu:
+    level_progression_menu_title: '{skill} Уровни - Страница {page}'
+    your_ranking: '&7Рейтинг ваших навыков'
+    rank_out_of: '&7Ваш ранг &c{rank}&7 из {total} игроков'
+    rank_percent: '&7Вы в топе &c{percent}%&7 игроков'
+    back: '&cНазад'
+    back_click: '&7Назад в меню навыков'
+    next_page: '&cСледующая страница'
+    next_page_click: '&7Нажмите для перехода не следующую страницу'
+    previous_page: '&cПредыдущая страница'
+    previous_page_click: '&7Нажмите для перехода на предыдущую страницу'
+    level_unlocked: '&cУровень {level}'
+    level_in_progress: '&7Уровень {level}'
+    level_locked: '&cУровень {level}'
+    level_number: '&7Уровень &7{level}'
+    unlocked: '&cОТКРЫТ'
+    in_progress: '&2В ПРОЦЕССЕ'
+    locked: '&cЗАКРЫТ'
+    rewards: '&7Награды: {rewards}'
+    rewards_entry: \n  {color}+{num} {symbol} {stat}
+    ability_unlock: '\n&c{ability} &c&lСпосбность разблокирована\n&7  {desc}\n '
+    ability_level: '\n&c{ability} {level}\n&7  {desc}\n '
+    mana_ability_unlock: '\n&9{mana_ability} &d&lСпособность маны разблокирована\n&7  {desc}\n '
+    mana_ability_level: '\n&9{mana_ability} {level}\n&7  {desc}\n '
+    progress: '&7Прогресс: &c{percent}%\n  &c{current_xp}/{level_xp} {xp_unit}'
+    money_reward: \n  &a${amount}
+  stats_menu:
+    stats_menu_title: Ваша статистика
+    player_stat_entry: ' {color}{symbol} {stat} &7{level}'
+    primary_skills_two: '&7Основные скилы: &7{skill_1}, {skill_2}'
+    primary_skills_three: '&7Основные скилы: &7{skill_1}, {skill_2}, {skill_3}'
+    secondary_skills_two: '&7Вторичные скилы: &7{skill_1}, {skill_2}'
+    secondary_skills_three: '&7Вторичные скилы: &7{skill_1}, {skill_2}, {skill_3}'
+    your_level: '&7Ваш уровень: {color}{level}'
+    attack_damage: '&4+{value}% Урона'
+    hp: '&c+{value} {hp_unit}'
+    saturated_regen: '&c+{value} Насыщенния'
+    full_hunger_regen: '&c+{value} Регенерация голода'
+    almost_full_hunger_regen: '&c+{value} Почти полное восстановление голода'
+    mana_regen: '&c+{value} Регенерация маны'
+    luck: '&2+{value} Удача'
+    double_drop_chance: '&2Двойной дроп: {value}%'
+    xp_gain: '&9+{value}% {xp_unit} Gain'
+    anvil_cost_reduction: '&9AСтоимость починки: {value}%'
+    max_mana: '&9Максимальная мана: {value}'
+    incoming_damage: '&5-{value}% Входящий урон'
+    skills: '\n&7Skills: &f{skills}'
+  unclaimed_items:
+    unclaimed_items_title: Claim Items
+    inventory_full: '&eYou do not have enough space in your inventory to claim that
+      item'
+    click_to_claim: '&eClick to claim!'
+mana_abilities:
+  replenish:
+    name: Пополнитель
+    desc: '&7Повторно сажает собранную культуру \n&7  действует {value} сек. &7[ПКМ
+      мотыгой\n&7  для активации]'
+    raise: '&7Вы подняли свою мотыгу'
+    lower: '&7Вы опустили свою мотыгу'
+    start: '&cПополнитель активирован! &7(-{mana} {mana_unit})'
+    end: '&7Пополнитель завершен'
+  treecapitator:
+    name: Скоросной Лесоруб
+    desc: '&7Ломате всё дерево за 1 удар \n&7  действует {value} сек. &7[ПКМ топорм\n&7  для
+      активации]'
+    raise: '&7Вы подняли свой топор'
+    lower: '&7Вы опустили свой топор'
+    start: '&cСкоросной Лесоруб активирован! &7(-{mana} {mana_unit})'
+    end: '&7TСкоросной Лесоруб завершен'
+  speed_mine:
+    name: Скоросной шахтёр
+    desc: '&7Даёт спешку 10 на {value} сек.\n&7  [ПКМ киркой\n&7  для активации]'
+    raise: '&7Вы подняли свою кирку'
+    lower: '&7Вы опустили свою кирку'
+    start: '&cСкоросной шахтёр активирован! &7(-{mana} {mana_unit})'
+    end: '&7Скоросной шахтёр завершен'
+  absorption:
+    name: Поглощение
+    desc: Входящий урон уменьшит ману\n&7  в 2 раза в Minecraft вместо вашего\n&7  здоровье
+      на {value} секунд. Мана не будет\n&7  регенерировать пока этот эффекти активен.\n  &7[ЛКМ
+      щитом для активации]
+    raise: '&7Вы подняли свой щит'
+    lower: '&7Вы опустили свой щит'
+    start: '&cПоглощение активировано! &7(-{mana} {mana_unit})'
+    end: '&7Поглащение завершено'
+  terraform:
+    name: Тераформация
+    desc: Мгновенно ломайте блоки в радиусе 4 блоков\n&7  на вашем уровне {value}
+      секунд. Вы\n&7  должны использовать лопату а также\n&7  быть одинакового типа.\n&7  &7[ПКМ
+      ПО лопате для активации]
+    raise: '&7Вы поднимаете лопату'
+    lower: '&7Вы опускаете лопату'
+    start: '&cТераформация активирована! &7(-{mana} {mana_unit})'
+    end: '&7Тераформация завершена'
+  sharp_hook:
+    name: Острый крюк
+    desc: Даёт {value} урона, захваченным существам\n&7  при щелчке левой кнопкой
+      мыши удочкой
+    use: '&cИспользуется острый крючок! &7(-{mana} {mana_unit})'
+    menu: '\n&d&lСпособность маны &9{mana_ability} {level}\n &7Урон: &c{value} &7Цена
+      маны: &c{mana_cost} &7КД: &7{cooldown} сек.\n '
+  charged_shot:
+    name: Заряженный выстрел
+    desc: Стрелы, которые вы стреляете, нанесут больше урона\n&7  в зависимости от
+      того, насколько сильно был натянут лук,\n&7  потребление маны в процессе. Делает
+      {value}% больше\n&7  урон за израсходованную ману. &7[ЛКМ\n&7  по луку для переключения
+      режима заряженного выстрела]
+    enable: '&7Режим заряженного выстрела теперь включен'
+    disable: '&7Режим заряженного выстрела отключен.'
+    shoot: '&cИспользованный заряженный выстрел! &d+{percent}% УРОН &7(-{mana} {mana_unit})'
+    menu: '\n&d&lСпособность маны &9{mana_ability} {level}\n &7Урон: &c+{value}% /
+      Мана &7Максимальная стоиомсть: &c{mana_cost}\n '
+  not_ready: '&cСпособность не готова! &7({cooldown} сек.)'
+  not_enough_mana: '&7Недостаточно маны! &7({mana} {mana_unit} нужно, у вас есть {current_mana}/{max_mana})'
+  lightning_blade:
+    name: Lightning Blade
+    desc: Increases attack speed by {value}% for {duration} seconds.\n&e  [Right click
+      sword and attack mob to activate]
+    raise: '&7You ready your sword'
+    lower: '&7You lower your sword'
+    start: '&6Lightning Blade Activated! &7(-{mana} {mana_unit})'
+    end: '&7Lightning Blade has worn off'
+    menu: '\n&d&lMana Ability &9{mana_ability} {level}\n &7Attack Speed: &c+{value}%
+      &7Duration: &a{duration}s\n &7Mana Cost: &b{mana_cost} &7Cooldown: &e{cooldown}s\n '
+skills:
+  farming:
+    name: Фермерство
+    desc: '&7Собирайте уражай и получайте опыт фермера {xp_unit}'
+  foraging:
+    name: Собиратель
+    desc: '&7Срубайте деревья и получайте опыт собирательства {xp_unit}'
+  mining:
+    name: Шахтёрство
+    desc: '&7Капайте руды и получайте опыт шахтёрства {xp_unit}'
+  fishing:
+    name: Рыболовство
+    desc: '&7Ловите рыбу и получайте опыт рыболовства {xp_unit}'
+  excavation:
+    name: Капатель
+    desc: '&7Капайте лопатой и получайте опыт капателя {xp_unit}'
+  archery:
+    name: Лучник
+    desc: '&7Стреляйте по мобам и игрокам\n&7и получайте опыт лучника {xp_unit}'
+  defense:
+    name: Защитник
+    desc: '&7Получайте урон и повышайте опыт защиты {xp_unit}'
+  fighting:
+    name: Боец
+    desc: '&7Убивайте мобов и получайте\n&7опыт бойца {xp_unit}'
+  endurance:
+    name: Выносливость
+    desc: '&7Получайте очки выносливости за ходьбу {xp_unit}'
+  agility:
+    name: Ловкость
+    desc: '&7Получайте урон от падения и повышайте уровень\n&7ловкости {xp_unit}'
+  alchemy:
+    name: Алхимия
+    desc: '&7Занимайтесь варкой и получайте опыт алхимии {xp_unit}'
+  enchanting:
+    name: Зачарование
+    desc: '&7Зачаровывайте предметы и получайте\n&7очки зачарования {xp_unit}'
+  sorcery:
+    name: Колдовство
+    desc: '&7Используйте ману и получайте очки опыта колдовства {xp_unit}'
+  healing:
+    name: Лечение
+    desc: '&7Пейте различные зелья и получайте\n&7опыт лечения {xp_unit}'
+  forging:
+    name: Ковка
+    desc: '&7Пользуйтесь наковальней и получайте опыт\n&7 ковки{xp_unit}'
+stats:
+  strength:
+    name: Сила
+    desc: '&7Сила увеличивает урон\n&7от различного оружия'
+    color: '&4'
+    symbol: ➽
+  health:
+    name: Здоровье
+    desc: '&7Ваше здоровье увеличивается на {hp_unit}\n&7поэтому вы сможете дольше
+      прожить в\n&7ПВП сражениях'
+    color: '&c'
+    symbol: ❤
+  regeneration:
+    name: Регенерация
+    desc: '&7Регенерация позволит быстрее регенерировать\n&7ману и здоровье'
+    color: '&c'
+    symbol: ❥
+  luck:
+    name: Удача
+    desc: '&7Удача увеличивает шанс на получение\n&7редкого лута при ловле рыбы, убийстве
+      мобов и пр.'
+    color: '&2'
+    symbol: ☘
+  wisdom:
+    name: Мудрость
+    desc: '&7Мудрость увеличивает количество\n&7получаемого опыта а также уменьшает
+      стоиомсть\n&7ковки на наковальне'
+    color: '&9'
+    symbol: ✿
+  toughness:
+    name: Стойкость
+    desc: '&7Стойкость уменьшает количество\n&7получаемого урона.'
+    color: '&5'
+    symbol: ✦
+units:
+  mana: ☯
+  hp: ❤
+  xp: ✦
+file_version: 22
+rewards:
+  item:
+    default_menu_message: \n  {display_name}
+    default_menu_message_multiple: \n  {display_name} {amount}x
+    default_chat_message: \n  {display_name}
+    default_chat_message_multiple: \n  {display_name} {amount}x

@@ -1,0 +1,17 @@
+#Addons and Hooks
+Hooks:
+  ChestClan-Addon: true
+  Vault: true
+  PlaceholderAPI: true
+  ProtocolLib: true
+  WorldGuard: true
+  SuperVanish_PremiumVanish: false
+  BankClan-Addon: true
+  QuestClan-Addon: true
+  King-Addon: true
+  CombatLogX: false
+  DeluxeCombat: false
+  PvPManager: false
+  floodgate: false
+  Duels: false
+  HolographicDisplays: true

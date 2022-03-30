@@ -1,0 +1,9 @@
+time: 60
+redupetime: 600
+region: dupewater
+world: world
+
+title: "&9&nMcDev"
+subtitle: "&7Святая вода расстает через: &9%timer%"
+msgmeltz: "&7[&9McDev&7] &7Святая вода расстаяла, увеличь своё богатство &9/warp hole"
+msgfreeze: "&7[&9McDev&7] &7Возвращайтесь через &9%time% &7секунд на святое озеро"

@@ -1,0 +1,20 @@
+'%tm_tokens%':
+  alltime:
+    '1':
+    - lobby, 22, 134, -28
+    '2':
+    - lobby, 24, 133, -27
+    '3':
+    - lobby, 20, 133, -27
+    '5':
+    - lobby, 18, 132, -26
+    '4':
+    - lobby, 26, 132, -26
+'%statistic_player_kills%':
+  alltime:
+    '2':
+    - world, -1751, 69, 890
+    '3':
+    - world, -1751, 68, 886
+    '1':
+    - world, -1753, 70, 888

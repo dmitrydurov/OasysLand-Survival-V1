@@ -1,0 +1,24 @@
+Storage:
+  # mysql/yaml/sqlite
+  # For better performance it is recommended to use MYSQL as storage.
+  type: sqlite
+  prefix: uc_
+  mysql:
+    host: localhost
+    user: profit
+    pass: password
+    port: 3306
+    base: profit
+    #SSL is only valid for MYSQL, most servers are not necessary to use it as true.
+    useSSL: false
+    # NEW DRIVER: com.mysql.cj.jdbc.Driver
+    # OLD DRIVER: com.mysql.jdbc.Driver
+    driver: com.mysql.jdbc.Driver
+  databases:
+    clan_table: uclans-clans
+    player_table: uclans-players
+    holograms_table: uclans-holos
+    bases_table: uclans-bases
+    sync_table: uclans-sync
+    chest_info_table: uclans-chest-info
+    chest_items_table: uclans-chest-items

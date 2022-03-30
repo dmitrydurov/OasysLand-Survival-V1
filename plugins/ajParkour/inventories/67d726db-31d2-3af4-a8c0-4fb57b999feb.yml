@@ -1,0 +1,131 @@
+inventory:
+  armor:
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 154
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 10
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 154
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 18
+  - ==: org.bukkit.inventory.ItemStack
+    type: COOKIE
+    amount: 40
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    damage: 93
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 4
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    damage: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 36
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: SULPHUR
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 9
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    type: MOB_SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §aСпавнер Ведьм
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52LgDC5ILM9zSSxJ5GBgykxhYC3PLEnOAKrkB0sE5JekAhUn5hSDdONUzBOcmZMNlkwtKmZi4EgFW+DpwuDEwAAA4lIwN3gAAAA=
+      blockMaterial: MOB_SPAWNER
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 11
+  - ==: org.bukkit.inventory.ItemStack
+    type: WOOD_AXE
+  - ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+    amount: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: WOOD_PICKAXE
+    damage: 4
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+    damage: 94
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    damage: 1
+    amount: 48
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 4
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 1
+    amount: 11
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 8
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_AXE
+    damage: 117
+  - ==: org.bukkit.inventory.ItemStack
+    type: SPRUCE_WOOD_STAIRS
+    amount: 8
+  - ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+    amount: 5
+  - ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 40
+  - ==: org.bukkit.inventory.ItemStack
+    type: RAW_CHICKEN
+  - ==: org.bukkit.inventory.ItemStack
+    type: SAPLING
+    amount: 3
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 154
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 10
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 154
+  - ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 27

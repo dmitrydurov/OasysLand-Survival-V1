@@ -1,0 +1,97 @@
+prefix: "&7[&9McDev&7]"
+errors:
+    consoleError: "&cCommands can be performed only via Player!"
+    noPermissions: "&cYou are not permitted to use this command!"
+    wrongUsageOfCommand: "&cWrong usage of command!"
+
+    disabledWorld: "Календарь не может быть открыт в этом мире!"
+    noValidRangeZone: "Календарь не может быть открыт в этом месяце!"
+    closedWindow: "Подарок нельзя получать в это время, либо вы его уже получили!"
+    noPlayerInfo: "&cRequested stats were not found! Try to re-log. &7We apologize for inconveniences."
+
+    R_M_GUIException: "&cNot enough rewards! Please, contact staff to fix this problem!"
+    R_R_GUIException: "&cNot enough rewards! Please, contact staff to fix this problem!"
+
+    closedGUIs: "&cForced closure of inventory by administrator!"
+    armorStandNotFound: "&cArmorStand in your range was not found!"
+    inventory: "&cYour inventory is full! Please make a space to avoid losses!"
+success:
+    claim: "&7Подарок успешно получен!"
+    reload: "&7All required data were reloaded!"
+    armorStand: "&7ArmorStand was successfully created!"
+armorStand:
+    out: "&cNo more rewards"
+    last: "&9Last window today"
+    list:
+    - "&8Подарки"
+    - "&7New window in &8\u00BB &9{time}"
+GUI:
+    Calendar:
+        inventoryName: "&8Подарки"
+        DayState:
+            PreLocked: "Закрыто"
+            PostLocked: "Доступно"
+            UnLocked: "Получено"
+        Items:
+            EMPTY_SLOT:
+                headName: "&cИнформация"
+                lore:
+                - ""
+                - "&8\u25CF &7Получено подарков &8\u00BB &9{count}"
+                - ""
+                - "&8\u25CF &7Сегодня &8\u00BB &9{dayState}"
+                - ""
+                - "&8\u25CF &7Новый подарок через &8\u00BB &9{newWindowIn}"
+                - ""
+            WINDOW:
+                PreLocked:
+                    headName: "&cДень ещё не наступил"
+                    lore:
+                    - ""
+                    - "&8\u25CF &7День &8\u00BB &9{day}"
+                    - ""
+                    - "&8\u25CF &7Будет доступно &8\u00BB &9{date}"
+                    - ""
+                PostLocked:
+                    headName: "&aПолучено&7 или &cПросрочено"
+                    lore:
+                    - ""
+                    - "&8\u25CF &7День &8\u00BB &9{day}"
+                    - ""
+                    - "&8\u25CF &cПодарок уже получен или был просрочен!"
+                    - ""
+                UnLocked:
+                    headName: "&9Доступно!"
+                    lore:
+                    - ""
+                    - "&8\u25CF &7День &8\u00BB &9{day}"
+                    - ""
+                    - "&8\u25CF &9Нажмите чтобы забрать!"
+                    - ""
+    Multiple:
+        inventoryName: "&5Rewards"
+        Items:
+            PRESENT:
+                headName: "&2Package"
+                lore:
+                - "&8\u25CF &7Click to claim!"
+    Random:
+        inventoryName: "&5LuckyWheel"
+        Items:
+            EMPTY_SLOT:
+                headName: " "
+                lore: []
+            ARROW_SLOT:
+                headName: " "
+                lore: []
+            CLOSE_SLOT:
+                headName: " "
+                lore: []
+            START_BUTTON:
+                headName: "&2Start Button"
+                lore:
+                - "&8\u25CF &7Click to run!"
+            DISABLE_START_BUTTON:
+                headName: "&2Start Button"
+                lore:
+                - "&8\u25CF &cWheel is running!"

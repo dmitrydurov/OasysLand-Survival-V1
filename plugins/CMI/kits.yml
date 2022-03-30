@@ -1,0 +1,356 @@
+# Player should have appropriate permission node to use particular kit: cmi.kit.[kitName]
+# cmi.kit.newbie will allow to use newbie kit
+# Possible custom variables: {USERNAME} {DISPLAYNAME} {WORLDNAME} {KITNAME} {RANDOMPLAYER}
+# Edit kits ingame with /cmi kiteditor to avoid formating issues
+# Commands support specialized command format
+start:
+  CommandName: start
+  Delay: 36000
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+  Items:
+    '1':
+      type: COBBLESTONE
+      amount: 32
+    '2':
+      type: LOG
+      amount: 16
+    '3':
+      type: GLASS
+      amount: 32
+    '4':
+      type: STONE_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 1
+          DURABILITY: 1
+    '5':
+      type: STONE_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 1
+          DURABILITY: 1
+    '6':
+      type: STONE_SPADE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 1
+          DURABILITY: 1
+    '7':
+      type: BREAD
+      amount: 32
+    '8':
+      type: BUCKET
+    '9':
+      type: TORCH
+      amount: 32
+    '10':
+      type: EXP_BOTTLE
+      amount: 16
+    Helmet:
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 1
+    Chest:
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 1
+          PROTECTION_PROJECTILE: 1
+    Legs:
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 1
+    Boots:
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 1
+          DURABILITY: 1
+    OffHand:
+      type: STONE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 2
+          DURABILITY: 1
+vip:
+  CommandName: vip
+  Delay: 36000
+  Icon:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  IconOff:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  Items:
+    '1':
+      type: IRON_SPADE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 2
+          DURABILITY: 2
+    '2':
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 2
+          DURABILITY: 2
+    '3':
+      type: IRON_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 3
+          DURABILITY: 2
+    '4':
+      type: LOG
+      amount: 64
+    '5':
+      type: GLASS
+      amount: 64
+    '6':
+      type: IRON_ORE
+      amount: 16
+    '7':
+      type: HAY_BLOCK
+      amount: 16
+    '8':
+      type: CHEST
+    '9':
+      type: FURNACE
+    '10':
+      type: TORCH
+      amount: 64
+    '11':
+      type: COAL
+      amount: 64
+    '12':
+      type: EXP_BOTTLE
+      amount: 32
+    '13':
+      type: GOLDEN_APPLE
+    '14':
+      type: GRILLED_PORK
+      amount: 64
+    '15':
+      type: WORKBENCH
+    Helmet:
+      type: CHAINMAIL_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          PROTECTION_PROJECTILE: 1
+          DURABILITY: 2
+    Chest:
+      type: CHAINMAIL_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+          PROTECTION_PROJECTILE: 3
+          DURABILITY: 3
+    Legs:
+      type: CHAINMAIL_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          PROTECTION_PROJECTILE: 1
+          DURABILITY: 2
+    Boots:
+      type: CHAINMAIL_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          PROTECTION_PROJECTILE: 1
+          DURABILITY: 2
+    OffHand:
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+          FIRE_ASPECT: 1
+          DURABILITY: 2
+premium:
+  CommandName: prem
+  Delay: 36060
+  Items:
+    '1':
+      type: IRON_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 3
+          DURABILITY: 3
+    '2':
+      type: IRON_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 2
+          DURABILITY: 3
+    '3':
+      type: IRON_SPADE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DIG_SPEED: 3
+          DURABILITY: 3
+    '4':
+      type: GLASS
+      amount: 64
+    '5':
+      type: LOG
+      amount: 64
+    '6':
+      type: IRON_ORE
+      amount: 64
+    '7':
+      type: GOLD_ORE
+      amount: 16
+    '8':
+      type: WOOL
+      amount: 16
+    '9':
+      type: ENCHANTMENT_TABLE
+    '10':
+      type: EXP_BOTTLE
+      amount: 64
+    '11':
+      type: EXP_BOTTLE
+      amount: 32
+    '12':
+      type: TORCH
+      amount: 64
+    '13':
+      type: TORCH
+      amount: 64
+    '14':
+      type: FISHING_ROD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 3
+    '15':
+      type: SHEARS
+    '16':
+      type: PUMPKIN_SEEDS
+      amount: 8
+    '17':
+      type: MELON_SEEDS
+      amount: 8
+    '18':
+      type: GRILLED_PORK
+      amount: 64
+    '19':
+      type: COOKED_BEEF
+      amount: 64
+    '20':
+      type: GOLDEN_APPLE
+      amount: 16
+    '21':
+      type: CARROT_ITEM
+      amount: 16
+    '22':
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 2
+          ARROW_FIRE: 1
+          ARROW_INFINITE: 1
+    '23':
+      type: ARROW
+    Helmet:
+      type: IRON_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+          PROTECTION_FIRE: 2
+          DURABILITY: 2
+          PROTECTION_PROJECTILE: 1
+    Chest:
+      type: IRON_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+          PROTECTION_FIRE: 2
+          DURABILITY: 2
+          PROTECTION_EXPLOSIONS: 1
+          PROTECTION_PROJECTILE: 2
+    Legs:
+      type: IRON_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+          PROTECTION_FIRE: 2
+          DURABILITY: 2
+          PROTECTION_PROJECTILE: 1
+    Boots:
+      type: IRON_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+          PROTECTION_FIRE: 2
+          DURABILITY: 2
+          PROTECTION_PROJECTILE: 1
+    OffHand:
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DAMAGE_ALL: 3
+          FIRE_ASPECT: 2
+          DURABILITY: 3

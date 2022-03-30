@@ -1,0 +1,33 @@
+# 
+###### About multiserver mode #####
+#
+# The multiserver mode synchronizes user data at a high frequency, so if you don't use the 
+#same database on multiple servers, leave this "false" to save memory.
+#
+# Remember, if you don't use multiserver mode, use different databases for each server.
+# Holograms are not synchronized.
+#Clan bases are not yet being separated
+#
+#About "servername": This needs to be a UNIQUE NAME, if you are using "mode" like BUNGEECORD, 
+#it needs to have the same name in the instance of bungeecord..
+#
+#About "updateTask": This is the time in SECONDS between syncs, setting a value too high causes 
+#sync delay and too low a value uses a lot of data traffic. so a suitable value is between 2 and 5
+#
+#About "mode": There are 2 synchronization switches:
+# -- BUNGECORD: With this mode you need to install the UClans.jar plugin inside your
+#plugins folder on the bungecord instance, and the synchronization is done through
+#interaction channels without the use of databases.
+#
+# -- MYSQL: This mode is a little slower and demands higher server load when doing multiple
+#queries and inserts into the database, if you don't have a bungecord network use with caution
+#
+# ATENTION: For both sync modes it is mandatory to use MYSQL database!
+###### About multiserver mode #####
+ 
+Multiserver:
+  enabled: false
+  servername: W1UHLZKX
+  updateTask: 3
+  #on enabled use: BUNGEECORD or MYSQL
+  mode: BUNGEECORD

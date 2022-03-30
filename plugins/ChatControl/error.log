@@ -1,0 +1,97 @@
+------------------------------------[ 24.12.2021 17:18:42 ]-----------------------------------
+ChatControl 8.6.6 encountered an IllegalPluginAccessException
+Running CraftBukkit 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_312
+Plugins: MinePacks v1.17.12, PlaceholderAPI v2.10.9, Vehicles v9.4.4, DynPad v1.4, Treasures v3.0-pre22.8, HandyOrbs v2.0, ViaVersion v4.1.1, NBTAPI v2.7.1, HideStream v3.10, ViaBackwards v4.1.1, LuckPerms v5.3.87, LuckyBlocks v1.0, AConsole v1.3.5, IllegalStack v2.2.0e, WorldBorder v1.8.7, KiteBoard v3.2.5, OPConsole v0.1, LobbyPresents v4.3, ProtocolLib v4.5.0, AdvancedPortals v0.0.41, FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10, DrugsFTW v2.3, OPSRegion v1.0, AntiAura v12.06-1, PVPProtect v0.4beta, Vault v1.7.3-b131, TokenManager v3.2.5, MagicWater v1.0, ViaRewind v2.0.2, rMine v1.0, DrinksCMD v1.3, HolographicDisplays v2.4.9, SkinsRestorer v14.1.10, LibRepairer v1.0, HoloMedals v2.1.1, AdventCalendar v2.0.3, WorldEdit v6.1.7;dd00bb1, MarriageMaster v2.5.4-Release, ChatControl v8.6.6, PowerlessLamps v2.5, WoodCutter v0.6.13, CustomGUI v2.4.9, bVape v1, TAB v2.8.10, MoneyPrinters v1.2.7, HolographicExtension v1.10.9, WorldGuard v6.2.2-SNAPSHOT;, ajParkour v2.10.10, RandomTeleport v1.7.4 (build #20), BountyHunters v2.3.9, LimitedWorldEdit v1.0.7, SilkSpawners v5.0.0, Citizens v2.0.29-SNAPSHOT (build 2419), UClans v3.5.3, ArtMap v2.1, AureliumSkills vBeta 1.1.4, LeaderHeadsRevamped v4.0.6, CitizensCMD v2.5.1, MoreFish v2.1.3, BattlePass v3.6.0, ShopGUIPlus v1.10.0, MixLeveledShops v1.1.5, CMILib v1.1.0.2, CMI v9.1.0.2, CMIEInjector v1.0.2.3, DisplayShops v1.5.5, zAuctionHouseV3 v3.0.7.1, AntiAura-ML v1.0
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Error reloading ChatControl 8.6.6
+IllegalPluginAccessException Plugin attempted to register class org.bukkit.event.player.AsyncPlayerChatEvent while not enabled
+	 at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:554)
+	 at org.mineacademy.chatcontrol.final.nul. .bJ.b(SourceFile:172)
+	 at org.mineacademy.chatcontrol.final.nul. .cD.a(SourceFile:63)
+	 at org.mineacademy.chatcontrol.final.nul. .cE.a(SourceFile:842)
+	 at org.mineacademy.chatcontrol.ChatControl.f(SourceFile:254)
+	 at org.mineacademy.chatcontrol.final.nul. .cE.G(SourceFile:752)
+	 at org.mineacademy.chatcontrol.final.nul. .c.a(SourceFile:565)
+	 at org.mineacademy.chatcontrol.final.nul. .bm.execute(SourceFile:329)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 24.12.2021 17:18:48 ]-----------------------------------
+ChatControl 8.6.6 encountered an IllegalPluginAccessException
+Running CraftBukkit 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_312
+Plugins: MinePacks v1.17.12, PlaceholderAPI v2.10.9, Vehicles v9.4.4, DynPad v1.4, Treasures v3.0-pre22.8, HandyOrbs v2.0, ViaVersion v4.1.1, NBTAPI v2.7.1, HideStream v3.10, ViaBackwards v4.1.1, LuckPerms v5.3.87, LuckyBlocks v1.0, AConsole v1.3.5, IllegalStack v2.2.0e, WorldBorder v1.8.7, KiteBoard v3.2.5, OPConsole v0.1, LobbyPresents v4.3, ProtocolLib v4.5.0, AdvancedPortals v0.0.41, FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10, DrugsFTW v2.3, OPSRegion v1.0, AntiAura v12.06-1, PVPProtect v0.4beta, Vault v1.7.3-b131, TokenManager v3.2.5, MagicWater v1.0, ViaRewind v2.0.2, rMine v1.0, DrinksCMD v1.3, HolographicDisplays v2.4.9, SkinsRestorer v14.1.10, LibRepairer v1.0, HoloMedals v2.1.1, AdventCalendar v2.0.3, WorldEdit v6.1.7;dd00bb1, MarriageMaster v2.5.4-Release, ChatControl v8.6.6, PowerlessLamps v2.5, WoodCutter v0.6.13, CustomGUI v2.4.9, bVape v1, TAB v2.8.10, MoneyPrinters v1.2.7, HolographicExtension v1.10.9, WorldGuard v6.2.2-SNAPSHOT;, ajParkour v2.10.10, RandomTeleport v1.7.4 (build #20), BountyHunters v2.3.9, LimitedWorldEdit v1.0.7, SilkSpawners v5.0.0, Citizens v2.0.29-SNAPSHOT (build 2419), UClans v3.5.3, ArtMap v2.1, AureliumSkills vBeta 1.1.4, LeaderHeadsRevamped v4.0.6, CitizensCMD v2.5.1, MoreFish v2.1.3, BattlePass v3.6.0, ShopGUIPlus v1.10.0, MixLeveledShops v1.1.5, CMILib v1.1.0.2, CMI v9.1.0.2, CMIEInjector v1.0.2.3, DisplayShops v1.5.5, zAuctionHouseV3 v3.0.7.1, AntiAura-ML v1.0
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Error reloading ChatControl 8.6.6
+IllegalPluginAccessException Plugin attempted to register class org.bukkit.event.player.AsyncPlayerChatEvent while not enabled
+	 at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:554)
+	 at org.mineacademy.chatcontrol.final.nul. .bJ.b(SourceFile:172)
+	 at org.mineacademy.chatcontrol.final.nul. .cD.a(SourceFile:63)
+	 at org.mineacademy.chatcontrol.final.nul. .cE.a(SourceFile:842)
+	 at org.mineacademy.chatcontrol.ChatControl.f(SourceFile:254)
+	 at org.mineacademy.chatcontrol.final.nul. .cE.G(SourceFile:752)
+	 at org.mineacademy.chatcontrol.final.nul. .c.a(SourceFile:565)
+	 at org.mineacademy.chatcontrol.final.nul. .bm.execute(SourceFile:329)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 24.12.2021 17:23:31 ]-----------------------------------
+ChatControl 8.6.6 encountered an IllegalPluginAccessException
+Running CraftBukkit 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_312
+Plugins: MinePacks v1.17.12, PlaceholderAPI v2.10.9, Vehicles v9.4.4, DynPad v1.4, Treasures v3.0-pre22.8, HandyOrbs v2.0, ViaVersion v4.1.1, NBTAPI v2.7.1, HideStream v3.10, ViaBackwards v4.1.1, LuckPerms v5.3.87, LuckyBlocks v1.0, AConsole v1.3.5, IllegalStack v2.2.0e, WorldBorder v1.8.7, KiteBoard v3.2.5, OPConsole v0.1, LobbyPresents v4.3, ProtocolLib v4.5.0, AdvancedPortals v0.0.41, FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10, DrugsFTW v2.3, OPSRegion v1.0, AntiAura-ML v1.0, AntiAura v12.06-1, PVPProtect v0.4beta, Vault v1.7.3-b131, TokenManager v3.2.5, MagicWater v1.0, ViaRewind v2.0.2, rMine v1.0, DrinksCMD v1.3, HolographicDisplays v2.4.9, SkinsRestorer v14.1.10, LibRepairer v1.0, HoloMedals v2.1.1, AdventCalendar v2.0.3, WorldEdit v6.1.7;dd00bb1, MarriageMaster v2.5.4-Release, ChatControl v8.6.6, PowerlessLamps v2.5, WoodCutter v0.6.13, CustomGUI v2.4.9, bVape v1, TAB v2.8.10, MoneyPrinters v1.2.7, HolographicExtension v1.10.9, WorldGuard v6.2.2-SNAPSHOT;, ajParkour v2.10.10, RandomTeleport v1.7.4 (build #20), BountyHunters v2.3.9, LimitedWorldEdit v1.0.7, SilkSpawners v5.0.0, Citizens v2.0.29-SNAPSHOT (build 2419), UClans v3.5.3, ArtMap v2.1, AureliumSkills vBeta 1.1.4, LeaderHeadsRevamped v4.0.6, CitizensCMD v2.5.1, MoreFish v2.1.3, BattlePass v3.6.0, ShopGUIPlus v1.10.0, MixLeveledShops v1.1.5, CMILib v1.1.0.2, CMI v9.1.0.2, CMIEInjector v1.0.2.3, DisplayShops v1.5.5, zAuctionHouseV3 v3.0.7.1
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Error reloading ChatControl 8.6.6
+IllegalPluginAccessException Plugin attempted to register class org.bukkit.event.player.AsyncPlayerChatEvent while not enabled
+	 at org.bukkit.plugin.SimplePluginManager.registerEvent(SimplePluginManager.java:554)
+	 at org.mineacademy.chatcontrol.final.nul. .bJ.b(SourceFile:172)
+	 at org.mineacademy.chatcontrol.final.nul. .cD.a(SourceFile:63)
+	 at org.mineacademy.chatcontrol.final.nul. .cE.a(SourceFile:842)
+	 at org.mineacademy.chatcontrol.ChatControl.f(SourceFile:254)
+	 at org.mineacademy.chatcontrol.final.nul. .cE.G(SourceFile:752)
+	 at org.mineacademy.chatcontrol.final.nul. .c.a(SourceFile:565)
+	 at org.mineacademy.chatcontrol.final.nul. .bm.execute(SourceFile:329)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:648)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 24.12.2021 17:23:59 ]-----------------------------------
+ChatControl 8.6.6 encountered a bM
+Running CraftBukkit 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_312
+Plugins: MinePacks v1.17.12, PlaceholderAPI v2.10.9, Vehicles v9.4.4, DynPad v1.4, Treasures v3.0-pre22.8, HandyOrbs v2.0, ViaVersion v4.1.1, NBTAPI v2.7.1, HideStream v3.10, ViaBackwards v4.1.1, LuckPerms v5.3.87, LuckyBlocks v1.0, AConsole v1.3.5, IllegalStack v2.2.0e, WorldBorder v1.8.7, KiteBoard v3.2.5, OPConsole v0.1, LobbyPresents v4.3, ProtocolLib v4.5.0, AdvancedPortals v0.0.41, FastAsyncWorldEdit v21.03.26-b67f782-1287-22.3.10, DrugsFTW v2.3, OPSRegion v1.0, AntiAura-ML v1.0, AntiAura v12.06-1, PVPProtect v0.4beta, Vault v1.7.3-b131, TokenManager v3.2.5, MagicWater v1.0, ViaRewind v2.0.2, rMine v1.0, DrinksCMD v1.3, HolographicDisplays v2.4.9, SkinsRestorer v14.1.10, LibRepairer v1.0, HoloMedals v2.1.1, AdventCalendar v2.0.3, WorldEdit v6.1.7;dd00bb1, MarriageMaster v2.5.4-Release, ChatControl v8.6.6, PowerlessLamps v2.5, WoodCutter v0.6.13, CustomGUI v2.4.9, bVape v1, TAB v2.8.10, MoneyPrinters v1.2.7, HolographicExtension v1.10.9, WorldGuard v6.2.2-SNAPSHOT;, ajParkour v2.10.10, RandomTeleport v1.7.4 (build #20), BountyHunters v2.3.9, LimitedWorldEdit v1.0.7, SilkSpawners v5.0.0, Citizens v2.0.29-SNAPSHOT (build 2419), UClans v3.5.3, ArtMap v2.1, AureliumSkills vBeta 1.1.4, LeaderHeadsRevamped v4.0.6, CitizensCMD v2.5.1, MoreFish v2.1.3, BattlePass v3.6.0, ShopGUIPlus v1.10.0, MixLeveledShops v1.1.5, CMILib v1.1.0.2, CMI v9.1.0.2, CMIEInjector v1.0.2.3, DisplayShops v1.5.5, zAuctionHouseV3 v3.0.7.1
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Global_Shortcut in formatting.yml cannot equal Bungee_Chat.Shortcut in settings.yml!
+bM Report / Global_Shortcut in formatting.yml cannot equal Bungee_Chat.Shortcut in settings.yml!
+	 at org.mineacademy.chatcontrol.final.nul. .as$c.init(SourceFile:121)
+	 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	 at java.lang.reflect.Method.invoke(Method.java:498)
+	 at org.mineacademy.chatcontrol.final.nul. .dJ.b(SourceFile:182)
+	 at org.mineacademy.chatcontrol.final.nul. .dJ.a(SourceFile:155)
+	 at org.mineacademy.chatcontrol.final.nul. .dJ.k(SourceFile:134)
+	 at org.mineacademy.chatcontrol.final.nul. .dJ$1.a_(SourceFile:56)
+	 at org.mineacademy.chatcontrol.final.nul. .dH.c(SourceFile:298)
+	 at org.mineacademy.chatcontrol.final.nul. .dJ.eg(SourceFile:220)
+	 at org.mineacademy.chatcontrol.final.nul. .as.a(SourceFile:20)
+	 at org.mineacademy.chatcontrol.final.nul. .dJ.a(SourceFile:80)
+	 at org.mineacademy.chatcontrol.final.nul. .cE.onEnable(SourceFile:262)
+	 at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	 at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337)
+	 at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:403)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:381)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:330)
+----------------------------------------------------------------------------------------------
+
+

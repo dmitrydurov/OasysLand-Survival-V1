@@ -1,0 +1,110 @@
+#
+# ATTENTION, THIS FILE IS FOR READING AND CONSULTATION ONLY.
+# ALL PLACEHOLDERS IN THIS FILE CAN BE USED IN THE GUI, PAGINATION, 
+# LANGUAGES AND EXTERNALLY WITH PLACEHOLDERAPI
+#
+#CLAN
+# %uclans_hasclan%
+# %uclans_hasclan_formated%
+# %uclans_hasclan_formated_levelsup%
+# %uclans_hasclan_formated_levelsub%
+# %uclans_tag_nocolor%
+# %uclans_tag_color%
+# %uclans_tag_color_levelsup%
+# %uclans_tag_color_levelsub%
+# %uclans_tag_formated%
+# %uclans_tag_formated_levelsup%
+# %uclans_tag_formated_levelsub%
+# %uclans_desc_nocolor%
+# %uclans_desc_color%
+# %uclans_leader%
+# %uclans_creation_date%
+# %uclans_creation_date_formated%
+# %uclans_clanid%
+# %uclans_clan_kills%
+# %uclans_clan_deaths%
+# %uclans_clan_souls%
+# %uclans_clan_kdr%
+# %uclans_clan_home%
+# %uclans_clan_members%
+# %uclans_clan_onlinemembers%
+# %uclans_count_onlinemembers%
+# %uclans_clan_ally%
+# %uclans_clan_count_ally%
+# %uclans_clan_rival%
+# %uclans_clan_count_rival%
+# %uclans_count_members%
+# %uclans_moderators%
+# %uclans_count_moderators%
+# %uclans_name%
+# %uclans_leader%
+# %uclans_verified%
+# %uclans_bank_balance%
+# %uclans_bank_balance_formated%
+# %uclans_level%
+# %uclans_max_level_reached%
+# %uclans_levelsup%
+# %uclans_levelsub%
+# %uclans_points%
+# %uclans_points_to_nextlevel%
+# %uclans_slots%
+# %uclans_slots_extra%
+# %uclans_slots_total%
+#ARENA
+# %uclans_war_arena_state:ARENA_NAME%
+# %uclans_war_arena_clan1:ARENA_NAME%
+# %uclans_war_arena_clan2:ARENA_NAME%
+# %uclans_war_arena_kit:ARENA_NAME%
+#BANNER
+# %uclans_hasbanner%
+# %uclans_hasbanner_formated%
+#LIMITS
+# %uclans_limit_home%
+# %uclans_limit_chest%
+# %uclans_limit_ally%
+# %uclans_limit_rival%
+#SETTINGS
+# %uclans_setting:WARINVITE%
+# %uclans_setting_state:WARINVITE%
+# %uclans_setting:ALLYSHAREDCHAT%
+# %uclans_setting_state:ALLYSHAREDCHAT%
+# %uclans_setting:ALLYSHAREDHOME%
+# %uclans_setting_state:ALLYSHAREDHOME%
+#STATS
+# %uclans_clan_member_joined%
+# %uclans_clan_member_leave%
+# %uclans_clan_member_kicked%
+# %uclans_clan_war_win%
+# %uclans_clan_war_lose%
+# %uclans_clan_tag_changed%
+#RELATION
+# %rel_uclans_relcolor%
+# %rel_uclans_reltext%
+# %rel_uclans_reltext_coloured%
+#QUEST
+# %uclans_quest_finished%
+#TOP
+# %uclans_top:kdr:<num>%
+# %uclans_top:kill:<num>%
+# %uclans_top:death:<num>%
+# %uclans_top:member:<num>%
+# %uclans_top:bank:<num>%
+# %uclans_top:level:<num>%
+# %uclans_top:war:<num>%
+#PLAYER
+# %uclans_player%
+# %uclans_player_name%
+# %uclans_player_kills%
+# %uclans_player_deaths%
+# %uclans_player_souls%
+# %uclans_player_kdr%
+# %uclans_level_identifier%
+# %uclans_tag_formated_level%
+# %uclans_player_joindate%
+# %uclans_player_joindate_formated%
+# %uclans_player_lastsee%
+# %uclans_player_lastsee_formated%
+# %uclans_player_leader_yes_no%
+# %uclans_player_mod_yes_no%
+# %uclans_player_inwar%
+r: true

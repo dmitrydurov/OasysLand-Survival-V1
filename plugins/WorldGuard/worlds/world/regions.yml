@@ -1,0 +1,117 @@
+#
+# Файл регионов WorldGuard
+#
+# ПРЕДУПРЕЖДЕНИЕ: ЭТОТ ФАЙЛ АВТОМАТИЧЕСКИ СГЕНЕРИРОВАН. Если изменить этот файл
+# вручную, имейте в виду, ЧТО ОДИН НЕПРАВИЛЬНО ВВЕДЕННЫЙ СИМВОЛ МОЖЕТ ПОВЕРЕДИТЬ ФАЙЛ. Если
+# WorldGuard будет неспособен разобрать файл, ваши регионы НЕ ЗАГРУЗЯТСЯ, и
+# содержимое этого файла будет сброшено. Пожалуйста, используйте валидатор YAML, такой как
+# http://yaml-online-parser.appspot.com (для небольших файлов).
+#
+# НЕ ЗАБУДЬТЕ ПЕРИОДИЧЕСКИ ДЕЛАТЬ РЕЗЕРВНЫЕ КОПИИ.
+#
+regions:
+    luckyblock:
+        min: {x: -3789.0, y: 0.0, z: -1016.0}
+        max: {x: -3778.0, y: 255.0, z: -1006.0}
+        members: {}
+        flags: {invincible: deny, block-break: allow, pvp: allow}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 100
+    main:
+        min: {x: -3808.0, y: 0.0, z: -1106.0}
+        max: {x: -3708.0, y: 255.0, z: -892.0}
+        members: {}
+        flags: {other-explosion: deny, lava-fire: deny, water-flow: deny, use: allow,
+            invincible: allow, Rafts: deny, leaf-decay: deny, snow-fall: deny, firework-damage: deny,
+            coral-fade: deny, mob-damage: deny, Drills: deny, ravager-grief: deny,
+            mushroom-growth: deny, use-anvil: deny, respawn-anchors: deny, lightning: deny,
+            Cars: deny, wither-damage: deny, ice-form: deny, enderman-grief: deny,
+            pvp: deny, mob-spawning: allow, crop-growth: deny, creeper-explosion: deny,
+            vine-growth: deny, Parachutes: deny, damage-animals: deny, snow-melt: deny,
+            tnt: deny, entity-item-frame-destroy: deny, ghast-fireball: deny, frosted-ice-form: deny,
+            mycelium-spread: deny, block-trampling: deny, ice-melt: deny, vehicle-destroy: deny,
+            chest-access: allow, fire-spread: deny, enderdragon-block-damage: deny,
+            sleep: deny, vehicle-place: deny, snowman-trails: deny, entity-painting-destroy: deny,
+            lighter: deny, use-dripleaf: deny, pistons: deny, block-place: deny, soil-dry: deny,
+            build: deny, item-frame-rotation: deny, frosted-ice-melt: deny, lava-flow: deny,
+            grass-growth: deny}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 10
+    dupewater:
+        min: {x: -3736.0, y: 66.0, z: -1069.0}
+        max: {x: -3717.0, y: 66.0, z: -1057.0}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 0
+    gora:
+        min: {x: -3785.0, y: 0.0, z: -1077.0}
+        max: {x: -3777.0, y: 255.0, z: -1069.0}
+        members: {}
+        flags: {use: allow, invincible: deny, pvp: allow, chest-access: allow}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 100
+    pvp:
+        min: {x: -3795.0, y: 0.0, z: -952.0}
+        max: {x: -3745.0, y: 255.0, z: -909.0}
+        members: {}
+        flags: {invincible: deny, pvp: allow}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 100
+    water:
+        min: {x: -3736.0, y: 0.0, z: -1069.0}
+        max: {x: -3716.0, y: 255.0, z: -1057.0}
+        members: {}
+        flags: {invincible: deny, pvp: allow}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 100
+    magicwater:
+        min: {x: -3736.0, y: 66.0, z: -1069.0}
+        max: {x: -3717.0, y: 66.0, z: -1057.0}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 0
+    spawn:
+        min: {x: -3984.0, y: 0.0, z: -1312.0}
+        max: {x: -3543.0, y: 255.0, z: -738.0}
+        members: {}
+        flags: {other-explosion: deny, lava-fire: deny, water-flow: deny, use: allow,
+            invincible: allow, Rafts: deny, leaf-decay: deny, snow-fall: deny, firework-damage: deny,
+            coral-fade: deny, mob-damage: deny, Drills: deny, ravager-grief: deny,
+            mushroom-growth: deny, use-anvil: deny, respawn-anchors: deny, lightning: deny,
+            Cars: deny, wither-damage: deny, ice-form: deny, enderman-grief: deny,
+            pvp: deny, mob-spawning: allow, crop-growth: deny, creeper-explosion: deny,
+            vine-growth: deny, Parachutes: deny, damage-animals: deny, snow-melt: deny,
+            tnt: deny, entity-item-frame-destroy: deny, ghast-fireball: deny, frosted-ice-form: deny,
+            mycelium-spread: deny, block-trampling: deny, ice-melt: deny, vehicle-destroy: deny,
+            chest-access: allow, fire-spread: deny, enderdragon-block-damage: deny,
+            sleep: deny, vehicle-place: deny, snowman-trails: deny, entity-painting-destroy: deny,
+            lighter: deny, use-dripleaf: deny, pistons: deny, block-place: deny, soil-dry: deny,
+            build: deny, item-frame-rotation: deny, frosted-ice-melt: deny, lava-flow: deny,
+            grass-growth: deny}
+        owners:
+            unique-ids: [cbd33f8a-7743-44ed-81f7-8b349d4e07e7]
+        type: cuboid
+        priority: 10
+    __global__:
+        members: {}
+        flags:
+            deny-spawn: [WITHER, ENDER_DRAGON, ENDER_CRYSTAL]
+        owners: {}
+        type: global
+        priority: 0

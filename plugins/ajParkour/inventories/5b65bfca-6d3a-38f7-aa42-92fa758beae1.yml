@@ -1,0 +1,166 @@
+inventory:
+  armor:
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 36
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 36
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 26
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 36
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 67
+  - ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 8
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    damage: 170
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    damage: 1
+    amount: 41
+  - ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 4
+    amount: 50
+  - ==: org.bukkit.inventory.ItemStack
+    type: BONE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+  - ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 8
+  - ==: org.bukkit.inventory.ItemStack
+    type: BREAD
+    amount: 9
+  - ==: org.bukkit.inventory.ItemStack
+    type: SAPLING
+    damage: 4
+    amount: 6
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    damage: 20
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        PROTECTION_PROJECTILE: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 4
+    amount: 62
+  - ==: org.bukkit.inventory.ItemStack
+    type: STRING
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 33
+  - ==: org.bukkit.inventory.ItemStack
+    type: SAPLING
+    damage: 1
+    amount: 34
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+    damage: 81
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_ORE
+    amount: 5
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 9
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+  - ==: org.bukkit.inventory.ItemStack
+    type: GLASS
+    amount: 21
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 2
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    damage: 79
+  - ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 1
+    amount: 17
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+    amount: 5
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: PORK
+    amount: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 1
+        DURABILITY: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  - ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    amount: 16
+  - ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 36
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 36
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 26
+  - ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 36
+  - ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    damage: 113

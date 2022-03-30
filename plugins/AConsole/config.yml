@@ -1,0 +1,75 @@
+# Лог
+Log:
+# Записывать всё в лог команды, сообщения и т.д
+  global: false
+# Создать ли лог файл если true - да | false - нет
+  enabled: true
+# Формат в котором сохронять
+  save: '%date% %name% использовал(а): /%command%'
+# Удалять файл при выключении сервера
+  delete: false
+  
+ignore:
+# Команды которые не будут выводиться в ConsoleSpy
+  commands:
+  - 'l'
+  - 'login'
+  - 'reg'
+  - 'mail'
+  - 'register'
+  - 'changepassword'
+  - 'email'
+  # Каких игроков не будет видно в ConsoleSpy
+  admins:
+  - '1DarkDev1'
+
+# Будет ли работать чёрный список true - да | false - нет
+# Will it work blacklist true - Yes | false - no
+black-list: true
+# Список команд которые не будут работать
+# List of commands which will not work
+blacklist:
+- 'op'
+- 'deop'
+- 'ban'
+- 'mute'
+- 'lp'
+- 'stop'
+- 'restart'
+
+# Будет ли команда работать только для опнутых
+OpPlayers: false
+
+# Будет ли работать белый список true - да | false - нет
+# Will it work the white list true - Yes | false - no
+white-list: false
+# Список команд которые будут работать
+# A list of commands that will work
+whitelist:
+- 'heal'
+- 'spawn'
+- 'clear'
+
+# Будет ли работать список игроков которым доступна консоль
+# Will it work the list of players allowed access to the console
+Allow-Players: false
+# Список игроков которым доступна мини-консоль
+# The list of players which is available mini-console
+Players:
+- '1DarkDev1'
+
+Permissions:
+# Права на команду /console | по умолчанию true
+# Rights to team /console | default true
+  Command:
+    enabled: true
+    permission: 'console.console'
+  Spy:
+    enabled: true
+    permission: 'console.spy'
+  Reload:
+    enabled: true
+    permission: 'console.reload'
+  Toggle:
+    enabled: true
+    permission: 'console.toggle'

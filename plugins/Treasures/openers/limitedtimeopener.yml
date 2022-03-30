@@ -1,0 +1,207 @@
+#    _______                                     
+#   |__   __|                                    
+#      | |_ __ ___  __ _ ___ _   _ _ __ ___  ___ 
+#      | | '__/ _ \/ _` / __| | | | '__/ _ \/ __|
+#      | | | |  __/ (_| \__ \ |_| | | |  __/\__ \
+#      |_|_|  \___|\__,_|___/\__,_|_|  \___||___/
+#   Official, default config.
+# -------------------------------------------------
+
+inventory:
+  title: Treasures
+  row: 5
+  canbuy: '&aClick to buy this!'
+  cantbuy: '&cYou can''t buy this!'
+  haskey: '&aClick to open.'
+  nokey: '&cYou don''t have a key!'
+treasures:
+  halloween1_default:
+    display-name: '&c[&6Halloween #1&c] &4Treasure'
+    lore:
+    - '&c&lLIMITED TIME TREASURE!'
+    - ''
+    - '&7Legends say, that these halloween'
+    - '&7treasures were found in a witch''s'
+    - '&7hut which was doing an experiement.'
+    - ''
+    - '&8You have &e%keys% &8Halloween #1 Treasures.'
+    - ''
+    - '&8Get Halloween Treasures'
+    - '&8by winning @ &eGames'
+    slot: 23
+    amount: -1
+    item: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWUyOGEwM2VkMmViOTBlYWZmMWExMTlhNWI1NTQ0NTI3MDFiOTdhZjQ3YmZmNzNjZTcxMDg0OWM2YjAifX19
+    opening-effect: WEB
+    opening-particle: COLOR_0_0_0
+    open-broadcast: true
+    open-message: '&6%player% &cis opening a &4Halloween #1 &ctreasure!'
+    result-effect: LIGHTNING
+    use-key: true
+    purchaseable-key: false
+    key-limit: 100
+    duplicate: false
+    rarities:
+      common_default:
+        chance: 45
+      rare_default:
+        chance: 20
+      legendary_default:
+        chance: 14
+      mythical_default:
+        chance: 1
+  halloween2_default:
+    display-name: '&c[&6Halloween #2&c] &4Treasure'
+    lore:
+    - '&c&lLIMITED TIME TREASURE!'
+    - ''
+    - '&7These treasures were made from'
+    - '&7a potion, and a pumpkin combination.'
+    - '&7This has a less chance for common.'
+    - ''
+    - '&8You have &e%keys% &8Halloween #2 Treasures.'
+    - ''
+    - '&8Get Halloween Treasures'
+    - '&8by winning @ &eGames'
+    slot: 24
+    amount: -1
+    item: PUMPKIN
+    opening-effect: EXPLOSIVE
+    opening-particle: FLAME
+    open-broadcast: true
+    open-message: '&6&l%player% &cis opening a &4&lHalloween #2 &ctreasure!'
+    result-effect: LIGHTNING
+    use-key: true
+    purchaseable-key: false
+    key-limit: 100
+    duplicate: false
+    rarities:
+      common_default:
+        chance: 20
+      rare_default:
+        chance: 49
+      legendary_default:
+        chance: 10
+      mythical_default:
+        chance: 1
+  halloween3_default:
+    display-name: '&c[&6Halloween #3&c] &4Treasure'
+    lore:
+    - '&c&lLIMITED TIME TREASURE!'
+    - ''
+    - '&7This pumpkin is the strongest of their'
+    - '&7type, this treasure was found in the'
+    - '&7deep of nethers!'
+    - ''
+    - '&8You have &e%keys% &8Halloween #3 Treasures.'
+    - ''
+    - '&8Get Halloween Treasures'
+    - '&8by winning @ &eGames'
+    slot: 25
+    amount: -1
+    item: JACK_O_LANTERN
+    opening-effect: INCR_CIRCLE
+    opening-particle: COLOR_255_128_0
+    open-broadcast: true
+    open-message: '&6&l%player% &c&lis opening a &4&lHalloween #3 &c&ltreasure!'
+    result-effect: LIGHTNING
+    use-key: true
+    purchaseable-key: false
+    key-limit: 100
+    duplicate: false
+    rarities:
+      rare_default:
+        chance: 74
+      legendary_default:
+        chance: 24
+      mythical_default:
+        chance: 2
+  halloween4_default:
+    display-name: '&c[&6Halloween &8&l2017&c] &4Treasure'
+    lore:
+    - '&c&lLIMITED TIME TREASURE!'
+    - ''
+    - '&7RobiFoxx, funnycube and Gianluca'
+    - '&7went to a Treasure Finding Adventure'
+    - '&7in the deeps of the TestPlugins Server,'
+    - '&7where they found this Rare Treasure!'
+    - ''
+    - '&8You have &e%keys% &8Halloween 2017 Treasures.'
+    - '&c§lREQUIRES 10 KEYS TO OPEN!'
+    - ''
+    - '&8Get Halloween Treasures'
+    - '&8by winning @ &eGames'
+    slot: 26
+    amount: -1
+    item: SOUL_SAND
+    opening-effect: BAT
+    opening-particle: SMOKE_NORMAL
+    open-broadcast: true
+    open-message: '&6&l%player% &c&lis opening a &4&lHalloween &8&l2017 &c&ltreasure!'
+    result-effect: LIGHTNING
+    use-key: true
+    purchaseable-key: false
+    key-limit: 100
+    required-key-to-open: 10
+    duplicate: false
+    rarities:
+      rare_default:
+        chance: 70
+      legendary_default:
+        chance: 25
+      mythical_default:
+        chance: 5
+  des_default:
+    display-name: '&a'
+    item: STAINED_GLASS_PANE:14
+    slot:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 18
+    - 19
+    - 27
+    - 28
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+  normal_treasures:
+    display-name: '&aNormal Treasures'
+    lore:
+    - ''
+    - '&7Normal Treasures that are'
+    - '&7available any time.'
+    - ''
+    - '&eClick to Continue'
+    slot: 21
+    item: ARROW
+    left-click-event:
+    - '[open] defaultopener.yml'
+  recent_default:
+    display-name: '&aYour Recent Loots'
+    item: CHEST
+    lore:
+    - '&71. %treasuresrecentfind_find_number_1%'
+    - '&72. %treasuresrecentfind_find_number_2%'
+    - '&73. %treasuresrecentfind_find_number_3%'
+    - '&74. %treasuresrecentfind_find_number_4%'
+    - '&75. %treasuresrecentfind_find_number_5%'
+    - '&7---'
+    - '&7Your first reward: %treasuresrecentfind_from_first_1%'
+    - ''
+    - '&aFeature above only works with'
+    - '&6[TreasuresAddon] &eRecentFinds&a!'
+    slot: 41

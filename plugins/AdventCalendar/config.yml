@@ -1,0 +1,118 @@
+# 
+#   Single -> Only one reward
+#   Multiple -> 3 or 5 rewards available. Player can choose only one! He doesn't know what is in package.
+#   Random -> LuckyWheel. One reward will be random selected from list on available rewards!
+language: EN
+disabledWorlds:
+- world_the_end
+- world_nether
+date:
+  time: 00:00
+  month: 12
+  year: 2021
+  format: dd.MM.yyyy HH:mm
+economy:
+  VAULT: false
+  POINTS: false
+database:
+  type: file
+  user: profit
+  host: localhost
+  database: profit
+  password: password
+command:
+  aliases:
+  - ac
+  - adventc
+  - advent
+  - calendar
+sounds:
+  CalendarGUI: BLOCK_STONE_PRESSUREPLATE_CLICK_ON
+  MultipleGUI: BLOCK_STONE_PRESSUREPLATE_CLICK_ON
+  RandomGUI:
+    Start: BLOCK_STONE_PRESSUREPLATE_CLICK_ON
+    Wheel: BLOCK_NOTE_PLING
+    Ending: BLOCK_NOTE_HAT
+    Prize: ENTITY_PLAYER_LEVELUP
+santa:
+  particles:
+    enable: true
+  carols:
+    enable: true
+    range: 5.0
+rewarding:
+  type: Single
+GUI:
+  settings:
+    lines: 6
+    windowSlots:
+    - 1
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    randomPosition: false
+  Calendar:
+    Items:
+      EMPTY_SLOT:
+        material: STAINED_GLASS_PANE
+        materialData: 15
+      WINDOW:
+        PreLocked:
+          material: SKULL_ITEM
+          materialData: 3
+          skull: INCr3Mentj
+        PostLocked:
+          material: SKULL_ITEM
+          materialData: 3
+          skull: MHF_Present1
+        UnLocked:
+          material: SKULL_ITEM
+          materialData: 3
+          skull: thresh3
+  Multiple:
+    Items:
+      PRESENT:
+        material: SKULL_ITEM
+        materialData: 3
+        skull: thresh3
+  Random:
+    Items:
+      EMPTY_SLOT:
+        material: STAINED_GLASS_PANE
+        materialData: 15
+      ARROW_SLOT:
+        material: STAINED_GLASS_PANE
+        materialData: 1
+      CLOSE_SLOT:
+        material: STAINED_GLASS_PANE
+        materialData: 5
+      START_BUTTON:
+        material: INK_SACK
+        materialData: 10
+      DISABLE_START_BUTTON:
+        material: INK_SACK
+        materialData: 8

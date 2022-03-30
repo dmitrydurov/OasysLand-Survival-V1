@@ -1,0 +1,52 @@
+# --
+# Блок mysql:
+# По стандарту будет использовать
+# SQL файл, если понадобиться подключить
+# к базе, всё что нужно сделать это просто
+# поставить use на true
+# --
+# Блок cache:
+# Тут можно просто настроить синхронизацию с помощью
+# redis'a, в связи с тем что всё кэшируется,
+# вы можете как использовать редис для этого так и обычную
+# локальную дату.
+# --
+# Блок level:
+# {current}, {next}, {previous}, {price}
+# --
+# Блок refill:
+# every > Кол-во тиков (Long значение)
+# ----------------------------------------------------------------------------------------------------------------
+# This plugin was made by:
+# https://vk.com/ilya_koreysha
+# For:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# Buy link:
+# https://forum-minecraft.ru/resources/mixmarket-magaziny-ot-mixstudio-parodija-magazinov-na-sunrise.646/ & https://vk.com/kzdnl
+# Distributor:
+# https://vk.com/mixstd & https://vk.com/kzdnl
+# ----------------------------------------------------------------------------------------------------------------
+mysql:
+  use: false
+  host: "localhost"
+  port: 3306
+  user: "root"
+  pass: "password"
+  data: "leveled_shops"
+  use-ssl: false
+cache:
+  use: false
+  host: "127.0.0.1"
+  port: 6379
+  use-auth: false
+  user: "myuser"
+  pass: "mypassword"
+  use-ssl: false
+level:
+  exp-formula: 3600
+  max-level: 50
+refill:
+  every: 3600000
+redeposit:
+  every: 3600000
+  sum: 5000

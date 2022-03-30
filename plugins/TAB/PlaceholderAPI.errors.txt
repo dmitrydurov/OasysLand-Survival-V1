@@ -1,0 +1,18 @@
+09.12.2021 - 22:00:50 - [TAB v2.8.10] PlaceholderAPI v2.10.9 generated an error when setting placeholder %server_unique_joins% for player <null>
+09.12.2021 - 22:00:50 - java.lang.NullPointerException: null
+09.12.2021 - 22:00:50 -        at org.bukkit.craftbukkit.v1_12_R1.CraftServer.getOfflinePlayers(CraftServer.java:1470)
+09.12.2021 - 22:00:50 -        at org.bukkit.Bukkit.getOfflinePlayers(Bukkit.java:832)
+09.12.2021 - 22:00:50 -        at com.extendedclip.papi.expansion.server.ServerExpansion.onRequest(ServerExpansion.java:124)
+09.12.2021 - 22:00:50 -        at me.clip.placeholderapi.replacer.CharsReplacer.apply(CharsReplacer.java:156)
+09.12.2021 - 22:00:50 -        at me.clip.placeholderapi.PlaceholderAPI.setPlaceholders(PlaceholderAPI.java:69)
+09.12.2021 - 22:00:50 -        at me.clip.placeholderapi.PlaceholderAPI.setPlaceholders(PlaceholderAPI.java:97)
+09.12.2021 - 22:00:50 -        at me.neznamy.tab.platforms.bukkit.BukkitPlatform.setPlaceholders(BukkitPlatform.java:206)
+09.12.2021 - 22:00:50 -        at me.neznamy.tab.platforms.bukkit.BukkitPlatform$1.get(BukkitPlatform.java:172)
+09.12.2021 - 22:00:50 -        at me.neznamy.tab.shared.placeholders.ServerPlaceholder.update(ServerPlaceholder.java:27)
+09.12.2021 - 22:00:50 -        at me.neznamy.tab.shared.features.PlaceholderManager$1.run(PlaceholderManager.java:109)
+09.12.2021 - 22:00:50 -        at me.neznamy.tab.shared.cpu.CPUManager$4.run(CPUManager.java:119)
+09.12.2021 - 22:00:50 -        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+09.12.2021 - 22:00:50 -        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09.12.2021 - 22:00:50 -        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+09.12.2021 - 22:00:50 -        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+09.12.2021 - 22:00:50 -        at java.lang.Thread.run(Thread.java:748)

@@ -1,0 +1,43 @@
+Menu:
+  Color_Container:
+    No_Permission_Color:
+      Name: '&eNo permissions!'
+      Lore:
+      - ''
+      - 'You do not have any color permission:'
+      - '&o{color_specific}'
+      - ''
+      - give yourself some to see options here!
+    No_Permission_Both:
+      Name: '&eNo permissions!'
+      Lore:
+      - ''
+      - 'You do not have any color permission:'
+      - '&o{color_specific}'
+      - ''
+      - 'nor any decoration permission:'
+      - '&o{format_generic}.{name}'
+      - ''
+      - give yourself some to see options here!
+    Decoration_Disabled: '&4Decoration was disabled!'
+    Button_Decoration:
+      Name: Disable decoration
+      Lore:
+      - ''
+      - Click to reset your decoration.
+    Preferences_Reset: '&4Color and decoration reset!'
+    Button_Preferences:
+      Name: Reset
+      Lore:
+      - ''
+      - Click to reset your chat
+      - color and decoration.
+    Color_Title: Color
+    Decoration_Title: '&rDecoration'
+    Color_Selected: Selected {color} Color!
+    Decoration_Selected: Selected {decoration} Decoration!
+    Description: |-
+      Select your chatting color
+      and the decoration. This will
+      override your prefix from
+      your permission group.

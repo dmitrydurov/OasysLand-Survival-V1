@@ -1,0 +1,82 @@
+MYSQL:
+  Enable: false
+  host: localhost
+  port: '3306'
+  database: base
+  table_name: Presents
+  username: mixdata
+  password: password
+Effect:
+  distance: 5
+  ticks: 25
+  amount_canclaim: 51
+  amount_claimed: 0
+  canclaim: VILLAGER_HAPPY
+  claimed: CRIT
+  click: REDSTONE
+Messages:
+  found: '&eMcDev &8▪ &7Вы нашли подарок! &8&l(&e%found%&8/&e%total%&8&l)'
+  alreadyfound: '&eMcDev &8▪ &7Вы уже находили этот подарок!'
+  completed: '&eMcDev &8▪ &7Вы нашли подарок! &8&l(&e%found%&8/&e%total%&8&l)'
+  actionbar: '&7Вы нашли подарок! &8&l(&e%found%&8/&e%total%&8&l)'
+  actionbar-completed: '&7Вы нашли подарок! &8&l(&e%found%&8/&e%total%&8&l)'
+Actionbar:
+  enable: false
+  world: {}
+  update: 10
+Sounds:
+  found: ENTITY_PLAYER_LEVELUP
+  alreadyfound: ENTITY_ENDEREYE_DEATH
+Rewards:
+  type: sequence
+  sequence-rewards:
+    '1': money give %player% 100
+    '2': money give %player% 100
+    '3': money give %player% 100
+    '4': money give %player% 100
+    '5': money give %player% 100
+    '6': money give %player% 100
+    '7': money give %player% 100
+    '8': money give %player% 100
+    '9': money give %player% 100
+    '10': money give %player% 100
+    '11': money give %player% 100
+    '12': money give %player% 100
+    '13': money give %player% 100
+    '14': money give %player% 100
+    '15': money give %player% 100
+    '16': money give %player% 100
+    '17': money give %player% 100
+    '18': money give %player% 100
+    '19': money give %player% 100
+    '20': money give %player% 100
+    '21': money give %player% 100
+    '22': money give %player% 100
+    '23': money give %player% 100
+    '25': money give %player% 100
+    '26': money give %player% 100
+    '27': money give %player% 100
+    '28': money give %player% 100
+    '29': money give %player% 100
+    '30': money give %player% 100
+    '31': money give %player% 100
+    '32': money give %player% 100
+    '33': money give %player% 100
+    '34': money give %player% 100
+    '35': money give %player% 100
+    '36': money give %player% 100
+    '37': money give %player% 100
+    '38': money give %player% 100
+    '39': money give %player% 100
+    '40': money give %player% 100
+    '41': money give %player% 100
+    '42': money give %player% 100
+    '43': money give %player% 100
+    '44': money give %player% 100
+    '45': money give %player% 100
+    '46': money give %player% 100
+    '47': money give %player% 100
+    '48': money give %player% 100
+    '49': money give %player% 100
+    '50': money give %player% 100
+    '51': money give %player% 100
